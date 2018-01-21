@@ -73,7 +73,7 @@
 
     -   Backing up files.
 
-    -   Restoring a system to a usable state in case a crash occurs.
+    -   Restoring a system to a usable state in case of a crash.
 
     -   Startup, shutdown and maintenance of the system.
 
@@ -85,6 +85,6 @@
 
 ##
 
-12. AT&T and The University of California, Berkeley (UCB).
+12. AT&T and University of California, Berkeley (UCB).
 
 ##
