@@ -34,9 +34,9 @@
 
 06. `wc` command can be used with not just files but with input coming from standard input or from output of some other command. This is illustrated with the following examples:
 
-    Execute `wc` command without any argument. The command prompt won't return. Enter some text and terminate the input by entering a newline immediately followed by end-of-file character using `[Ctrl-d]`. The output will represent count of the characters in the entered text.
+    Execute `wc` command without any argument. The command prompt won't return. Enter some text and terminate the input by entering a newline and immediately following it by end-of-file character using `[Ctrl-d]`. The output will represent count of the characters in the entered text.
 
-    Pipe the output of some command such as `ls` to `wc -l` to count the number of non-hidden files and directories in the current directory. Enter the command line as:
+    Pipe the output of a command such as `ls` to `wc -l` to count the number of non-hidden files and directories in the current directory. Enter the command-line as:
 
     `ls | wc -l`.
 
