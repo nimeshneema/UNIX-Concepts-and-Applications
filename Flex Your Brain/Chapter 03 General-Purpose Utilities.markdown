@@ -13,9 +13,9 @@
 
     Three escape sequences used by echo command, with their significance are:
 
-    -   `\n` : Prints a newline.
-    -   `\b` : Prints a backspace character, i.e. removes the previous character.
-    -   `\\` : Prints a literal backslash character.
+    -   `\n` : Newline character.
+    -   `\b` : Backspace character, i.e. removes the previous character.
+    -   `\\` : Literal backslash character.
 
 ##
 
