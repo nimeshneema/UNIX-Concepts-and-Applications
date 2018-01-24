@@ -6,7 +6,7 @@
 
     C program source code, perl script file and ASCII text readme files are examples of text files.
 
-    Compiled C executable, a PNG image file and a wav audio file are examples of binary files.
+    Compiled C executable, PNG image file and wav audio file are examples of binary files.
 
 ##
 
@@ -14,7 +14,7 @@
 
 ##
 
-03. (i). `mkdir a/b/c` : Won't work. Directory `a` and `a/b` needs to exist before attempting to create directory `a/b/c`.
+03. (i). `mkdir a/b/c` : Won't work. Directory `a` and `a/b` need to exist before attempting to create directory `a/b/c`.
 
     (ii). `mkdir a a/b` : Will work. Directory `a` will be created first followed by directory `a/b`.
 
@@ -22,7 +22,7 @@
 
     (iv). `rmdir a a/b` : Will work partially. Directory `a` won't be removed as it's non-empty. Directory `a/b` will be removed as it's empty.
 
-    (v). `mkdir /bin/foo` : Won't work. `/bin` is writable only by the root user. To create a file or directory in `/bin`, either login as root user or use `sudo` command.
+    (v). `mkdir /bin/foo` : Won't work. `/bin` is writable only by the root user. To create a file or directory in `/bin`, either login as root user or use `sudo`.
 
 ##
 
@@ -42,11 +42,11 @@
 
 ##
 
-08. `cd ~charlie` changes the current working directory to charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named `charlie` inside charlie's home directory. The latter command may fail if no such directory exists.
+08. `cd ~charlie` changes the current working directory to charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named `charlie` inside charlie's home directory. The latter may fail if no such directory exists.
 
 ##
 
-09. To refer to the `update.sh` file present in the current directory and not some other file with the same name existing in a directory listed in the user's **PATH**. This measure will be required if the current working directory (represented by `.`) is not listed in the **PATH** variable.
+09. To refer to the `update.sh` file present in the current directory and not some other file with the same name existing in a directory listed in the user's **PATH**. This measure could also be required if the current working directory (represented by `.`) is not listed in the **PATH** variable.
 
 ##
 
