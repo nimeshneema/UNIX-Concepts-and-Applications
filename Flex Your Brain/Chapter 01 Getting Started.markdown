@@ -25,7 +25,7 @@
 
 04. The output obtained on running `ls` command is saved in a file named `list` in the current directory.
 
-    The shell sees the redirection operator when interpreting the command line. It opens the file following the `>` operator (here, `list`). Next the command `ls` is run which reads the directory file corresponding to the current directory. The shell has manipulated things so that the output of the `ls` command doesn't go to the terminal but is written to the file opened by the shell on its behalf.
+    The shell sees the redirection operator when interpreting the command line. It opens the file following the `>` operator (here, `list`). Next the command `ls` is run which reads the directory file corresponding to the current directory. The shell has manipulated things so that the output of the `ls` command doesn't go to the standard output but is written to the file opened by the shell on its behalf.
 
     **Note**: The file is created anew if it doesn't already exist, or is overwritten with the command output if it does. An error occurs if either the named file exists and is not writable by the current user, or the named file doesn't exist and the directory is not writable by the user.
 
