@@ -8,7 +8,7 @@
 
 ##
 
-02. `cat foo` : Displays the contents of the file `foo` on the terminal.
+02. `cat foo` : Displays the contents of the file `foo` on standard output.
 
     `cat > foo` : Returns secondary prompt and let the user type any text. Upon encountering end-of-file `[Ctrl-d]` character, the entered text is saved in a file named `foo` in the current directory.
 
@@ -32,7 +32,7 @@
 
     `rmdir bar`
 
-    will work only when the directory is not write-protected and is completely empty.
+    will work only when the directory containing `bar` (current directory here) is not write-protected and is the directory `bar` is completely empty.
 
 ##
 
@@ -40,7 +40,7 @@
 
     (ii). `cp -r bar1 bar2` : Recursively copy the contents of `bar1` to `bar2`. If `bar2` exists, recursively copy contents of `bar1` into `bar2`, thus making the copy of `bar1` a sub-directory of `bar2`.
 
-    (iii). `mv * ../bin` : Move all the files and directories in the current directory into a directory named **bin** in the parent directory. The command fails if the directory `bin` doesn't exist.
+    (iii). `mv * ../bin` : Moves all the files and directories in the current directory into a directory named `bin` in the parent directory. The command fails if the directory `bin` doesn't exist.
 
 ##
 
@@ -54,7 +54,7 @@
 
 ##
 
-07. Assuming that the statement "first `a` is empty" means that the directory `a` doesn't contain any file(s), just the sub-directory `a`.
+07. Assuming that the statement "first `a` is empty" means that the directory `a` doesn't contain any files (even hidden), just the sub-directory `a`.
 
     To accomplish the said task, execute the following command line:
 
@@ -134,11 +134,7 @@
 
 ##
 
-14. Name three advantages `zip` has over `gzip`. How do you use `zip` to send a complete directory structure to someone by email? How does the recipient recreate the directory structure at her end?
-
-    **Answer:**
-
-    The three advantages of using `zip` over `gzip` are:
+14. The three advantages of using `zip` over `gzip` are:
 
     -   zip files can he handled easily both in Windows and UNIX.
 
@@ -156,9 +152,9 @@
 
 ##
 
-15. A command behaves recursively when it can descent a directory hierarchy, and execute over all the files, sub-directories and files thereof.
+15. A command behaves recursively when it can descent a directory hierarchy and execute over all the files, sub-directories and files thereof.
 
-    Examples of commands which support recursive operation:
+    Examples of commands which support recursive operation are:
 
     -   `cp -R` : recursively copies a directory hierarchy.
 
