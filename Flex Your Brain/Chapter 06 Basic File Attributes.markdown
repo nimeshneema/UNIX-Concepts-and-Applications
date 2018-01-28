@@ -14,7 +14,7 @@
 
     -   First column : Shows the file type and the associated permissions for file owner, group owners and others.
 
-    -   Second column : Indicates the number of links associated with the file.
+    -   Second column : Shows the number of links associated with the file.
 
     -   Third column : Shows the username of the file owner.
 
@@ -34,7 +34,7 @@
 
 04. If `bar` is an ordinary file, both the commands display `bar` as the output.
 
-    If `bar` is a directory that contains only a single file or directory also named bar, than both the commands display `bar` as the output.
+    If `bar` is a directory that contains only a single file or directory also named `bar`, than both the commands display `bar` as the output.
 
 ##
 
@@ -86,7 +86,7 @@
 
 ##
 
-10. Assume that the file is named **foo**.
+10. Assume that the file is named `foo`.
 
     Using relative assignment:
 
