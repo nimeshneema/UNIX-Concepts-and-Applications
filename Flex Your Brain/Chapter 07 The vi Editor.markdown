@@ -36,11 +36,57 @@
 
 ##
 
-07. Enter the character sequence shown below as it is. Enter the characters as indicated:
+07. Enter the character sequence as shown below:
 
-    (i). `e`, `a`, enter the characters: ` `, ` -n`, `[Esc]`, `w`, `r"`, `3e`, `2x`, `r"`.
+    (i). `e`, `a`, ` -n`, `[Esc]`, `w`, `r"`, `3e`, `2x`, `r"`.
 
-    (ii). `i`, enter the characters: `f`, `[Esc]`, `w`, `a`, enter the characters: `stderr,`, ` `, `[Esc]`.
+    The step-by-step explanation is as follows:
+
+    `e`: Move forward to end of word.
+
+    `a`: Enter input mode to append text to right of cursor.
+
+    ` -n`: Enter the three character **space**, **hyphen** and alphabet **n**.
+
+    `[Esc]`: Press escape key to switch back to command mode.
+
+    `w`: Move forward to beginning of word.
+
+    `r"`: Replace **single quote** character with **double quote**.
+
+    `3e`: Move forward to end of word, repeated thrice.
+
+    `2x`: Delete the 2 characters `\c`.
+
+    `r"`: Replace **single quote** character with **double quote**.
+
+    <br/>
+
+    (ii). `I`, `f`, `[Esc]`, `w`, `a`, `stderr, `, `[Esc]`, `6e`, `a`, `"`, `[Esc]`.
+
+    The step-by-step explanation is as follows:
+
+    `I`: Enter input mode to insert text at beginning of line.
+
+    `f`: Insert the alphabet `f`.
+
+    `[Esc]`: Switch to command mode.
+
+    `w`: Move forward to beginning of word.
+
+    `a`: Enter input mode to append text to right of cursor.
+
+    `stderr, `: Enter the string `stderr` followed by command and space character.
+
+    `[Esc]`: Switch to command mode.
+
+    `6e`: Move forward to end of word, repeated six times.
+
+    `a`: Enter input mode to append text to right of cursor.
+
+    `f`: Insert double quote character.
+
+    `[Esc]`: Switch to command mode.
 
 ##
 
