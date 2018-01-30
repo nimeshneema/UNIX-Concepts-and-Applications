@@ -96,53 +96,73 @@
 
 ##
 
-09. Make sure you are in command mode. Then enter the following sequence:
+09. Make sure you are in command mode. Enter the character sequence as shown below:
 
-    `:/#include[Enter], 4dd, :1, P`
+    `:/#include`, `[Enter]`, `4dd`, `:1`, `P`.
+
+    The step-by-step explanation is as follows:
+
+    `:/#include`: ex mode command to search for the occurrence of string **#include**.
+
+    `[Enter]`: Pressing the enter key positions the cursor to the first match of the **#include** string.
+
+    `4dd`: Deletes 4 lines, starting from the current line.
+
+    `:1`: Move to the first line of the file buffer.
+
+    `P`: Paste the deleted content of the four lines here.
 
 ##
 
-10. `:1,$s/printf(/fprintf(stderr,/g`
+10. To achieve the desired substitution with global effect, enter the following ex mode substitute command sequence:
+
+    `:1,$s/printf(/fprintf(stderr,/g`
 
 ##
 
 11. In default configuration, `u` undoes the most recent, single editing change. Subsequent pressing of the key will redo the change.
 
-    When a number of editing changes have been made to a single line, pressing `U` will discard all the changes made since the cursor was moved to the line.
+    When a number of editing changes have been made to a single line and the user has not navigated away from the line, pressing `U` will discard all the changes made since the cursor was moved to the line.
 
 ##
 
-12. (i). `:1,10s/cnt/count/g`
+12. Enter the ex mode command sequences as shown below:
+
+    (i). `:1,10s/cnt/count/g`
 
     (ii). `:.s/cnt/count/g`
 
     (iii). `:1,$s/cnt/count/g`
 
-    by changing the flag to `gc` from `g`.
+    To repeat the exercise in an interactive manner, change the flag from `g` to `gc`. The updated ex mode command sequences are as shown below:
+
+    (i). `:1,10s/cnt/count/gc`
+
+    (ii). `:.s/cnt/count/gc`
+
+    (iii). `:1,$s/cnt/count/gc`
 
 ##
 
-13. vi editor stores most of the unsaved buffer in a hidden swap file on disk. The file is automatically removed by the editor upon successful exit.
+13. The swap file can remain on disk and the editor will complain when an attempt is made to open the file.
 
-    If the same file is opened after a crash, the editor complains. In such a case, it is advised to use
-
-    `:recover`
-
-    ex mode command.
+    It is advised to use `:recover` ex mode command to recover as much of the file as possible.
 
 ##
 
-14. Save the file under a different name after making sure that the file doesn't exist, using the command:
+14. Save the file under a different name using the command:
 
     `:w filename`.
 
+    Make sure that a file named **filename** doesn't already exist on disk.
+
 ##
 
-15. Copy the file in the home directory by running:
+15. Copy the **/etc/passwd** file in the home directory by running the following command-line:
 
     `cd ; cp /etc/passwd .`
 
-    Start the editor by running:
+    Start the vi editor by executing:
 
     `vi passwd`
 
