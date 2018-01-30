@@ -4,7 +4,7 @@
 
 01. The three modes of **vi** are: **Command Mode**, **Input Mode** and **ex Mode** (or Last Line Mode).
 
-    The editor starts in Command mode by default. To switch to Input mode, enter one of the `i`, `I`, `a`, `A`, `r`, `R`, `s`, `S, `o`, or `O` key. To switch back to Command mode, press the `[Esc]` key. To enter ex mode, switch to Command mode and press the `:` key followed by ex mode command. ex mode command is executed by pressing the `[Enter]` key, which on completion switches the editor back to Command mode.
+    The editor starts in Command mode by default. To switch to Input mode, enter one of the `i`, `I`, `a`, `A`, `r`, `R`, `s`, `S`, `o`, or `O` key. To switch back to Command mode, press the `[Esc]` key. To enter ex mode, switch to Command mode and press the `:` key followed by ex mode command. ex mode command is executed by pressing the `[Enter]` key, which on completion switches the editor back to Command mode.
 
 ##
 
@@ -18,7 +18,7 @@
 
 04. To move to line number 100, enter `:100`.
 
-    To write the lines to a file named `newfile`, enter the ex mode command:
+    To write the lines to a file named **newfile**, enter the ex mode command:
 
     `:.,$w newfile`.
 
@@ -28,11 +28,11 @@
 
 ##
 
-06. (i). `:.,10w foo` : Saves the lines from the current line to 10th line below in a file named `foo`.
+06. (i). `:.,10w foo` : Saves the lines from the current line to 10th line below in a file named **foo**.
 
-    (ii). `:$w! foo` : Saves the last line in a file named `foo`. Overwrite the file `foo` if it already exist.
+    (ii). `:$w! foo` : Saves the last line in a file named **foo**. Overwrite the file **foo** if it already exist.
 
-    Both the above commands are executed in ex mode. If the file `foo` already exists, a warning message is shown by vi editor upon invoking `:w` ex mode command. The warning can be overridden by appending `!` to `:w` command.
+    Both the above commands are executed in ex mode. If the file **foo** already exists, a warning message is shown by vi editor upon invoking `:w` ex mode command. The warning can be overridden by appending `!` to `:w` command.
 
 ##
 
@@ -76,7 +76,7 @@
 
     `a`: Enter input mode to append text to right of cursor.
 
-    `stderr, `: Enter the string `stderr` followed by command and space character.
+    `stderr, `: Enter the string **stderr** followed by command and space character.
 
     `[Esc]`: Switch to command mode.
 

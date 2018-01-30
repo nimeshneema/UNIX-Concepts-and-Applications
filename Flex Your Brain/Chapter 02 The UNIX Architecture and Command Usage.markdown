@@ -52,7 +52,7 @@
 
 ##
 
-08. This can happen when `foo` doesn't exist as a shell built-in command and neither is any executable named `foo` present in any of the directories listed in the **PATH** environment variable. The executable named `foo` present in the current directory is not executed if the current directory (represented by `.`) is not listed in the PATH environment variable.
+08. This can happen when **foo** doesn't exist as a shell built-in command and neither is any executable named **foo** present in any of the directories listed in the **PATH** environment variable. The executable named **foo** present in the current directory is not executed if the current directory (represented by `.`) is not listed in the PATH environment variable.
 
 ##
 

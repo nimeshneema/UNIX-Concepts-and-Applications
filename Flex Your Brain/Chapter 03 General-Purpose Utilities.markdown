@@ -25,7 +25,7 @@
 
 ##
 
-04. The comma character is not required after the first argument. `fname` needs to be evaluated as a variable and should be preceded by `$` character. The correct command-line is:
+04. The comma character is not required after the first argument. **fname** needs to be evaluated as a variable and should be preceded by `$` character. The correct command-line is:
 
     `printf "Filename: %s\n" $fname`
 

@@ -32,9 +32,9 @@
 
 ##
 
-04. If `bar` is an ordinary file, both the commands display `bar` as the output.
+04. If **bar** is an ordinary file, both the commands display **bar** as the output.
 
-    If `bar` is a directory that contains only a single file or directory also named `bar`, than both the commands display `bar` as the output.
+    If **bar** is a directory that contains only a single file or directory also named **bar**, than both the commands display **bar** as the output.
 
 ##
 
@@ -86,7 +86,7 @@
 
 ##
 
-10. Assume that the file is named `foo`.
+10. Assume that the file is named **foo**.
 
     Using relative assignment:
 
