@@ -56,7 +56,7 @@
 
 07. Assuming that the statement "first `a` is empty" means that the directory **a** doesn't contain any files (even hidden), just the sub-directory **a**.
 
-    To accomplish the said task, execute the following command line:
+    To accomplish the said task, execute the following command-line:
 
     `cd ; mv a temp ; mv temp/a . ; rmdir temp`
 
