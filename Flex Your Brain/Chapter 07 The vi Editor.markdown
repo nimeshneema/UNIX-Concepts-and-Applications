@@ -4,11 +4,11 @@
 
 01. The three modes of **vi** are: **Command Mode**, **Input Mode** and **ex Mode** (or Last Line Mode).
 
-    The editor starts in Command mode by default. To switch to Input mode, enter one of `i`, `I`, `a`, `A`, `o`, `O`, `r`, `R`, `s` or `S` key. To switch back to Command mode, press the `[Esc]` key. To enter ex mode, switch back to Command mode first if you are currently in Input mode, then press the `:` key followed by ex mode command. ex mode command is executed by pressing the `[Enter]` key, which on completion switches the editor back to Command mode.
+    The editor starts in Command mode by default. To switch to Input mode, enter one of the `i`, `I`, `a`, `A`, `r`, `R`, `s`, `S, `o`, or `O` key. To switch back to Command mode, press the `[Esc]` key. To enter ex mode, switch to Command mode and press the `:` key followed by ex mode command. ex mode command is executed by pressing the `[Enter]` key, which on completion switches the editor back to Command mode.
 
 ##
 
-02. First navigate to the desired line using appropriate navigation keys. Press `I` key to insert text at the beginning of the line. Enter `/*` characters and press `[Esc]` key to switch back to Command mode. Now press `A` key to append text at the end of the line. Enter `*/` characters and press the `[Esc]` key to switch back to the Command mode.
+02. First navigate to the desired line using appropriate navigation keys. Press `I` to insert text at the beginning of the line. Enter `/*` and press `[Esc]` key to switch back to Command mode. Now press `A` key to append text at the end of the line. Enter `*/` and press the `[Esc]` key to switch back to the Command mode.
 
 ##
 
@@ -18,19 +18,21 @@
 
 04. To move to line number 100, enter `:100`.
 
-    To write the lines from that point onwards to the end of the file to a file named `newfile`, enter the ex mode command:
+    To write the lines to a file named `newfile`, enter the ex mode command:
 
     `:.,$w newfile`.
 
 ##
 
-05. This happens when there are unsaved changes in the buffer. To discard the unsaved changes and exit anyways, enter the ex mode command: `:q!`
+05. This can happen when there are unsaved changes in the buffer. To discard the unsaved changes and exit anyways, enter the ex mode command: `:q!`.
 
 ##
 
 06. (i). `:.,10w foo` : Saves the lines from the current line to 10th line below in a file named `foo`.
 
     (ii). `:$w! foo` : Saves the last line in a file named `foo`. Overwrite the file `foo` if it already exist.
+
+    Both the above commands are executed in ex mode. If the file `foo` already exists, a warning message is shown by vi editor upon invoking `:w` ex mode command. The warning can be overridden by appending `!` to `:w` command.
 
 ##
 
