@@ -16,23 +16,23 @@
 
 ##
 
-04. To move to line number 100, enter `:100`.
+04. To move to line number 100, enter `:100` followed by pressing the `[Enter]` key.
 
-    To write the lines to a file named **newfile**, enter the ex mode command:
+    To write the lines to a file named **newfile**, execute the ex mode command:
 
     `:.,$w newfile`.
 
 ##
 
-05. This can happen when there are unsaved changes in the buffer. To discard the unsaved changes and exit anyways, enter the ex mode command: `:q!`.
+05. This can happen when there are unsaved changes in the buffer. To discard the unsaved changes and exit anyways, execute the ex mode command: `:q!`.
 
 ##
 
-06. (i). `:.,10w foo` : Saves the lines from the current line to 10th line below in a file named **foo**.
+06. (i). `:.,10w foo`: Saves the lines from the current line to 10th line below in a file named **foo**.
 
-    (ii). `:$w! foo` : Saves the last line in a file named **foo**. Overwrite the file **foo** if it already exist.
+    (ii). `:$w! foo`: Saves the last line in a file named **foo**. Overwrite the file **foo** if it already exist.
 
-    Both the above commands are executed in ex mode. If the file **foo** already exists, a warning message is shown by vi editor upon invoking `:w` ex mode command. The warning can be overridden by appending `!` to `:w` command.
+    Both the above commands are executed in ex mode. If the file **foo** already exists, a warning message is shown by vi editor upon executing `:w` ex mode command. The warning can be overridden by appending `!` to `:w` command.
 
 ##
 
@@ -90,31 +90,33 @@
 
 ##
 
-08. By running the `who` command by issuing ex mode command as `:!who`.
+08. By running the `who` command by executing ex mode command `:!who`.
 
-    Switch to shell without quitting the editor by issuing ex mode command as `:sh`. Quitting the shell will returns to the editor session.
+    Switch to shell without quitting the editor by executing ex mode command `:sh`. Quitting the shell will returns to the editor session.
 
 ##
 
 09. Make sure you are in command mode. Enter the character sequence as shown below:
 
-    `:/#include`, `[Enter]`, `4dd`, `:1`, `P`.
+    `:/#include`, `[Enter]`, `4dd`, `:1`, `[Enter]`, `P`.
 
     The step-by-step explanation is as follows:
 
     `:/#include`: ex mode command to search for the occurrence of string **#include**.
 
-    `[Enter]`: Pressing the enter key positions the cursor to the first match of the **#include** string.
+    `[Enter]`: Pressing the enter key executes the above ex mode command and positions the cursor on the first match of the **#include** string.
 
     `4dd`: Deletes 4 lines, starting from the current line.
 
-    `:1`: Move to the first line of the file buffer.
+    `:1`: ex mode command to move to the first line of the file buffer.
+
+    `[Enter]`: Execute the above ex mode command.
 
     `P`: Paste the deleted content of the four lines here.
 
 ##
 
-10. To achieve the desired substitution with global effect, enter the following ex mode substitute command sequence:
+10. To achieve the desired substitution with global effect, execute the following ex mode substitute command sequence:
 
     `:1,$s/printf(/fprintf(stderr,/g`
 
@@ -126,7 +128,7 @@
 
 ##
 
-12. Enter the ex mode command sequences as shown below:
+12. The desired ex mode command sequences are as shown below:
 
     (i). `:1,10s/cnt/count/g`
 
@@ -150,7 +152,7 @@
 
 ##
 
-14. Save the file under a different name using the command:
+14. Save the file under a different name by executing the ex mode command:
 
     `:w filename`.
 
@@ -166,7 +168,7 @@
 
     `vi passwd`
 
-    Subsequently enter the following ex mode commands one by one:
+    Now, execute the following ex mode commands one by one:
 
     `:1,10w passwd1`
 
@@ -176,7 +178,7 @@
 
 ##
 
-16. Enter the character sequence shown below as it is. Enter the characters as indicated
+16.Enter the character sequence as shown below:
 
     `:1`, `O`, enter the characters: `#include <stdio.h>`, `[Esc]`, `j`, `0`, `l`, `x`, `6e`, `a`, enter the characters: `, int exit_status`, `A`, enter the characters: ` {`, `[Esc]`, `j`, `dd`, `0`, `w`, `i`, enter the characters: `/* `, `[Esc]`, `A`, enter the characters: ` */`, `[Esc]`, `j`, `0`, `w`, `i`, enter the character: `f`, `[Esc]`, `w`, `a`, enter the characters: `stderr, `, `[Esc]`, `2w`, `rE`, `5w`, `i`, enter the characters: `quitting program\n`, `[Esc]`, `j`, `dd`, `0`, `3w`, `s`, enter the characters: `exit_status`, `[Esc]`.
 
