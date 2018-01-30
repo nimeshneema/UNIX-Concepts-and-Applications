@@ -178,8 +178,80 @@
 
 ##
 
-16.Enter the character sequence as shown below:
+16. Move to the first line of the mentioned text. Press the key-sequences as mentioned below:
 
-    `:1`, `O`, enter the characters: `#include <stdio.h>`, `[Esc]`, `j`, `0`, `l`, `x`, `6e`, `a`, enter the characters: `, int exit_status`, `A`, enter the characters: ` {`, `[Esc]`, `j`, `dd`, `0`, `w`, `i`, enter the characters: `/* `, `[Esc]`, `A`, enter the characters: ` */`, `[Esc]`, `j`, `0`, `w`, `i`, enter the character: `f`, `[Esc]`, `w`, `a`, enter the characters: `stderr, `, `[Esc]`, `2w`, `rE`, `5w`, `i`, enter the characters: `quitting program\n`, `[Esc]`, `j`, `dd`, `0`, `3w`, `s`, enter the characters: `exit_status`, `[Esc]`.
+    `0`: Move the cursor to the first column.
+
+    `O`: Open a line above and enter **Input Mode**.
+
+    `#include <stdio.h>`: Enter this string verbatim.
+
+    `[Esc]`: Switch back to **Command Mode**.
+
+    `j`: Move a line below.
+
+    `2|`: move to second column.
+
+    `x`: Delete the space character just before include.
+
+    `e`: Move to end of word.
+
+    `a`: Enter **Input Mode** to append text.
+
+    ` `: Enter a single space character just after include.
+
+    `[Esc]`: Switch back to **Command Mode**.
+
+    `j`: Move a line below.
+
+    `$`: Move the cursor to the end of the line.
+
+    `h`: Move the cursor one character to left.
+
+    `a`: Enter **Input Mode** to append text.
+
+    `, int exit_status`: Enter this string verbatim.
+
+    `[Esc]`: Switch back to **Command Mode**.
+
+    `J`: Join the current and the next line.
+
+    `j`: Move a line below.
+
+    `b`: Repeatedly press this key till the cursor is on the beginning of the word **printf**.
+
+    `i`: Enter **Input Mode** to insert text.
+
+    `/* `: Enter this string verbatim.
+
+    `[Esc]`: Switch back to **Command Mode**.
+
+    `$`: Move the cursor to the end of the line.
+
+    `a`: Enter **Input Mode** to append text to the end of the line.
+
+    ` */`: Enter this string verbatim.
+
+    `[Esc]`: Switch back to **Command Mode**.
+
+    `o`: Open a line below and enter **Input Mode**.
+
+    `    fpritnf(stderr, "Error number %d, quitting program\n", errno);`: Enter this string verbatim.
+
+    `[Esc]`: Switch back to **Command Mode**.
+
+    `j`: Move a line below.
+
+    `2dd`: Delete the current and the next line.
+
+    Navigate to the parameter `1` of exit function.
+
+    `s`: Enter **Input Mode** to substitute text.
+
+    `exit_status`: Enter this string verbatim.
+
+    `[Esc]`: Switch back to **Command Mode**.
+
+    `:w` or `:w somefile`: Optionally save the updated buffer contents to disk file.
 
 ##
