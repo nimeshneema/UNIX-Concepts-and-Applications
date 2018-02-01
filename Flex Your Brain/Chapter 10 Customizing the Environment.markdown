@@ -8,11 +8,7 @@
 
 ##
 
-02. Why are all environment variables represented in a fixed format regardless of the shell you use?
-
-    **Answer:**
-
-    Applications are not designed to run from a specific shell. The environment variables are not dependent on shell. As they are independent of shell in use, they are represented in a fixed format.
+02. Applications are not designed to run from a specific shell. The environment variables are not dependent on shell. As they are independent of shell in use, they are represented in a fixed format.
 
 ##
 
