@@ -10,11 +10,11 @@
 
 02. The three time stamps maintained in the inode for every file are:
 
-    -   **Time of creation**.
+    -   Time of creation.
 
-    -   **Time of last modification**.
+    -   Time of last modification.
 
-    -   **Time of last access.**
+    -   Time of last access.
 
     To display them for the file **foo** execute the following:
 
