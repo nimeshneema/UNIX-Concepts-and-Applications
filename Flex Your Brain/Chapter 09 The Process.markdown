@@ -22,8 +22,6 @@
 
     (ii). Do not wait for the child process to die and continue to spawn other processes.
 
-    <br/>
-
     The shell can be made be behave in both the aforementioned modes as discussed:
 
     (i). The shell can be made to behave in waiting mode by waiting for the completion of the child processes before presenting the prompt again.

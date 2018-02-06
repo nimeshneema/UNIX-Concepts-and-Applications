@@ -4,7 +4,7 @@
 
 01. By executing the command-line:
 
-    `ls -lR / > listing.txt`.
+    `ls -lR / > listing.txt`
 
     Administrative privilege may be required to run the command as many system directories do not have read and execute permissions for non-administrative users, hence are inaccessible.
 
@@ -42,9 +42,9 @@
 
 ##
 
-06. (i). `chmod u+rwx,o-rwx foo`
+06. (i). `chmod u+rwx,o-rwx foo`.
 
-    (ii). `chmod 740 foo`
+    (ii). `chmod 740 foo`.
 
     In case of absolute assignment, we need to know the default permissions for the file foo to preserve the group permissions.
 
@@ -72,8 +72,6 @@
 
     (iv). kumar cannot change the ownership of the file foo as he is not the owner of the file.
 
-    <br/>
-
     Considering that user **kumar** doesn't belong to the group **kumar**:
 
     (i). kumar cannot edit the file as the others do not have write permission available.
@@ -90,25 +88,23 @@
 
     Using relative assignment:
 
-    (i). `chmod a+rwx foo`
+    (i). `chmod a+rwx foo`.
 
-    (ii). `chmod a-wx,o-r foo`
+    (ii). `chmod a-wx,o-r foo`.
 
-    (iii). `chmod a-wx,u-r foo`
+    (iii). `chmod a-wx,u-r foo`.
 
-    (iv). `chmod a-rwx foo`
-
-    <br/>
+    (iv). `chmod a-rwx foo`.
 
     Using absolute assignment:
 
-    (i). `chmod 777 foo`
+    (i). `chmod 777 foo`.
 
-    (ii). `chmod 440 foo`
+    (ii). `chmod 440 foo`.
 
-    (iii). `chmod 044 foo`
+    (iii). `chmod 044 foo`.
 
-    (iv). `chmod 000 foo`
+    (iv). `chmod 000 foo`.
 
 ##
 

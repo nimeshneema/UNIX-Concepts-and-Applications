@@ -8,21 +8,21 @@
 
 ##
 
-02. (i). `{[f]oo[12],Foo5}`
+02. (i). `{[f]oo[12],Foo5}`.
 
-    (ii). `quit.[coh]`
+    (ii). `quit.[coh]`.
 
-    (iii). `{watch.{htm,HTML},Watch.html}`
+    (iii). `{watch.{htm,HTML},Watch.html}`.
 
-    (iv). `.*.swp`
+    (iv). `.*.swp`.
 
 ##
 
-03. (i). `[0-9]?*[!A-Za-z]`
+03. (i). `[0-9]?*[!A-Za-z]`.
 
-    (ii). `[!.]??*`
+    (ii). `[!.]??*`.
 
-    (iii). `?*2004*?`
+    (iii). `?*2004*?`.
 
 ##
 
@@ -116,7 +116,7 @@
 
 17. (i). ``echo "`cal`"``.
 
-    (ii). ``echo "`cat list`"``
+    (ii). ``echo "`cat list`"``.
 
 ##
 
@@ -132,7 +132,7 @@
 
 19. By executing the command-line:
 
-    ``count=$(cat `cat ~/foo` | wc -m)``.
+    ``count=$(cat `cat ~/foo` | wc -m)``
 
     First of all `cat foo` is expanded which lists all the file names. Further invocation of `cat` write to standard output the contents of all the files listed from the last step. The standard output from this step is piped to `wc` command which counts the total number of characters using `-m` option and the result is assigned to `count` variable.
 

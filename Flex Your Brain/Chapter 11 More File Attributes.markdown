@@ -46,8 +46,6 @@
 
     (ii). Freedom from maintaining separate disk files for programs with little difference.
 
-    <br/>
-
     Two disadvantages of hard link are:
 
     (i). A hard link for a file cannot be created on a separate file system.

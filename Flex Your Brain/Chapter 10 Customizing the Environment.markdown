@@ -56,9 +56,7 @@
 
     (iv). `^doc^bak`: In the previously executed command replace **doc** with **bak**.
 
-    <br/>
-
-    The Korn shell equivalents are as listed below:
+    The Korn shell equivalent are listed below:
 
     (i). `r 50`.
 

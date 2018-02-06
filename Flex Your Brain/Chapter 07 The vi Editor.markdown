@@ -60,8 +60,6 @@
 
     `r"`: Replace **single quote** character with **double quote**.
 
-    <br/>
-
     (ii). `I`, `f`, `[Esc]`, `w`, `a`, `stderr, `, `[Esc]`, `6e`, `a`, `"`, `[Esc]`.
 
     The step-by-step explanation is as follows:
@@ -118,7 +116,7 @@
 
 10. To achieve the desired substitution with global effect, execute the following **ex Mode** substitute command sequence:
 
-    `:1,$s/printf(/fprintf(stderr,/g`
+    `:1,$s/printf(/fprintf(stderr,/g`.
 
 ##
 
@@ -130,19 +128,19 @@
 
 12. The desired **ex Mode** command sequences are as shown below:
 
-    (i). `:1,10s/cnt/count/g`
+    (i). `:1,10s/cnt/count/g`.
 
-    (ii). `:.s/cnt/count/g`
+    (ii). `:.s/cnt/count/g`.
 
-    (iii). `:1,$s/cnt/count/g`
+    (iii). `:1,$s/cnt/count/g`.
 
     To repeat the exercise in an interactive manner, change the flag from `g` to `gc`. The updated **ex Mode** command sequences are as shown below:
 
-    (i). `:1,10s/cnt/count/gc`
+    (i). `:1,10s/cnt/count/gc`.
 
-    (ii). `:.s/cnt/count/gc`
+    (ii). `:.s/cnt/count/gc`.
 
-    (iii). `:1,$s/cnt/count/gc`
+    (iii). `:1,$s/cnt/count/gc`.
 
 ##
 
@@ -154,7 +152,7 @@
 
 14. Save the file under a different name by executing the **ex Mode** command:
 
-    `:w filename`.
+    `:w filename`
 
     Make sure that a file named **filename** doesn't already exist on disk.
 

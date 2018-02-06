@@ -5,7 +5,7 @@
 01. By running the following command-line:
 
 
-    `date +"%d-%m-%y/%H:%M:%S"`
+    `date +"%d-%m-%y/%H:%M:%S"`.
 
 ##
 
@@ -19,15 +19,15 @@
 
 ##
 
-03. (i). Supply `-e` option to echo command as: `echo -e "Filename: \c"`
+03. (i). Supply `-e` option to echo command as: `echo -e "Filename: \c"`.
 
-    (ii). Supply `-n` option to echo command as: `echo -n "Filename: \c"`
+    (ii). Supply `-n` option to echo command as: `echo -n "Filename: \c"`.
 
 ##
 
 04. The comma character is not required after the first argument. **fname** needs to be evaluated as a variable and should be preceded by `$` character. The correct command-line is:
 
-    `printf "Filename: %s\n" $fname`
+    `printf "Filename: %s\n" $fname`.
 
 ##
 
@@ -93,7 +93,7 @@
 
 12. By setting `[Ctrl-c]` corresponding to `kill` keyword using stty command as:
 
-    `stty kill \^c`.
+    `stty kill \^c`
 
     No. The settings doesn't persist between login sessions.
 

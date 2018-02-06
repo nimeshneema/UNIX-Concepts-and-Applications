@@ -88,7 +88,7 @@
 
 10. (i). We can count the number of filenames by executing:
 
-    `wc -l`.
+    `wc -l`
 
     This command outputs the total number of lines in the file.
 
