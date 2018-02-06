@@ -4,7 +4,6 @@
 
 01. By running the following command-line:
 
-
     `date +"%d-%m-%y/%H:%M:%S"`.
 
 ##
@@ -37,10 +36,8 @@
     <br/>
     `192[Enter]`
 
-
-
     Convert 192 to hexadecimal by executing the following internal commands:
-    
+
     `obase=16`
     <br/>
     `192[Enter]`
