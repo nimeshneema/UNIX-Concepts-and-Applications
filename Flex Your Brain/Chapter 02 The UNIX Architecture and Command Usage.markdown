@@ -20,15 +20,15 @@
 
 ##
 
-04. System calls are special routines written in C language and built into the kernel. They act as an interface to the kernel for user programs. System calls are standardized across UNIX and any UNIX distribution by definition offers the same set of system calls.
+04. System calls are special routines written in C language and built into the kernel. They act as an interface to the kernel for user programs. System calls are standardized across UNIX and any UNIX operating system by definition offers the same set of system calls.
 
-    C programming is different and powerful in the UNIX environment as C was created and implemented first on UNIX and then the entire UNIX operating system, including all the utilities was written in C. Thus, C language and its standard library is deeply integrated into UNIX operating system. UNIX system calls are implemented in C and are offered as C function interfaces. Windows doesn't share the same system calls as UNIX, neither does it include the standard library in the default installation.
+    C programming is different and powerful in the UNIX environment as it was created and implemented first on UNIX and then the entire UNIX operating system, including all the utilities were written in C. Thus, C language and its standard library is deeply integrated into UNIX operating system. UNIX system calls are implemented in C and are offered as C function interfaces. Windows doesn't share the same system calls as UNIX, neither does it include the standard library in its default installation.
 
 ##
 
-05. The creators of the UNIX followed the "small is beautiful" philosophy and never attempted to pack many features in small number of tools.
+05. The creators of the UNIX followed the "small is beautiful" philosophy and never attempted to pack many features into a single tool.
 
-    Simple tools that perform well defined tasks can be combined with operators to perform complicated tasks and filter data.
+    Simple tools that perform well defined tasks can be combined using shell operators to perform complicated tasks and filter data.
 
 ##
 
@@ -48,7 +48,7 @@
 
     -   Windows commands work irrespective of the presence of whitespace between the command and its options unlike UNIX where whitespace is mandatory.
 
-    -   UNIX commands makes use of POSIX systems calls whereas Windows doesn't.
+    -   UNIX commands makes use of POSIX systems calls whereas Windows commands doesn't.
 
 ##
 
@@ -62,7 +62,7 @@
 
 10. By specifying the section number as an argument to man command as follows:
 
-    `man -s1 command`, `man -s5 filename` and `man -s2 system call`.
+    `man -s1 command`, `man -s5 filename` and `man -s2 system_call`.
 
 ##
 

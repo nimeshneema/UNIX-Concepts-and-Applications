@@ -4,7 +4,7 @@
 
 01. A directory is technically a file that contains the name and the inode number of the files and sub-directories it houses. The entries in a directory are updated by the kernel on the user's behalf when new files and sub-directories are added or removed.
 
-    The size of a directory is usually small as it doesn't actually store the files and sub-directories it houses, just their name and inode numbers.
+    The size of a directory is usually small as it doesn't actually store the files and sub-directories it houses, just their name and inode number.
 
 ##
 
@@ -70,6 +70,8 @@
 
     -   `rmdir temp` : Remove the **temp** directory normally as it is empty.
 
+    **Note**: The last command in the above command-line `rmdir temp` may occasionally fail when running on macOS. It could happen due to presence of a system metadata file named `.DS_Store` which gets created automatically by Finder application. To circumvent, replace `rmdir temp` with `rm -rf temp`.
+
 ##
 
 08. Using repeat factor, an internal command can be repeated **n** number of times.
@@ -80,7 +82,7 @@
 
 ##
 
-09. We can ensure that a the file is indeed Postscript file by executing the `file` command with the filename as argument and checking for the type information.
+09. We can ensure that the file is indeed a Postscript file by executing `file` command with the filename as argument and checking for the type information.
 
     Postscript files are properly formatted for input to Postscript printers.
 
@@ -88,9 +90,9 @@
 
 10. (i). We can count the number of filenames by executing:
 
-    `wc -l`
+    `wc -l <foo`
 
-    This command outputs the total number of lines in the file.
+    This command outputs the total number of lines in the file foo.
 
     (ii). By displaying the octal dump of the files contents by executing:
 
@@ -118,7 +120,7 @@
 
     `tar -cvf archive.tar foo.html bar.html ; gzip archive.tar`.
 
-    The compressed archive will be saved as **archive.tar.gz**. To also delete the original files execute:
+    The compressed archive will be saved as **archive.tar.gz**. To delete the original files execute:
 
     `rm foo.html bar.html`.
 

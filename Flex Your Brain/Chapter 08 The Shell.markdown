@@ -4,17 +4,17 @@
 
 01. The shell performs all the actions represented by the metacharacters before executing the command-line.
 
-    After completing this pre-processing step (wild-card expansion, variable evaluation, command substitution, opening appropriate files, connecting streams) shell submits the command-line to the kernel for final execution.
+    After completing the pre-processing step consisting of wild-card expansion, variable evaluation, command substitution, opening appropriate files, connecting streams, the shell submits the command-line to the kernel for final execution.
 
 ##
 
-02. (i). `{[f]oo[12],Foo5}`.
+02. (i). `{foo[12],Foo5}`.
 
     (ii). `quit.[coh]`.
 
     (iii). `{watch.{htm,HTML},Watch.html}`.
 
-    (iv). `.*.swp`.
+    (iv). `^\..*\.swp`.
 
 ##
 
@@ -22,7 +22,7 @@
 
     (ii). `[!.]??*`.
 
-    (iii). `?*2004*?`.
+    (iii). `^?*2004*?$`.
 
 ##
 
@@ -32,7 +32,7 @@
 
     (iii). A filename which doesn't end with a numeric character.
 
-    (iv). A non-hidden filename with two character extension where first character is not `s`, second character is not `h` or both.
+    (iv). A non-hidden filename with two character extension where first character is not `s`, second character is not `h` and the extension is not `.sh`.
 
 ##
 
@@ -50,7 +50,7 @@
 
 07. By executing the command-line:
 
-    `rm -rf *`.
+    `rm -rf "*" "My Documents"`.
 
 ##
 
@@ -58,29 +58,31 @@
 
 ##
 
-09. `wc foo`: The `wc` command opens the file **foo** and displays the character count on the standard output.
+line words and bytes
 
-    `wc < foo`: The `wc` command reads the stream input coming from the file **foo** and displays the character count on the standard output.
+09. `wc foo`: The `wc` command opens the file **foo** and displays the count of lines, words and bytes in the file foo on the standard output.
+
+    `wc < foo`: The `wc` command reads the stream input coming from the file **foo** and displays the count of lines, words and bytes in the file foo on the standard output.
 
     The command `wc` opens the file in the former case and the shell opens the file in the latter.
 
 ##
 
-10. By running the command:
+10. By executing the command-line:
 
     `cat foo1 - foo2`
 
-    The contents of file **foo1** will be displayed on the terminal and the shell will wait for user input from keyboard. Once the input from the keyboard is made and the same is terminated with end-of-file character, the contents of file **foo2** will be displayed on the terminal and the prompt returned.
+    The contents of file **foo1** will be displayed on the terminal and the shell will wait for user input from keyboard. Once the input from the keyboard is made and the same is terminated with end-of-file character, the contents of the file **foo2** will be displayed on the terminal and the prompt returned subsequently.
 
 ##
 
-11. (i). The contents of **foo** are overwritten by the text entered via standard input.
+11. (i). The contents of the file **foo** are overwritten by the text entered via standard input.
 
     (ii). file **foo** is created anew and the output of command `who` is appended to it.
 
     (iii). The file **foo** is blanked out.
 
-    (iv). The file **foo** is blanked out.
+    (iv). The contents of the file **foo** is replaced by a single newline `\n` character.
 
 ##
 
@@ -94,17 +96,17 @@
 
 ##
 
-14. The error is thrown not by `cat` command but by the shell. Any error thrown by `cat` command will be redirected to the file **bar**. Here the command doesn't get to act and the shell itself fails to locate the file **foo**, hence the error.
+14. The error message is thrown not by `cat` command but by the shell. Any error thrown by `cat` command will be redirected to the file **bar**. Here the command doesn't get to act as the shell fails to locate the file **foo**, hence the error.
 
 ##
 
 15. Three conditions needs to be satisfied here:
 
-    -   `prog1` should be able to write to standard output.
+    -   `prog1` should be able to write to Standard Output.
 
-    -   `prog2` should be able to read from standard input and write to standard output.
+    -   `prog2` should be able to read from Standard Input and write to Standard Output.
 
-    -   `prog3` should be able to read from standard input.
+    -   `prog3` should be able to read from Standard Input.
 
 ##
 
@@ -114,26 +116,26 @@
 
 ##
 
-17. (i). ``echo "`cal`"``.
+17. (i). `echo "$(cal)"`.
 
-    (ii). ``echo "`cat list`"``.
+    (ii). `echo "$(cat list)"`.
 
 ##
 
-18. (i). By executing the following command-line:
+18. (i). Total size of all C source files (in bytes) can be stored in the variable named **count** by executing the following command-line:
 
     `count=$(cat *.c | wc -c)`.
 
-    (ii). By executing the following command-line:
+    (ii). Assuming that the file is named foo.c, the total number of lines can be stored in the variable named **count** by executing the following command-line:
 
-    `count=$(cat foo | wc -l)`.
+    `count=$(cat foo.c | wc -l)`.
 
 ##
 
 19. By executing the command-line:
 
-    ``count=$(cat `cat ~/foo` | wc -m)``
+    `count="$(cat `cat foo` | wc -m)"`
 
-    First of all `cat foo` is expanded which lists all the file names. Further invocation of `cat` write to standard output the contents of all the files listed from the last step. The standard output from this step is piped to `wc` command which counts the total number of characters using `-m` option and the result is assigned to `count` variable.
+    First of all `cat foo` is expanded which lists all the file names. Further invocation of `cat` write to Standard Output the contents of all the files listed from the last step. The Standard Output from this step is piped to `wc` command which counts the total number of characters using `-m` option and the resulting value is assigned to the `count` variable.
 
 ##

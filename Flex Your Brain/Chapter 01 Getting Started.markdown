@@ -2,11 +2,11 @@
 
 ---
 
-01. A computer hardware is a bare machine with no intelligence of its own. An operating system like UNIX is a special software which provides the computer with basic intelligence in the form of services.
+01. A computer hardware is a bare machine with no intelligence of its own. An operating system like UNIX is a special system software which provides the computer with basic intelligence in the form of services.
 
     A few examples of services for programs include scheduling CPU time, allocating memory, accessing hardware devices like disks for reading and writing files etc.
 
-    A few examples of services for users include file management (copying and deleting files, creating directories), determining other users working in the network, sending mail messages etc.
+    A few examples of services for users include file management (copying and deleting files, creating directories), determining other users currently logged-in into the system, sending mail messages etc.
 
 ##
 
@@ -14,12 +14,12 @@
 
 ##
 
-03. The program is known as the user's login shell. Some of the popular shell program generally available on a UNIX system are:
+03. The program is known as the user's login shell. Some of the popular shell programs available on a UNIX system are:
 
-    -   **sh** : The primitive Bourne Shell.
-    -   **csh** : C Shell.
-    -   **ksh** : Korn shell.
-    -   **bash** : An enhanced version of original Bourne shell.
+    -   **sh**: The primitive Bourne Shell.
+    -   **csh**: C Shell.
+    -   **ksh**: Korn shell.
+    -   **bash**: An enhanced version of the original Bourne shell.
 
 ##
 
@@ -33,7 +33,7 @@
 
 05. The shell programming syntax requires that there should be no spaces on either side of the `=` operator.
 
-    When entering `x =10`, `x` is treated as a command by the shell. Since there is no command (internal or external) named `x`, the shell shows an appropriate error message stating that the command couldn't be found.
+    When entering `x =10`, `x` is treated as a command by the shell. Since there is no system command (internal or external) named `x`, the shell shows an appropriate error message stating that the command couldn't be found.
 
     Similar error occurs in case `x= 10` is entered where `10` is treated as a command. The shell tries to locate and execute it, but fails to do so. The `x=` part is seen as a variable assignment valid only for the scope of `10` command.
 
@@ -45,9 +45,9 @@
 
 ##
 
-07. (i). `who` command outputs a list of all users currently logged in, showing for each user the login name, terminal name, the date and time of login and host-name if not local.
+07. (i). `who` command outputs a list of all the users currently logged in, showing for each user her login name, terminal name, date and time of login and host-name if not local.
 
-    `tty` command outputs the absolute path of the device file corresponding to the terminal attached to the standard input/output.
+    `tty` command outputs the absolute path of the device file corresponding to the terminal attached to the standard output.
 
     (ii). `ps` command outputs a list of all the currently running processes corresponding to the logged in user.
 
@@ -73,7 +73,7 @@
 
     -   Backing up files.
 
-    -   Restoring a system to a usable state in case of a crash.
+    -   Restoring the system to a usable state in case of a crash.
 
     -   Startup, shutdown and maintenance of the system.
 

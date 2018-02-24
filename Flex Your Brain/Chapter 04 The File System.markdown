@@ -34,7 +34,7 @@
 
 ##
 
-06. The directory **bar** may contain hidden files and hence may not actually be empty. Alternatively, the user may not have write permission for the current directory (which contains the directory **bar**).
+06. The directory **bar** may contain hidden files and hence may not actually be empty.
 
 ##
 

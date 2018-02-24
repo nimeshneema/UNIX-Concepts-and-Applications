@@ -2,9 +2,9 @@
 
 ---
 
-01. The three modes of **vi** are: **Command Mode**, **Input Mode** and **ex Mode** (or Last Line Mode).
+01. The three modes of **vi** are: **Command Mode**, **Input Mode** and **ex Mode** (or **Last Line Mode**).
 
-    The editor starts in **Command Mode** by default. To switch to **Input Mode**, enter one of the `i`, `I`, `a`, `A`, `r`, `R`, `s`, `S`, `o`, or `O` key. To switch back to **Command Mode**, press the `[Esc]` key. To enter **ex Mode**, switch to **Command Mode** and press the `:` key followed by **ex Mode** command. **ex Mode** command is executed by pressing the `[Enter]` key, which on completion switches the editor back to **Command Mode**.
+    The editor starts in **Command Mode** by default. To switch to **Input Mode**, enter one of the `i`, `I`, `a`, `A`, `r`, `R`, `s`, `S`, `o`, or `O` keys. To switch back to **Command Mode**, press the `[Esc]` key. To enter **ex Mode**, switch to **Command Mode** and press the `:` key followed by **ex Mode** command. **ex Mode** command is executed by pressing the `[Enter]` key, which on completion switches the editor back to **Command Mode**.
 
 ##
 
@@ -42,15 +42,15 @@
 
     The step-by-step explanation is as follows:
 
-    `e`: Move forward to end of word.
+    `e`: Move forward to the end of word.
 
-    `a`: Enter **Input Mode** to append text to right of cursor.
+    `a`: Enter **Input Mode** to append text to the right of cursor.
 
-    ` -n`: Enter the three character **space**, **hyphen** and alphabet **n**.
+    ` -n`: Enter the three characters **space**, **hyphen** and alphabet **n**.
 
     `[Esc]`: Press escape key to switch back to **Command Mode**.
 
-    `w`: Move forward to beginning of word.
+    `w`: Move forward to the beginning of word.
 
     `r"`: Replace **single quote** character with **double quote**.
 
@@ -60,11 +60,13 @@
 
     `r"`: Replace **single quote** character with **double quote**.
 
+    <br/>
+
     (ii). `I`, `f`, `[Esc]`, `w`, `a`, `stderr, `, `[Esc]`, `6e`, `a`, `"`, `[Esc]`.
 
     The step-by-step explanation is as follows:
 
-    `I`: Enter **Input Mode** to insert text at beginning of line.
+    `I`: Enter **Input Mode** to insert text at the beginning of line.
 
     `f`: Insert the alphabet `f`.
 
@@ -144,9 +146,9 @@
 
 ##
 
-13. The swap file can remain on disk and the editor will complain when an attempt is made to open the file.
+13. If the power to the machine is cut off while an editing session is action, the temporary swap file created by the vi editor can remain on disk. Subsequently the editor will complain when an attempt is made to open the file.
 
-    It is advised to use `:recover` **ex Mode** command to recover as much of the file as possible.
+    It is advised to use `:recover` **ex Mode** command to recover as much of the file data as possible.
 
 ##
 
@@ -160,7 +162,7 @@
 
 15. Copy the **/etc/passwd** file in the home directory by running the following command-line:
 
-    `cd ; cp /etc/passwd .`
+    `cd ; cp /etc/passwd .`.
 
     Start the vi editor by executing:
 
@@ -168,9 +170,9 @@
 
     Now, execute the following **ex Mode** commands one by one:
 
-    `:1,10w passwd1`
+    `:1,10w passwd1`,
 
-    `:11,20w passwd2`
+    `:11,20w passwd2`,
 
     `:21,$w passwd3`.
 

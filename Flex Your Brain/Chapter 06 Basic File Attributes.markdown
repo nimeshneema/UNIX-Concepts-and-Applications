@@ -6,7 +6,9 @@
 
     `ls -lR / > listing.txt`
 
-    Administrative privilege may be required to run the command as many system directories do not have read and execute permissions for non-administrative users, hence are inaccessible.
+    Administrative privilege may be required to run the command-line as many system directories do not have read and execute permissions for non-administrative users, and hence are inaccessible. The same could be achieved by executing the command-line as mentioned below:
+
+    `sudo ls -lR / > listing.txt`.
 
 ##
 
@@ -54,33 +56,21 @@
 
 ##
 
-08. (i). No one, including even the owner of the file can do anything with the file. The file is technically unusable.
+08. (i). No one, including the owner of the file can do anything with the file. The file is technically unusable.
 
     (ii). Anyone can read, write or execute the file. The file is publicly accessible.
 
 ##
 
-09. There can be two course of actions depending on whether the user **kumar** belongs to the group named **kumar**. Both the cases are discussed one by one:
-
-    Considering that user **kumar** also belongs to the group **kumar**:
+09. kumar is the group owner of the file foo.
 
     (i). kumar can edit the file as the group owners have write permission available.
 
-    (ii). Whether kumar can delete the file will depend on user and group ownership and permission set for the directory housing the file foo.
+    (ii). Whether or not kumar can delete the file will depend on the group ownership and permission set for the directory housing the file foo. kumar will be able to delete the file foo if the parent directory belongs to group kumar and has write permission available for the group.
 
-    (iii). kumar cannot change the permissions of the file foo as he is not the owner of the file.
+    (iii). kumar cannot change the permissions of the file foo as she is not the owner of the file.
 
-    (iv). kumar cannot change the ownership of the file foo as he is not the owner of the file.
-
-    Considering that user **kumar** doesn't belong to the group **kumar**:
-
-    (i). kumar cannot edit the file as the others do not have write permission available.
-
-    (ii). Whether kumar can delete the file will depend on user and group ownership and permission set for the directory housing the file foo.
-
-    (iii). kumar cannot change the permissions of the file foo as he is not the owner of the file.
-
-    (iv). kumar cannot change the ownership of the file foo as he is not the owner of the file.
+    (iv). kumar cannot change the ownership of the file foo as she is not the owner of the file.
 
 ##
 
@@ -110,10 +100,10 @@
 
 11. No.
 
-    Yes.
+    No.
 
 ##
 
-12. On an AT&T system, owner can change the owner and the group of a file. On a BSD system, owner of a file can be changed only by the superuser and the user can change the group of a file only to a group to which he or she already belongs.
+12. On an AT&T system, owner can change the owner and the group of a file. On a BSD system, owner of a file can be changed only by the superuser and the user can change the group of a file only to a group to which she already belong.
 
 ##

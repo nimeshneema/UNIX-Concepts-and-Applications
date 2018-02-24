@@ -13,7 +13,7 @@
     Three escape sequences used by echo command, with their significance are:
 
     -   `\n` : Newline character.
-    -   `\b` : Backspace character, i.e. removes the previous character.
+    -   `\b` : Backspace character.
     -   `\\` : Literal backslash character.
 
 ##
@@ -24,21 +24,21 @@
 
 ##
 
-04. The comma character is not required after the first argument. **fname** needs to be evaluated as a variable and should be preceded by `$` character. The correct command-line is:
+04. The comma character is not required after the first argument. **fname** needs to be evaluated as a variable and should be preceded by a `$` character. The correct command-line is:
 
     `printf "Filename: %s\n" $fname`.
 
 ##
 
-05. (i). Convert 192 to octal by executing the following internal commands:
+05. (i). Convert 192 to octal by executing the following `bc` internal commands:
 
-    `obase=8`
+    `obase=8[Enter]`
     <br/>
     `192[Enter]`
 
-    Convert 192 to hexadecimal by executing the following internal commands:
+    Convert 192 to hexadecimal by executing the following `bc` internal commands:
 
-    `obase=16`
+    `obase=16[Enter]`
     <br/>
     `192[Enter]`
 
@@ -50,7 +50,7 @@
 
 ##
 
-06. Running `script` command spawns a new shell process.
+06. Running `script` command spawns a new sub-shell process.
 
 ##
 
