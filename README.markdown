@@ -18,5 +18,5 @@ A copy of the book can be bought online from [Amazon][Amazon] or [Flipkart][Flip
 [Publisher]: https://www.mheducation.co.in
 [macOS]:     https://www.apple.com/macos
 [Bash]:      https://www.gnu.org/software/bash
-[Amazon]:    https://www.amazon.in/UNIX-CONCEPTS-APPLICATIONS-Sumitabha-Das/dp/0070635463
+[Amazon]:    https://amzn.to/2xAJ2lJ
 [Flipkart]:  https://www.flipkart.com/unix-concepts-applications-4th/p/itmczynvf32hxm3f
