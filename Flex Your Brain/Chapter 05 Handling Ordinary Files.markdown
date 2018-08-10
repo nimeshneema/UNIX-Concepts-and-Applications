@@ -48,7 +48,7 @@
 
     (i). Read permission is not available for the file **hosts**.
 
-    (ii). Write permission is not available for the file **hosts.bak**.
+    (ii). Write permission is not available for the file **backup/hosts.bak**.
 
     (iii). Execute permission not available for the directory **backup**.
 
@@ -108,7 +108,7 @@
 
 12. The required list can be created by executing the command-line:
 
-    `comm -13 foo1 foo2`,
+    `comm -13 foo1 foo2`
 
     which will list entires unique to file **foo2**. The command will not work properly when the files are unsorted or the files contains more than one name per line.
 
