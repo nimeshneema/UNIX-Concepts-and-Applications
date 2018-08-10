@@ -14,13 +14,13 @@
 
 02. The significance of the first four fields in `ls -l` output is described below:
 
-    -   First column : Shows the file type and the associated permissions for file owner, group owners and others.
+    -   **First column**: Shows the file type and the associated permissions for file owner, group owners and others.
 
-    -   Second column : Shows the number of links associated with the file.
+    -   **Second column**: Shows the number of links associated with the file.
 
-    -   Third column : Shows the username of the file owner.
+    -   **Third column**: Shows the username of the file owner.
 
-    -   Fourth column : Names the group that owns the file (by default this is the primary group of the file owner).
+    -   **Fourth column**: Names the group that owns the file (by default this is the primary group of the file owner).
 
     These attributes can be changed by the owner of the file as well as the system administrator. (Depending on the release of UNIX i.e. AT&T or BSD. See answer 12 below).
 
@@ -28,9 +28,9 @@
 
 ##
 
-03. (i). `ls -ld .` : Shows the attributes of the current directory in long listing format.
+03. (i). `ls -ld .`: Shows the attributes of the current directory in long listing format.
 
-    (ii). `ls -l ..` : Lists the contents of the parent directory in long listing format.
+    (ii). `ls -l ..`: Lists the contents of the parent directory in long listing format.
 
 ##
 
