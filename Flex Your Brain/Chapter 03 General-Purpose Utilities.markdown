@@ -10,7 +10,7 @@
 
 02. An escape sequence is generally a two character-sequence beginning with a backslash (`\`) character.
 
-    Three escape sequences used by echo command, with their significance are:
+    Three escape sequences used by `echo` command, with their significance are:
 
     -   `\n` : Newline character.
     -   `\b` : Backspace character.
@@ -18,9 +18,9 @@
 
 ##
 
-03. (i). Supply `-e` option to echo command as: `echo -e "Filename: \c"`.
+03. (i). Supply `-e` option to `echo` command as: `echo -e "Filename: \c"`.
 
-    (ii). Supply `-n` option to echo command as: `echo -n "Filename: \c"`.
+    (ii). Supply `-n` option to `echo` command as: `echo -n "Filename: \c"`.
 
 ##
 
@@ -88,7 +88,7 @@
 
 ##
 
-12. By setting `[Ctrl-c]` corresponding to `kill` keyword using stty command as:
+12. By setting `[Ctrl-c]` corresponding to **kill** keyword using `stty` command as:
 
     `stty kill \^c`
 
