@@ -8,9 +8,9 @@
 
 ##
 
-02. `cat foo` : Displays the contents of the file **foo** on standard output.
+02. `cat foo`: Displays the contents of the file **foo** on standard output.
 
-    `cat > foo` : Returns secondary prompt and let the user type any text. Upon encountering end-of-file `[Ctrl-d]` character, the entered text is saved in a file named **foo** in the current directory.
+    `cat > foo`: Returns secondary prompt and let the user type any text. Upon encountering end-of-file `[Ctrl-d]` character, the entered text is saved in a file named **foo** in the current directory.
 
     Use of `[Ctrl-d]` character is required when entering the text from standard input to let the shell know that the text entry is over.
 
@@ -36,11 +36,11 @@
 
 ##
 
-05. (i). `mv $HOME/include .` : The file or directory named **include** present in the logged in users home directory is moved to the current working directory. The command fails if the user is currently in the home directory.
+05. (i). `mv $HOME/include .`: The file or directory named **include** present in the logged in users home directory is moved to the current working directory. The command fails if the user is currently in the home directory.
 
-    (ii). `cp -r bar1 bar2` : Recursively copy the contents of **bar1** to **bar2**. If **bar2** exists, recursively copy contents of **bar1** into **bar2**, thus making the copy of **bar1** a sub-directory of **bar2**.
+    (ii). `cp -r bar1 bar2`: Recursively copy the contents of **bar1** to **bar2**. If **bar2** exists, recursively copy contents of **bar1** into **bar2**, thus making the copy of **bar1** a sub-directory of **bar2**.
 
-    (iii). `mv * ../bin` : Moves all the files and directories in the current directory into a directory named **bin** in the parent directory. The command fails if the directory **bin** doesn't exist.
+    (iii). `mv * ../bin`: Moves all the files and directories in the current directory into a directory named **bin** in the parent directory. The command fails if the directory **bin** doesn't exist.
 
 ##
 
@@ -62,13 +62,13 @@
 
     Individual commands in the above command-line are described as below:
 
-    -   `cd` : Make home directory as the current working directory.
+    -   `cd`: Make home directory as the current working directory.
 
-    -   `mv a temp` : Rename the directory **a** under home directory to something other than **a**, say **temp**.
+    -   `mv a temp`: Rename the directory **a** under home directory to something other than **a**, say **temp**.
 
-    -   `mv temp/a .` : Move the directory hierarchy **a** under **temp** directory to the current directory i.e. the home directory.
+    -   `mv temp/a .`: Move the directory hierarchy **a** under **temp** directory to the current directory i.e. the home directory.
 
-    -   `rmdir temp` : Remove the **temp** directory normally as it is empty.
+    -   `rmdir temp`: Remove the **temp** directory normally as it is empty.
 
 ##
 
@@ -156,12 +156,12 @@
 
     Examples of commands which support recursive operation are:
 
-    -   `cp -R` : recursively copies a directory hierarchy.
+    -   `cp -R`: recursively copies a directory hierarchy.
 
-    -   `ls -R` : recursively list files in a directory hierarchy.
+    -   `ls -R`: recursively list files in a directory hierarchy.
 
-    -   `rm -r` : recursively deletes files in a directory hierarchy.
+    -   `rm -r`: recursively deletes files in a directory hierarchy.
 
-    -   `zip -r` : recursively compress and archives a directory hierarchy.
+    -   `zip -r`: recursively compress and archives a directory hierarchy.
 
 ##

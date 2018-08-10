@@ -12,9 +12,9 @@
 
     Three escape sequences used by `echo` command, with their significance are:
 
-    -   `\n` : Newline character.
-    -   `\b` : Backspace character.
-    -   `\\` : Literal backslash character.
+    -   `\n`: Newline character.
+    -   `\b`: Backspace character.
+    -   `\\`: Literal backslash character.
 
 ##
 

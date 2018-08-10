@@ -14,15 +14,15 @@
 
 ##
 
-03. (i). `mkdir a/b/c` : Won't work. Directory `a` and `a/b` need to exist before attempting to create directory `a/b/c`.
+03. (i). `mkdir a/b/c`: Won't work. Directory `a` and `a/b` need to exist before attempting to create directory `a/b/c`.
 
-    (ii). `mkdir a a/b` : Will work. Directory `a` will be created first followed by directory `a/b`.
+    (ii). `mkdir a a/b`: Will work. Directory `a` will be created first followed by directory `a/b`.
 
-    (iii). `rmdir a/b/c` : Won't work. Directory `a/b/c` does not exist yet.
+    (iii). `rmdir a/b/c`: Won't work. Directory `a/b/c` does not exist yet.
 
-    (iv). `rmdir a a/b` : Will work partially. Directory `a` won't be removed as it's non-empty. Directory `a/b` will be removed as it's empty.
+    (iv). `rmdir a a/b`: Will work partially. Directory `a` won't be removed as it's non-empty. Directory `a/b` will be removed as it's empty.
 
-    (v). `mkdir /bin/foo` : Won't work. `/bin` is writable only by the root user. To create a file or directory in `/bin`, either login as root user or use `sudo`.
+    (v). `mkdir /bin/foo`: Won't work. `/bin` is writable only by the root user. To create a file or directory in `/bin`, either login as root user or use `sudo`.
 
 ##
 
@@ -54,12 +54,12 @@
 
 ##
 
-11. (i). `cd ../..` : Changes the current directory to the root directory `/`. It will work successfully if the user has execute permission available for the root directory.
+11. (i). `cd ../..`: Changes the current directory to the root directory `/`. It will work successfully if the user has execute permission available for the root directory.
 
-    (ii). `mkdir ../bin` : Create a directory named `bin` under `/home` directory. The command will fail if either the user doesn't have write permission available for `/home` or `/home/bin` already exists as a directory or file.
+    (ii). `mkdir ../bin`: Create a directory named `bin` under `/home` directory. The command will fail if either the user doesn't have write permission available for `/home` or `/home/bin` already exists as a directory or file.
 
-    (iii). `rmdir ..` : Won't work. This command attempts to remove the parent directory i.e. `/home` while being placed in the child directory `/home/kumar`, which the shell won't permit.
+    (iii). `rmdir ..`: Won't work. This command attempts to remove the parent directory i.e. `/home` while being placed in the child directory `/home/kumar`, which the shell won't permit.
 
-    (iv). `ls ..` : This command will attempt to list the contents of the parent directory i.e. `/home`. Will succeed only if the user has read permission available for `/home` directory.
+    (iv). `ls ..`: This command will attempt to list the contents of the parent directory i.e. `/home`. Will succeed only if the user has read permission available for `/home` directory.
 
 ##
