@@ -70,8 +70,6 @@
 
     -   `rmdir temp` : Remove the **temp** directory normally as it is empty.
 
-    **Note**: The last command in the above command-line `rmdir temp` may occasionally fail when running on macOS. It could happen due to presence of a system metadata file named `.DS_Store` which gets created automatically by Finder application. To circumvent, replace `rmdir temp` with `rm -rf temp`.
-
 ##
 
 08. Using repeat factor, an internal command can be repeated **n** number of times.
