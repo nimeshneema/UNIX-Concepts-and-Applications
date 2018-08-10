@@ -42,7 +42,7 @@
 
 ##
 
-08. `cd ~charlie` changes the current working directory to charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named **charlie** inside charlie's home directory. The latter may fail if no such directory exists.
+08. `cd ~charlie` changes the current working directory to charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named **charlie** inside current user's home directory. The latter may fail if no such directory exists.
 
 ##
 
