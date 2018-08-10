@@ -12,11 +12,11 @@
 
 ##
 
-03. **Multiprogramming** means ability to keep multiple programs in the system memory at the same time.
+03. **Multiprogramming**: Ability to keep multiple programs in the system memory at the same time.
 
-    **Multiuser** means ability to support multiple users at the same time and allowing them to use a single installation of an operating system simultaneously.
+    **Multiuser**: Ability to support multiple users at the same time and allowing them to use a single installation of an operating system simultaneously.
 
-    **Multitasking** means ability to execute multiple tasks concurrently and even switch between them.
+    **Multitasking**: Ability to execute multiple tasks concurrently and even switch between them.
 
 ##
 
@@ -26,7 +26,7 @@
 
 ##
 
-05. The creators of the UNIX followed the "small is beautiful" philosophy and never attempted to pack many features into a single tool.
+05. The creators of the UNIX followed the **small is beautiful** philosophy and never attempted to pack many features into a single tool.
 
     Simple tools that perform well defined tasks can be combined using shell operators to perform complicated tasks and filter data.
 
@@ -60,7 +60,7 @@
 
 ##
 
-10. By specifying the section number as an argument to man command as follows:
+10. By specifying the section number as an argument to the `man` command. as follows:
 
     `man -s1 command`, `man -s5 filename` and `man -s2 system_call`.
 
@@ -72,9 +72,9 @@
 
 ##
 
-12. Interrupt character represented by `[Ctrl-c]` is used to interrupt a long running or an unresponsive program.
+12. **Interrupt character** represented by `[Ctrl-c]` is used to interrupt a long running or an unresponsive program.
 
-    eof character represented by `[Ctrl-d]` can be used to terminate user input or to log out from the current session.
+    **eof character** represented by `[Ctrl-d]` can be used to terminate user input or to log out from the current session.
 
 ##
 
