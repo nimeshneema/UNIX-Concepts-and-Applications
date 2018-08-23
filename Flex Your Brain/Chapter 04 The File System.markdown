@@ -46,7 +46,7 @@
 
 ##
 
-09. To refer to the **update.sh** file present in the current directory and not some other file with the same name existing in a directory listed in the user's **PATH**. This measure could also be required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
+09. To refer to the _update.sh_ file present in the current directory and not some other file with the same name existing in a directory listed in the user's **PATH**. This measure could also be required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
 
 ##
 

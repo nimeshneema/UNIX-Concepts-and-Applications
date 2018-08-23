@@ -2,11 +2,13 @@
 
 ---
 
-01. The UNIX system divides the labor between two agencies - the kernel and the shell. Kernel interacts with the machine's hardware and the shell interacts with the user. Kernel is responsible for all sorts of system management activities. Shell performs the job of command interpretation and gets a command-line executed with the help of the kernel.
+01. The UNIX system divides the labor between two agencies - **kernel** and **shell**.
+
+    Kernel interacts with the machine's hardware and the shell interacts with the user. Kernel is responsible for all sorts of system management activities. Shell performs the job of command interpretation and gets a command-line executed with the help of the kernel.
 
 ##
 
-02. Everything is represented in UNIX by a file which is just an array of bytes. A file when executed as a program is called a process. A file is stored on disk and a process exists in main memory.
+02. Everything is represented in UNIX as a file which is just an array of bytes. A file when executed as a program is called a process. A file is stored on disk and a process exists in main memory.
 
     UNIX systems predominantly use text file as they are easy to edit. UNIX started out as an operating system targeted towards engineering community. Engineers tend to tinker with configuration files and share it with their peers. Using text file format makes it easy. UNIX also provide a large collection of text manipulation tools to enable editing configuration files without using an editor.
 
@@ -14,7 +16,7 @@
 
 03. **Multiprogramming**: Ability to keep multiple programs in the system memory at the same time.
 
-    **Multiuser**: Ability to support multiple users at the same time and allowing them to use a single installation of an operating system simultaneously.
+    **Multiuser**: Ability to support multiple users at the same time and allowing them to use a single installation of operating system simultaneously.
 
     **Multitasking**: Ability to execute multiple tasks concurrently and even switch between them.
 
@@ -32,7 +34,7 @@
 
 ##
 
-06. `wc` command can be used with not just files but with input coming from standard input or from output of some other command. This is illustrated with the following examples:
+06. `wc` command can be used not just with files, but also with input coming from standard input or from output of some other command. This is illustrated with the following examples:
 
     Execute `wc` command without any argument. The command prompt won't return. Enter some text and terminate the input by entering a newline and immediately following it by end-of-file character using `[Ctrl-d]`. The output will represent count of the characters in the entered text.
 
@@ -44,25 +46,29 @@
 
 07. Three major differences between UNIX commands and Windows programs are:
 
-    -   Unlike Windows, commands in UNIX are case sensitive.
+    - Unlike Windows, commands in UNIX are case-sensitive.
 
-    -   Windows commands work irrespective of the presence of whitespace between the command and its options unlike UNIX where whitespace is mandatory.
+    - Windows commands work irrespective of the presence of whitespace between the command and its options unlike UNIX where whitespace is mandatory.
 
-    -   UNIX commands makes use of POSIX systems calls whereas Windows commands doesn't.
-
-##
-
-08. The executable named **foo** present in the current directory is not executed if the current directory (represented by `.`) is not listed in the **PATH** environment variable.
+    - UNIX commands makes use of POSIX systems calls whereas Windows commands doesn't.
 
 ##
 
-09. Any contiguous sequence of space, tab and newline characters is called a whitespace. If multiple contiguous whitespace is present between the command and its arguments, the shell automatically compresses it to a single space character.
+08. The executable named _foo_ present in the current directory is not executed if the current directory (represented by `.`) is not listed in the **PATH** environment variable.
+
+##
+
+09. Any contiguous sequence of **space**, **tab** and **newline** characters is called a whitespace. If multiple contiguous whitespace is present between the command and its arguments, the shell automatically compresses it to a single space character.
 
 ##
 
 10. By specifying the section number as an argument to the `man` command. as follows:
 
-    `man -s1 command`, `man -s5 filename` and `man -s2 system_call`.
+    - `man -s1 command`
+
+    - `man -s5 filename`
+
+    - `man -s2 system_call`
 
 ##
 

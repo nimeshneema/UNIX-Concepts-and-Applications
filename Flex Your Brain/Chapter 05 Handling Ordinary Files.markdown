@@ -8,17 +8,17 @@
 
 ##
 
-02. `cat foo`: Displays the contents of the file **foo** on standard output.
+02. `cat foo`: Displays the contents of the file _foo_ on standard output.
 
-    `cat > foo`: Returns secondary prompt and let the user type any text. Upon encountering end-of-file `[Ctrl-d]` character, the entered text is saved in a file named **foo** in the current directory.
+    `cat > foo`: Returns a secondary prompt and lets the user type any text. Upon encountering end-of-file (`[Ctrl-d]`) character, the entered text is saved in a file named _foo_ in the current directory.
 
     Use of `[Ctrl-d]` character is required when entering the text from standard input to let the shell know that the text entry is over.
 
 ##
 
-03. (i). Yes. The file **foo** will be copied into the directory **bar**.
+03. (i). Yes. The file _foo_ will be copied into the directory _bar_.
 
-    (ii). No. An error message is displayed stating **foo** is a directory and is not copied.
+    (ii). No. An error message is displayed stating _foo_ is a directory and is not copied.
 
 ##
 
@@ -26,35 +26,35 @@
 
     `rm -rf bar`
 
-    will delete directory **bar** along with all the files and sub-directories recursively, disregarding the write protection status of any file or sub-directory and non-emptiness of any sub-directory.
+    will delete directory _bar_ along with all the files and sub-directories recursively, disregarding the write protection status of any file or sub-directory and non-emptiness of any sub-directory.
 
     The command:
 
     `rmdir bar`
 
-    will work only when the directory containing **bar** (current directory here) is not write-protected and is the directory **bar** is completely empty.
+    will work only when the directory _bar_ is completely empty and its parent directory (current directory here) is not write-protected.
 
 ##
 
-05. (i). `mv $HOME/include .`: The file or directory named **include** present in the logged in users home directory is moved to the current working directory. The command fails if the user is currently in the home directory.
+05. (i). `mv $HOME/include .`: The file or directory named _include_ present in the logged in users home directory is moved to the current working directory.
 
-    (ii). `cp -r bar1 bar2`: Recursively copy the contents of **bar1** to **bar2**. If **bar2** exists, recursively copy contents of **bar1** into **bar2**, thus making the copy of **bar1** a sub-directory of **bar2**.
+    (ii). `cp -r bar1 bar2`: Recursively copy the contents of _bar1_ to _bar2_. If _bar2_ exists, and is a directory, recursively copy contents of _bar1_ into _bar2_, thus making a copy of _bar1_ a sub-directory of _bar2_.
 
-    (iii). `mv * ../bin`: Moves all the files and directories in the current directory into a directory named **bin** in the parent directory. The command fails if the directory **bin** doesn't exist.
+    (iii). `mv * ../bin`: Moves all the files and directories in the current directory into a directory named _bin_ in the parent directory. The command fails if the directory _bin_ doesn't exist.
 
 ##
 
 06. The three possible reasons could be:
 
-    (i). Read permission is not available for the file **hosts**.
+    (i). Read permission is not available for the file _hosts_.
 
-    (ii). Write permission is not available for the file **backup/hosts.bak**.
+    (ii). Write permission is not available for the file _backup/hosts.bak_.
 
-    (iii). Execute permission not available for the directory **backup**.
+    (iii). Execute permission not available for the directory _backup_.
 
 ##
 
-07. Assuming that the statement "first `a` is empty" means that the directory **a** doesn't contain any files (even hidden), just the sub-directory **a**.
+07. Assuming that the statement **first a is empty** mean that the directory _a_ doesn't contain any file (even hidden), just the sub-directory _a_.
 
     To accomplish the said task, execute the following command-line:
 
@@ -62,13 +62,13 @@
 
     Individual commands in the above command-line are described as below:
 
-    -   `cd`: Make home directory as the current working directory.
+    -   `cd`: Change the working directory to home directory.
 
-    -   `mv a temp`: Rename the directory **a** under home directory to something other than **a**, say **temp**.
+    -   `mv a temp`: Rename the directory _a_ under home directory to something other than _a_, say _temp_.
 
-    -   `mv temp/a .`: Move the directory hierarchy **a** under **temp** directory to the current directory i.e. the home directory.
+    -   `mv temp/a .`: Move the directory hierarchy _a_ under _temp_ directory to the current directory i.e. the home directory.
 
-    -   `rmdir temp`: Remove the **temp** directory normally as it is empty.
+    -   `rmdir temp`: Remove the _temp_ directory normally as it is empty.
 
 ##
 
@@ -88,9 +88,9 @@
 
 10. (i). We can count the number of filenames by executing:
 
-    `wc -l <foo`
+    `wc -l < foo`
 
-    This command outputs the total number of lines in the file foo.
+    This command outputs the total number of lines in the file _foo_.
 
     (ii). By displaying the octal dump of the files contents by executing:
 
@@ -110,7 +110,7 @@
 
     `comm -13 foo1 foo2`
 
-    which will list entires unique to file **foo2**. The command will not work properly when the files are unsorted or the files contains more than one name per line.
+    which will list entires unique to file _foo2_. The command will not work properly when the files are unsorted or the files contains more than one name per line.
 
 ##
 
@@ -118,7 +118,7 @@
 
     `tar -cvf archive.tar foo.html bar.html ; gzip archive.tar`.
 
-    The compressed archive will be saved as **archive.tar.gz**. To delete the original files execute:
+    The compressed archive will be saved as _archive.tar.gz_. To delete the original files execute:
 
     `rm foo.html bar.html`.
 

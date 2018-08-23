@@ -24,7 +24,7 @@
 
 ##
 
-04. The comma character is not required after the first argument. **fname** needs to be evaluated as a variable and should be preceded by a `$` character. The correct command-line is:
+04. The comma character is not required after the first argument. _fname_ needs to be evaluated as a variable and should be preceded by a `$` character. The correct command-line is:
 
     `printf "Filename: %s\n" $fname`.
 
@@ -54,7 +54,7 @@
 
 ##
 
-07. **mailx** can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can be automated.
+07. `mailx` can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can be automated.
 
 ##
 
@@ -72,11 +72,9 @@
 
 ##
 
-10. Execute:
+10. By checking the hostname of the machine by executing the following command:
 
     `uname -n`
-
-    and check the hostname.
 
 ##
 

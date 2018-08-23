@@ -18,7 +18,7 @@
 
 04. To move to line number 100, enter `:100` followed by pressing the `[Enter]` key.
 
-    To write the lines to a file named **newfile**, execute the **ex Mode** command:
+    To write the lines to a file named _newfile_, execute the **ex Mode** command:
 
     `:.,$w newfile`.
 
@@ -28,11 +28,11 @@
 
 ##
 
-06. (i). `:.,10w foo`: Saves the lines from the current line to 10th line below in a file named **foo**.
+06. (i). `:.,10w foo`: Saves the lines from the current line to 10th line below in a file named _foo_.
 
-    (ii). `:$w! foo`: Saves the last line in a file named **foo**. Overwrite the file **foo** if it already exist.
+    (ii). `:$w! foo`: Saves the last line in a file named _foo_. Overwrite the file _foo_ if it already exist.
 
-    Both the above commands are executed in **ex Mode**. If the file **foo** already exists, a warning message is shown by vi editor upon executing `:w` **ex Mode** command. The warning can be overridden by appending `!` to `:w` command.
+    Both the above commands are executed in **ex Mode**. If the file _foo_ already exists, a warning message is shown by vi editor upon executing `:w` **ex Mode** command. The warning can be overridden by appending `!` to `:w` command.
 
 ##
 
@@ -42,23 +42,23 @@
 
     The step-by-step explanation is as follows:
 
-    `e`: Move forward to the end of word.
+    - `e`: Move forward to the end of word.
 
-    `a`: Enter **Input Mode** to append text to the right of cursor.
+    - `a`: Enter **Input Mode** to append text to the right of cursor.
 
-    ` -n`: Enter the three characters **space**, **hyphen** and alphabet **n**.
+    - ` -n`: Enter the three characters **space**, **hyphen** and alphabet **n**.
 
-    `[Esc]`: Press escape key to switch back to **Command Mode**.
+    - `[Esc]`: Press escape key to switch back to **Command Mode**.
 
-    `w`: Move forward to the beginning of word.
+    - `w`: Move forward to the beginning of word.
 
-    `r"`: Replace **single quote** character with **double quote**.
+    - `r"`: Replace **single quote** character with **double quote**.
 
-    `3e`: Move forward to end of word, repeated thrice.
+    - `3e`: Move forward to end of word, repeated thrice.
 
-    `2x`: Delete the 2 characters `\c`.
+    - `2x`: Delete the 2 characters `\c`.
 
-    `r"`: Replace **single quote** character with **double quote**.
+    - `r"`: Replace **single quote** character with **double quote**.
 
     <br/>
 
@@ -66,27 +66,27 @@
 
     The step-by-step explanation is as follows:
 
-    `I`: Enter **Input Mode** to insert text at the beginning of line.
+    - `I`: Enter **Input Mode** to insert text at the beginning of line.
 
-    `f`: Insert the alphabet `f`.
+    - `f`: Insert the alphabet `f`.
 
-    `[Esc]`: Switch to **Command Mode**.
+    - `[Esc]`: Switch to **Command Mode**.
 
-    `w`: Move forward to beginning of word.
+    - `w`: Move forward to beginning of word.
 
-    `a`: Enter **Input Mode** to append text to right of cursor.
+    - `a`: Enter **Input Mode** to append text to right of cursor.
 
-    `stderr, `: Enter the string **stderr** followed by command and space character.
+    - `stderr, `: Enter the string **stderr** followed by command and space character.
 
-    `[Esc]`: Switch to **Command Mode**.
+    - `[Esc]`: Switch to **Command Mode**.
 
-    `6e`: Move forward to end of word, repeated six times.
+    - `6e`: Move forward to end of word, repeated six times.
 
-    `a`: Enter **Input Mode** to append text to right of cursor.
+    - `a`: Enter **Input Mode** to append text to right of cursor.
 
-    `f`: Insert double quote character.
+    - `f`: Insert double quote character.
 
-    `[Esc]`: Switch to **Command Mode**.
+    - `[Esc]`: Switch to **Command Mode**.
 
 ##
 
@@ -102,17 +102,17 @@
 
     The step-by-step explanation is as follows:
 
-    `:/#include`: **ex Mode** command to search for the occurrence of string **#include**.
+    - `:/#include`: **ex Mode** command to search for the occurrence of string **#include**.
 
-    `[Enter]`: Pressing the enter key executes the above **ex Mode** command and positions the cursor on the first match of the **#include** string.
+    - `[Enter]`: Pressing the enter key executes the above **ex Mode** command and positions the cursor on the first match of the **#include** string.
 
-    `4dd`: Deletes 4 lines, starting from the current line.
+    - `4dd`: Deletes 4 lines, starting from the current line.
 
-    `:1`: **ex Mode** command to move to the first line of the file buffer.
+    - `:1`: **ex Mode** command to move to the first line of the file buffer.
 
-    `[Enter]`: Execute the above **ex Mode** command.
+    - `[Enter]`: Execute the above **ex Mode** command.
 
-    `P`: Paste the deleted content of the four lines here.
+    - `P`: Paste the deleted content of the four lines here.
 
 ##
 
@@ -156,7 +156,7 @@
 
     `:w filename`
 
-    Make sure that a file named **filename** doesn't already exist on disk.
+    Make sure that a file named _filename_ doesn't already exist on disk.
 
 ##
 
@@ -170,88 +170,88 @@
 
     Now, execute the following **ex Mode** commands one by one:
 
-    `:1,10w passwd1`,
+    - `:1,10w passwd1`
 
-    `:11,20w passwd2`,
+    - `:11,20w passwd2`
 
-    `:21,$w passwd3`.
+    - `:21,$w passwd3`.
 
 ##
 
 16. Move to the first line of the mentioned text. Press the key-sequences as mentioned below:
 
-    `0`: Move the cursor to the first column.
+    - `0`: Move the cursor to the first column.
 
-    `O`: Open a line above and enter **Input Mode**.
+    - `O`: Open a line above and enter **Input Mode**.
 
-    `#include <stdio.h>`: Enter this string verbatim.
+    - `#include <stdio.h>`: Enter this string verbatim.
 
-    `[Esc]`: Switch back to **Command Mode**.
+    - `[Esc]`: Switch back to **Command Mode**.
 
-    `j`: Move a line below.
+    - `j`: Move a line below.
 
-    `2|`: move to second column.
+    - `2|`: move to second column.
 
-    `x`: Delete the space character just before include.
+    - `x`: Delete the space character just before include.
 
-    `e`: Move to end of word.
+    - `e`: Move to end of word.
 
-    `a`: Enter **Input Mode** to append text.
+    - `a`: Enter **Input Mode** to append text.
 
-    ` `: Enter a single space character just after include.
+    - ` `: Enter a single space character just after include.
 
-    `[Esc]`: Switch back to **Command Mode**.
+    - `[Esc]`: Switch back to **Command Mode**.
 
-    `j`: Move a line below.
+    - `j`: Move a line below.
 
-    `$`: Move the cursor to the end of the line.
+    - `$`: Move the cursor to the end of the line.
 
-    `h`: Move the cursor one character to left.
+    - `h`: Move the cursor one character to left.
 
-    `a`: Enter **Input Mode** to append text.
+    - `a`: Enter **Input Mode** to append text.
 
-    `, int exit_status`: Enter this string verbatim.
+    - `, int exit_status`: Enter this string verbatim.
 
-    `[Esc]`: Switch back to **Command Mode**.
+    - `[Esc]`: Switch back to **Command Mode**.
 
-    `J`: Join the current and the next line.
+    - `J`: Join the current and the next line.
 
-    `j`: Move a line below.
+    - `j`: Move a line below.
 
-    `b`: Repeatedly press this key till the cursor is on the beginning of the word **printf**.
+    - `b`: Repeatedly press this key till the cursor is on the beginning of the word **printf**.
 
-    `i`: Enter **Input Mode** to insert text.
+    - `i`: Enter **Input Mode** to insert text.
 
-    `/* `: Enter this string verbatim.
+    - `/* `: Enter this string verbatim.
 
-    `[Esc]`: Switch back to **Command Mode**.
+    - `[Esc]`: Switch back to **Command Mode**.
 
-    `$`: Move the cursor to the end of the line.
+    - `$`: Move the cursor to the end of the line.
 
-    `a`: Enter **Input Mode** to append text to the end of the line.
+    - `a`: Enter **Input Mode** to append text to the end of the line.
 
-    ` */`: Enter this string verbatim.
+    - ` */`: Enter this string verbatim.
 
-    `[Esc]`: Switch back to **Command Mode**.
+    - `[Esc]`: Switch back to **Command Mode**.
 
-    `o`: Open a line below and enter **Input Mode**.
+    - `o`: Open a line below and enter **Input Mode**.
 
-    `    fpritnf(stderr, "Error number %d, quitting program\n", errno);`: Enter this string verbatim.
+    - `    fpritnf(stderr, "Error number %d, quitting program\n", errno);`: Enter this string verbatim.
 
-    `[Esc]`: Switch back to **Command Mode**.
+    - `[Esc]`: Switch back to **Command Mode**.
 
-    `j`: Move a line below.
+    - `j`: Move a line below.
 
-    `2dd`: Delete the current and the next line.
+    - `2dd`: Delete the current and the next line.
 
-    Navigate to the parameter `1` of exit function.
+    - Navigate to the parameter `1` of exit function.
 
-    `s`: Enter **Input Mode** to substitute text.
+    - `s`: Enter **Input Mode** to substitute text.
 
-    `exit_status`: Enter this string verbatim.
+    - `exit_status`: Enter this string verbatim.
 
-    `[Esc]`: Switch back to **Command Mode**.
+    - `[Esc]`: Switch back to **Command Mode**.
 
-    `:w` or `:w somefile`: Optionally save the updated buffer contents to disk file.
+    - `:w` or `:w somefile`: Optionally save the updated buffer contents to disk file.
 
 ##
