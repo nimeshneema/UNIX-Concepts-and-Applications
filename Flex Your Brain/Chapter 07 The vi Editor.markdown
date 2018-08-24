@@ -160,7 +160,7 @@
 
 ##
 
-15. Copy the **/etc/passwd** file in the home directory by running the following command-line:
+15. Copy the _/etc/passwd_ file in the home directory by running the following command-line:
 
     `cd ; cp /etc/passwd .`.
 
