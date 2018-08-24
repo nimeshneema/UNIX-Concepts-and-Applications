@@ -76,7 +76,7 @@
 
     - `a`: Enter **Input Mode** to append text to right of cursor.
 
-    - `stderr, `: Enter the string **stderr** followed by command and space character.
+    - `stderr, `: Enter the string **stderr** followed by comma and space character.
 
     - `[Esc]`: Switch to **Command Mode**.
 
@@ -84,7 +84,7 @@
 
     - `a`: Enter **Input Mode** to append text to right of cursor.
 
-    - `f`: Insert double quote character.
+    - `"`: Insert double quote character.
 
     - `[Esc]`: Switch to **Command Mode**.
 
@@ -122,7 +122,7 @@
 
 ##
 
-11. In default configuration, `u` undoes the most recent, single editing change. Subsequent pressing of the key will redo the change.
+11. In default configuration, `u` undoes the most recent, single editing change. Subsequent pressing of the key will further undo previous changes.
 
     When a number of editing changes have been made to a single line and the user has not navigated away from the line, pressing `U` will discard all the changes made since the cursor was moved to the line.
 
@@ -178,7 +178,9 @@
 
 ##
 
-16. Move to the first line of the mentioned text. Press the key-sequences as mentioned below:
+16. Press the key-sequences as mentioned below:
+
+    - `:1`: Move to the first line in the text.
 
     - `0`: Move the cursor to the first column.
 
@@ -226,9 +228,7 @@
 
     - `[Esc]`: Switch back to **Command Mode**.
 
-    - `$`: Move the cursor to the end of the line.
-
-    - `a`: Enter **Input Mode** to append text to the end of the line.
+    - `A`: Enter **Input Mode** to append text to the end of the line.
 
     - ` */`: Enter this string verbatim.
 
@@ -236,7 +236,9 @@
 
     - `o`: Open a line below and enter **Input Mode**.
 
-    - `    fpritnf(stderr, "Error number %d, quitting program\n", errno);`: Enter this string verbatim.
+    - `    `: Enter four space characters.
+
+    - `fpritnf(stderr, "Error number %d, quitting program\n", errno);`: Enter this string verbatim (following the 4 space characters as entered above).
 
     - `[Esc]`: Switch back to **Command Mode**.
 
