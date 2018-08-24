@@ -60,9 +60,9 @@
 
 line words and bytes
 
-09. `wc foo`: The `wc` command opens the file **foo** and displays the count of lines, words and bytes in the file foo on the standard output.
+09. `wc foo`: The `wc` command opens the file named _foo_ and displays the count of lines, words and bytes in the file on the standard output.
 
-    `wc < foo`: The `wc` command reads the stream input coming from the file **foo** and displays the count of lines, words and bytes in the file foo on the standard output.
+    `wc < foo`: The `wc` command reads the stream input coming from the file _foo_ and displays the count of lines, words and bytes in the file on the standard output.
 
     The command `wc` opens the file in the former case and the shell opens the file in the latter.
 
@@ -72,21 +72,21 @@ line words and bytes
 
     `cat foo1 - foo2`
 
-    The contents of file **foo1** will be displayed on the terminal and the shell will wait for user input from keyboard. Once the input from the keyboard is made and the same is terminated with end-of-file character, the contents of the file **foo2** will be displayed on the terminal and the prompt returned subsequently.
+    The contents of file _foo1_ will be displayed on the terminal and the shell will wait for user input from keyboard. Once the input from the keyboard is made and the same is terminated with end-of-file character, the contents of the file _foo2_ will be displayed on the terminal and the prompt returned subsequently.
 
 ##
 
-11. (i). The contents of the file **foo** are overwritten by the text entered via standard input.
+11. (i). The contents of the file _foo_ are overwritten by the text entered via standard input.
 
-    (ii). file **foo** is created anew and the output of command `who` is appended to it.
+    (ii). The file named _foo_ is created anew and the output of command `who` is appended to it.
 
-    (iii). The file **foo** is blanked out.
+    (iii). The file _foo_ is blanked out.
 
-    (iv). The contents of the file **foo** is replaced by a single newline `\n` character.
+    (iv). The contents of the file _foo_ is replaced by a single newline `\n` character.
 
 ##
 
-12. The file **newlist** is present in the list of files along-with other files listed as an output of `ls` command. **newlist** finds its way into the list as the shell opens the file before `ls` command comes into action.
+12. The file _newlist_ is present in the list of files along-with other files listed as an output of `ls` command. The file _newlist_ finds its way into the list as the shell opens the file before `ls` command comes into action.
 
 ##
 
@@ -96,7 +96,7 @@ line words and bytes
 
 ##
 
-14. The error message is thrown not by `cat` command but by the shell. Any error thrown by `cat` command will be redirected to the file **bar**. Here the command doesn't get to act as the shell fails to locate the file **foo**, hence the error.
+14. The error message is thrown not by `cat` command but by the shell. Any error thrown by `cat` command will be redirected to the file **bar**. Here the command doesn't get to act as the shell fails to locate the file _foo_, hence the error.
 
 ##
 
@@ -126,7 +126,7 @@ line words and bytes
 
     `count=$(cat *.c | wc -c)`.
 
-    (ii). Assuming that the file is named foo.c, the total number of lines can be stored in the variable named **count** by executing the following command-line:
+    (ii). Assuming that the file is named _foo.c_, the total number of lines can be stored in the variable named **count** by executing the following command-line:
 
     `count=$(cat foo.c | wc -l)`.
 
@@ -136,6 +136,6 @@ line words and bytes
 
     `count="$(cat `cat foo` | wc -m)"`
 
-    First of all `cat foo` is expanded which lists all the file names. Further invocation of `cat` write to Standard Output the contents of all the files listed from the last step. The Standard Output from this step is piped to `wc` command which counts the total number of characters using `-m` option and the resulting value is assigned to the `count` variable.
+    First of all `cat foo` is expanded which lists all the file names. Further invocation of `cat` write to Standard Output the contents of all the files listed from the last step. The Standard Output from this step is piped to `wc` command which counts the total number of characters using `-m` option and the resulting value is assigned to the **count** variable.
 
 ##
