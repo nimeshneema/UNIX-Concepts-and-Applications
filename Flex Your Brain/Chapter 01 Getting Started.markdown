@@ -39,9 +39,9 @@
 
 ##
 
-06. Two empty files named **README** and **readme** are created in the current directory.
+06. Two empty files named _README_ and _readme_ are created in the current directory.
 
-    **Note**: When running on a case-insensitive file-system (the default configuration on macOS), only one file named **README** is created. If either of the two files already exists, its content is overwritten with an empty file.
+    **Note**: When running on a case-insensitive file-system (the default configuration on macOS), only one file named _README_ is created. If either of the two files already exists, its content is overwritten with an empty file.
 
 ##
 

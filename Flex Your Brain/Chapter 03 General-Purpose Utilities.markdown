@@ -24,7 +24,7 @@
 
 ##
 
-04. The comma character is not required after the first argument. _fname_ needs to be evaluated as a variable and should be preceded by a `$` character. The correct command-line is:
+04. The comma character is not required after the first argument. **fname** needs to be evaluated as a variable and should be preceded by a `$` character. The correct command-line is:
 
     `printf "Filename: %s\n" $fname`.
 
@@ -58,7 +58,7 @@
 
 ##
 
-08. When a new email message is received, it is stored in a file referred to as **mailbox**. Once the email message is read, it automatically moves to a file named **mbox** which is generally stored in the users home directory.
+08. When a new email message is received, it is stored in a file referred to as _mailbox_. Once the email message is read, it automatically moves to a file named _mbox_ which is generally stored in the users home directory.
 
 ##
 

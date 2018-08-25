@@ -2,7 +2,7 @@
 
 ---
 
-01. The shell performs all the actions represented by the metacharacters before executing the command-line.
+01. The shell performs all the actions represented by the meta-characters before executing the command-line.
 
     After completing the pre-processing step consisting of wild-card expansion, variable evaluation, command substitution, opening appropriate files, connecting streams, the shell submits the command-line to the kernel for final execution.
 
@@ -54,7 +54,7 @@
 
 ##
 
-08. Single and double quoting suppresses the special meaning of metacharacters and treats them literally. Double quoting is preferred when shell variable evaluation or command substitution is desired within the quoted string.
+08. Single and double quoting suppresses the special meaning of meta-characters and treats them literally. Double quoting is preferred when shell variable evaluation or command substitution is desired within the quoted string.
 
 ##
 
@@ -96,7 +96,7 @@ line words and bytes
 
 ##
 
-14. The error message is thrown not by `cat` command but by the shell. Any error thrown by `cat` command will be redirected to the file **bar**. Here the command doesn't get to act as the shell fails to locate the file _foo_, hence the error.
+14. The error message is thrown not by `cat` command but by the shell. Any error thrown by `cat` command will be redirected to the file _bar_. Here the command doesn't get to act as the shell fails to locate the file _foo_, hence the error.
 
 ##
 

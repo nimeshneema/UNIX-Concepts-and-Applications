@@ -10,21 +10,21 @@
 
 02. (i). Both have certain attributes.
 
-    (ii). Attributes for both are stored in a special structure in memory maintained by the operating system kernel (called process table for processes and inode for files).
+    (ii). Attributes for both are stored in a special structure maintained by the operating system (called process table for processes and inode for files).
 
     (iii). Both constitute parent child relationship.
 
 ##
 
-03. The two options available to a parent process after spawning a child are:
+03. The two options available to a parent after spawning a child process are:
 
-    (i). Wait for the child process to die so that it can spawn more process.
+    (i). Wait for the child process to die before parent can spawn another process.
 
-    (ii). Do not wait for the child process to die and continue to spawn other processes.
+    (ii). Do not wait for the child process to die and continue to spawn other child processes.
 
     The shell can be made be behave in both the aforementioned modes as discussed:
 
-    (i). The shell can be made to behave in waiting mode by waiting for the completion of the child processes before presenting the prompt again.
+    (i). The shell can be made to behave in waiting mode by waiting for the completion of the child process before presenting the prompt again.
 
     (ii). The shell can be made to behave in non-waiting mode by executing the command in the background by using `&` operator or `nohup` command.
 
@@ -40,11 +40,11 @@
 
     -   **cron**: Looks for its control file once a minute and performs the mentioned jobs.
 
-    Demons can be identified in the `ps -e` output by the `?` in the **TTY** column. The `?` means that the process has no controlling terminal.
+    Demons can be identified in the `ps -e` output by the `?` in the **TTY** column. A `?` indicates that the process has no controlling terminal.
 
 ##
 
-05. A process is created using three distinct phases using three system calls as discussed below:
+05. A process is created via three distinct phases using three system calls as discussed below:
 
     -   **fork**: The fork system call causes a copy of the invoking process to be made. The newly created child process has identical value for its process parameters except for PID and PPID.
 
@@ -56,7 +56,7 @@
 
 ##
 
-06. The important process attributes inherited by a child process from its parent are:
+06. The important process attributes inherited by a child process from its parent process are:
 
     (i). real UID and GID.
 
@@ -70,7 +70,7 @@
 
 ##
 
-07. `cd` is the change directory command. Directory change can't be made in a separate process. If invoking `cd` command spawns a child process (in case `cd` was made available as an external command), after the command has completed execution, control will return to the parent process and the original directory would be restored. Hence the command is built into the shell.
+07. `cd` is the change directory command. Directory change can't be made in a separate process. If invoking `cd` command was to spawn a child process (in case `cd` was made available as an external command), after the command has completed execution, control will return to the parent process and the original directory would be restored. Hence the command is built into the shell.
 
 ##
 
@@ -80,7 +80,7 @@
 
 ##
 
-09. Zombie is a process state which is acquired by a process upon its death. A dead process remains in this state until its parent process picks up the exit status from the process table. Once that is done, the kernel frees the process table entry thereby killing the process.
+09. Zombie is a process state which is acquired by a process upon its death. A dead process remains in this state until its parent process picks up the exit status from the process table. Once that is done, the kernel frees the process table entry thereby killing the zombie process.
 
 ##
 
@@ -92,7 +92,7 @@
 
     Pressing `[Ctrl-z]` key combination on the keyboard sends **SIGTSTP** signal to the foreground process. It causes the process to suspend execution.
 
-    Using `kill` command with signal names ensures portability as the signal numbers may vary across operating systems.
+    Using `kill` command with signal names ensures portability as the signal numbers are not portable across operating systems.
 
 ##
 
@@ -118,7 +118,7 @@
 
 ##
 
-15. (i). This is a valid **crontab** entry. It cause **cron** to execute the shell script **dial.sh**, every minute.
+15. (i). This is a valid **crontab** entry. It cause **cron** to execute the shell script _dial.sh_, every minute.
 
     (ii). This is an invalid **crontab** entry and will not work. In first column, **00-60** is not a valid range (valid range for minute of hour is **00-59**). **30th** day of month never occurs in **February** (2nd month of year), as mentioned in third and fourth column.
 

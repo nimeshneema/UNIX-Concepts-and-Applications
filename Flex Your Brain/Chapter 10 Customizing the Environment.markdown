@@ -12,7 +12,7 @@
 
 ##
 
-03. **$HOME** and **$SHELL** representing users users home directory and login shell respectively are set by reading **/etc/passwd** file.
+03. **$HOME** and **$SHELL** representing users users home directory and login shell respectively are set by reading _/etc/passwd_ file.
 
 ##
 
@@ -96,7 +96,7 @@
 
 13. (i). Change the current working directory to home directory of user **henry**.
 
-    (ii). Change the current working directory to the directory named **henry** in logged in user's home directory.
+    (ii). Change the current working directory to the directory named _henry_ in logged in user's home directory.
 
     (iii). Change the current working directory to the immediate previous working directory.
 
@@ -118,9 +118,9 @@
 
 ##
 
-16. (i). Restarting the login session, thereby automatically executing the updated **.profile** file.
+16. (i). Restarting the login session, thereby automatically executing the updated _.profile_ file.
 
-    (ii). Executing the **.profile** file in the current shell by running:
+    (ii). Executing the _.profile_ file in the current shell by running:
 
     `. .profile` or `source .profile`.
 

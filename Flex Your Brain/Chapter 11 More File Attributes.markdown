@@ -16,7 +16,7 @@
 
     -   Time of last access.
 
-    To display them for the file **foo** execute the following:
+    To display them for the file _foo_ execute the following:
 
     -   `ls -l foo`: Displays time of last modification.
 
@@ -34,9 +34,9 @@
 
 04. (i). A file named bar in created anew.
 
-    (ii). `ln` command throws an error message stating that file **bar** exits.
+    (ii). `ln` command throws an error message stating that file _bar_ exits.
 
-    (iii). File named **foo** is created inside directory **bar**.
+    (iii). File named _foo_ is created inside directory _bar_.
 
 ##
 
@@ -66,7 +66,7 @@
 
 ##
 
-08. The command can fail if the execute permission is not available for the directory **bar**.
+08. The command can fail if the execute permission is not available for the directory _bar_.
 
 ##
 

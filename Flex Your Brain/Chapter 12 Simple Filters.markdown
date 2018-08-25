@@ -2,7 +2,7 @@
 
 ---
 
-01. Assume that the file is named **foo**. Execute the following command-line to print it in reverse:
+01. Assume that the file is named _foo_. Execute the following command-line to print it in reverse:
 
     `pr -n -t foo | sort -nr | cut -f 2 -`.
 
@@ -14,7 +14,7 @@
 
 ##
 
-03. Assume that the file in question is named **foo**. Execute the following command-lines:
+03. Assume that the file in question is named _foo_. Execute the following command-lines:
 
     (i). `head -n 10 foo | tail -n -6`.
 
@@ -38,7 +38,7 @@
 
 ##
 
-06. Assume that the file is named **foo**. Execute the following command-line:
+06. Assume that the file is named _foo_. Execute the following command-line:
 
     `tr -cd '?' < foo | wc -m`.
 
@@ -60,7 +60,7 @@
 
 ##
 
-11. Executing the following command-line sets the variable named **length** to the length of line **xxx** of the file **emp.lst**:
+11. Executing the following command-line sets the variable named **length** to the length of line **xxx** of the file _emp.lst_:
 
     `length=$(head -n xxx emp.lst | tail -n 1 | wc -m)`.
 

@@ -26,7 +26,7 @@
 
 ##
 
-04. Either **test** already exists as a file or directory in the current directory, or the user doesn't have write permission for the current directory.
+04. Either _test_ already exists as a file or directory in the current directory, or the user doesn't have write permission for the current directory.
 
 ##
 
@@ -34,7 +34,7 @@
 
 ##
 
-06. The directory **bar** may contain hidden files and hence may not actually be empty.
+06. The directory _bar_ may contain hidden files and hence may not actually be empty.
 
 ##
 
@@ -42,7 +42,7 @@
 
 ##
 
-08. `cd ~charlie` changes the current working directory to charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named **charlie** inside current user's home directory. The latter may fail if no such directory exists.
+08. `cd ~charlie` changes the current working directory to charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named _charlie_ inside current user's home directory. The latter may fail if no such directory exists.
 
 ##
 
