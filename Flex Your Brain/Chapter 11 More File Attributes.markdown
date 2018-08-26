@@ -32,7 +32,7 @@
 
 ##
 
-04. (i). A file named bar in created anew.
+04. (i). A file named _bar_ in created anew.
 
     (ii). `ln` command throws an error message stating that file _bar_ exits.
 
@@ -86,9 +86,13 @@
 
 ##
 
-11. (i). `ls -l` displays a list of files and directories in the current directory in a long listing format, sorted in an ASCII collating sequence by name. `ls -lt` displays a similar output, only the order of listing is by modification time instead of name.
+11. (i). `ls -l` displays a list of files and directories in the current directory in a long listing format, sorted in an ASCII collating sequence by name.
 
-    (ii). `ls -lu` sorts the listing by time of last access. `ls -lut` sorts the listing by time of last access followed by time of modification.
+    `ls -lt` displays a similar output, only the order of listing is by modification time instead of name.
+
+    (ii). `ls -lu` sorts the listing by time of last access.
+
+    `ls -lut` sorts the listing by time of last access followed by time of modification.
 
 ##
 
