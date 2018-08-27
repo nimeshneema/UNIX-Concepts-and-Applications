@@ -8,9 +8,9 @@
 
 ##
 
-02. Executing the alias **lastedit** as shown below brings up the last modified file from among all the files present under current directory hierarchy and opens it with vim. It works with both Korn and Bash shell.
+02. Executing the alias `lastedit` as shown below will bring up the last modified file from among all the files present in the current directory hierarchy and open it with vim. It works with both Korn and Bash shell.
 
-    `alias lastedit="vi ls -t | head -n 1)"`.
+    `alias lastedit="vim $(ls -t | head -n 1)"`.
 
 ##
 
