@@ -72,9 +72,9 @@
 
     `cut -d ":" -f1 foo2 | sort -u > foo22`
 
-    The resultant output for files foo1 and foo2 are saved in files foo11 and foo22 respectively.
+    The resultant output for files _foo1_ and _foo2_ are saved in files _foo11_ and _foo22_ respectively.
 
-    Now, executing the following command-line achieve the desired results:
+    Now, executing the following command-line achieves the desired results:
 
     (i). `comm -23 foo11 foo22`.
 
