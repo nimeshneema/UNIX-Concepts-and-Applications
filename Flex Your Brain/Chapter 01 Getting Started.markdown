@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. A computer hardware is a bare machine with no intelligence of its own. An operating system like UNIX is a special system software which provides the computer with basic intelligence in the form of services.
 
     A few examples of services for programs include scheduling CPU time, allocating memory, accessing hardware devices like disks for reading and writing files etc.

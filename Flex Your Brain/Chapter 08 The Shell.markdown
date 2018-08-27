@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. The shell performs all the actions represented by the meta-characters before executing the command-line.
 
     After completing the pre-processing step consisting of wild-card expansion, variable evaluation, command substitution, opening appropriate files, connecting streams, the shell submits the command-line to the kernel for final execution.

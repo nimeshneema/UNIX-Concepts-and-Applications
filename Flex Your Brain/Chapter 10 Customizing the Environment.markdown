@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. An interactive shell presents a prompt and waits for input from user. A non-interactive shell on the other hand only executes shell scripts.
 
     Job control and history features have no significance in a non-interactive shell.

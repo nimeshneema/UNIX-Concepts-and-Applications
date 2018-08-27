@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. True.
 
     In a UNIX system, each available file system's directory structure is headed by root directory. Among the available file systems, one is demarcated as the root file system. At the time of booting, all the secondary file systems attach themselves to the root file system, thereby creating an illusion of a single file system.

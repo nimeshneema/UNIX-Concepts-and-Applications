@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. A directory is technically a file that contains the name and the inode number of the files and sub-directories it houses. The entries in a directory are updated by the kernel on the user's behalf when new files and sub-directories are added or removed.
 
     The size of a directory is usually small as it doesn't actually store the files and sub-directories it houses, just their name and inode number.

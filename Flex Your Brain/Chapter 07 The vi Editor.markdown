@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. The three modes of **vi** are: **Command Mode**, **Input Mode** and **ex Mode** (or **Last Line Mode**).
 
     The editor starts in **Command Mode** by default. To switch to **Input Mode**, enter one of the `i`, `I`, `a`, `A`, `r`, `R`, `s`, `S`, `o`, or `O` keys. To switch back to **Command Mode**, press the `[Esc]` key. To enter **ex Mode**, switch to **Command Mode** and press the `:` key followed by **ex Mode** command. **ex Mode** command is executed by pressing the `[Enter]` key, which on completion switches the editor back to **Command Mode**.

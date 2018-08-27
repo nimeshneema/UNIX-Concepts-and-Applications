@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. Assume that the file is named _foo_. Execute the following command-line to print it in reverse:
 
     `pr -n -t foo | sort -nr | cut -f 2 -`.

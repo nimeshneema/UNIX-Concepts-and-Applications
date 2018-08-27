@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. `$$`: Stores the PID of the user's login shell.
 
     `$!`: Stores the PID of the last background job.

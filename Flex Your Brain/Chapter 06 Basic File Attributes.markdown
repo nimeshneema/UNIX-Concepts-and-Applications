@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. By executing the command-line:
 
     `ls -lR / > listing.txt`

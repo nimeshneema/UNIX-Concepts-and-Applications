@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. Ordinary files can be classified into two types: **text** and **binary**. A text file generally contains only printable characters from the ASCII character set, whereas a binary file contain characters from the entire spectrum of the ASCII character set.
 
     C program source code, Perl script file and ASCII text readme files are examples of text files.

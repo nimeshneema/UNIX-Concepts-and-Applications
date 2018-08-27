@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. The UNIX system divides the labor between two agencies - **kernel** and **shell**.
 
     Kernel interacts with the machine's hardware and the shell interacts with the user. Kernel is responsible for all sorts of system management activities. Shell performs the job of command interpretation and gets a command-line executed with the help of the kernel.

@@ -1,7 +1,3 @@
-### Flex Your Brain
-
----
-
 01. By running the following command-line:
 
     `date +"%d-%m-%y/%H:%M:%S"`.
