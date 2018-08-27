@@ -86,7 +86,7 @@
 
 13. (i). Execute the following command:
 
-    `who | cut -d " " -f1 | sort | uniq -c | sort -nr`
+    `who | cut -d " " -f1 | sort | uniq -c | sort -n | grep -v "1 " | cut -c 6-`
 
     Each logged in user is listed with a count of their number of logins. Users who have logged in more than once can be easily identified from this list.
 
@@ -94,12 +94,12 @@
 
 ##
 
-14. Both `sort -u` and `uniq` removes repeated lines from a file. While `sort -u` both sorts a file and displays unique lines, `uniq` needs a sorted file an argument.
+14. Both `sort -u` and `uniq` removes repeated lines from a file. While `sort -u` both sorts a file and displays unique lines, `uniq` expects a sorted file as input.
 
 ##
 
 15. By executing the following command-line:
 
-    `tr -s " " < AMEN | cut -d " " -f 2,3,6 | sort | uniq -c | sort -nr`.
+    `tr -s " " < foo | cut -d " " -f 2,3,6 | sort | uniq -c | sort -n`.
 
 ##
