@@ -43,13 +43,13 @@
 
     `tty`: Prints the file name of the terminal connected to the standard input.
 
-    (ii). `ps` Lists all the currently running processes corresponding to the logged in user.
+    (ii). `ps`: Lists all the currently running processes corresponding to the logged in user.
 
-    `echo $$` Prints the integer **PID** (Process ID) corresponding to the running shell process.
+    `echo $$`: Prints the integer **PID** (Process ID) corresponding to the running shell process.
 
 ##
 
-08. `[Ctrl-d]`, `logout` and `exit`. `exit` command is guaranteed to always work.
+08. `[Control-d]`, `logout` and `exit`. `exit` command is guaranteed to always work.
 
 ##
 
