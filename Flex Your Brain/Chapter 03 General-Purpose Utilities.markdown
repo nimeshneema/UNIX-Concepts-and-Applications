@@ -4,23 +4,33 @@
 
 ##
 
-02. An escape sequence is generally a two character-sequence beginning with a backslash (`\`) character.
+02. An escape sequence is a sequence of characters that does not represent the characters themselves literally, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (`\`) character.
 
     Three escape sequences used by `echo` command, with their significance are:
 
-    -   `\n`: Newline character.
-    -   `\b`: Backspace character.
-    -   `\\`: Literal backslash character.
+    -   `\n`: Represents newline character.
+    -   `\b`: Represents backspace character.
+    -   `\\`: Represents backslash character.
 
 ##
 
-03. (i). Supply `-e` option to `echo` command as: `echo -e "Filename: \c"`.
+03. (i). Supply `-e` option to `echo` command. The modified command will be:
 
-    (ii). Supply `-n` option to `echo` command as: `echo -n "Filename: \c"`.
+    `echo -e "Filename: \c"`.
+
+    (ii). Supply `-n` option to `echo` command.  The modified command will be:
+
+    `echo -n "Filename: \c"`.
 
 ##
 
-04. The comma character is not required after the first argument. **fname** needs to be evaluated as a variable and should be preceded by a `$` character. The correct command-line is:
+04. There are a couple mistakes in the command-line:
+
+    - As per the syntax of `printf` command, it is invalid to supply a comma character between arguments.
+
+    - **fname** needs to be evaluated as a variable and should be preceded by `$` character.
+
+    The corrected command-line is:
 
     `printf "Filename: %s\n" $fname`.
 
@@ -42,7 +52,7 @@
 
     `printf "The value of 192 in octal is %o and hexadecimal is %x\n" 192 192`
 
-    `bc` can be used to display the number in binary by setting `obase=2`.
+    `bc` can be used to easily display the number in binary by setting `obase=2`.
 
 ##
 
@@ -50,7 +60,7 @@
 
 ##
 
-07. `mailx` can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can be automated.
+07. `mailx` command can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can be automated.
 
 ##
 
@@ -58,17 +68,17 @@
 
 ##
 
-09. Executing:
+09. To hide keybord input from getting displayed on the terminal, executing:
 
     `stty -echo`
 
-    will turn off the display of keyboard input. The above setting can be reversed by executing:
+    The above setting can be reversed by executing:
 
     `stty echo`.
 
 ##
 
-10. By checking the hostname of the machine by executing the following command:
+10. A machine can be identified by checking its hostname by executing the following command:
 
     `uname -n`
 
@@ -82,7 +92,7 @@
 
 ##
 
-12. By setting `[Ctrl-c]` corresponding to **kill** keyword using `stty` command as:
+12. By setting `[Control-c]` corresponding to **kill** keyword using `stty` command as:
 
     `stty kill \^c`
 
