@@ -1,22 +1,20 @@
-01. By executing the command-line:
+01. Executing the command-line:
 
-    `ls -lR / > listing.txt`
+    `ls -lR / > listing`
 
-    Administrative privilege may be required to run the command-line as many system directories do not have read and execute permissions for non-administrative users, and hence are inaccessible. The same could be achieved by executing the command-line as mentioned below:
-
-    `sudo ls -lR / > listing.txt`.
+    saves the output in a file named _listing_ in the current directory.
 
 ##
 
 02. The significance of the first four fields in `ls -l` output is as described below:
 
-    -   **First column**: Shows the file type and the associated permissions for file owner, group owner and others.
+    -   **First column**: File type and the associated permissions for file owner, group owner and others.
 
-    -   **Second column**: Shows the number of links associated with the file.
+    -   **Second column**: Number of links associated with the file.
 
-    -   **Third column**: Shows the username of the file owner.
+    -   **Third column**: Username of the file owner.
 
-    -   **Fourth column**: Names the group that owns the file.
+    -   **Fourth column**: Name of the group that owns the file.
 
     These attributes can be changed by the owner of the file as well as the system administrator. (Depending on the release of UNIX i.e. AT&T or BSD. See answer 12 below).
 
@@ -30,9 +28,9 @@
 
 ##
 
-04. If _bar_ is an ordinary file, both the commands display _bar_ as the output.
+04. (i). If _bar_ is an ordinary file, both the commands display _bar_ as the output.
 
-    If _bar_ is a directory that contains only a single file or directory also named _bar_, than both the commands display _bar_ as the output.
+    (ii). If _bar_ is a directory that contains only a single file or directory also named _bar_, than both the commands display _bar_ as the output.
 
 ##
 
@@ -40,9 +38,13 @@
 
 ##
 
-06. (i). `chmod u+rwx,o-rwx foo`.
+06. (i). By executing the command-line:
 
-    (ii). `chmod 740 foo`.
+    `chmod u+rwx,o-rwx foo`.
+
+    (ii). By executing the command-line:
+
+    `chmod 740 foo`.
 
     In case of absolute assignment, we need to know the default permissions for the file _foo_ to preserve the group permissions.
 
