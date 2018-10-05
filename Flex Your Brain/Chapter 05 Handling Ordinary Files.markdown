@@ -1,14 +1,14 @@
-01. A directory is technically a file that contains the name and the inode number of the files and sub-directories it houses. The entries in a directory are updated by the kernel on the user's behalf when new files and sub-directories are added or removed.
+01. A directory is technically a file containing the name and the inode number of files and sub-directories it contains. The entries are updated by the kernel on the user's behalf when files and sub-directories are added, renamed or deleted.
 
-    The size of a directory is usually small as it doesn't actually store the files and sub-directories it houses, just their name and inode number.
+    The size of a directory is usually small as it doesn't actually store the files and sub-directories it contains, just their name and inode number.
 
 ##
 
-02. `cat foo`: Displays the contents of the file _foo_ on standard output.
+02. `cat foo`: Displays the contents of the file _foo_.
 
-    `cat > foo`: Returns a secondary prompt and lets the user type any text. Upon encountering end-of-file (`[Ctrl-d]`) character, the entered text is saved in a file named _foo_ in the current directory.
+    `cat > foo`: Returns a secondary prompt and lets the user type any text. Upon encountering end-of-file (`[Control-d]`) character, the entered text is saved in a file named _foo_ in the current directory.
 
-    Use of `[Ctrl-d]` character is required when entering the text from standard input to let the shell know that the text entry is over.
+    Use of `[Control-d]` character is required when entering the text from standard input to let the shell know that the text entry is over.
 
 ##
 
@@ -32,15 +32,15 @@
 
 ##
 
-05. (i). `mv $HOME/include .`: The file or directory named _include_ present in the logged in users home directory is moved to the current working directory.
+05. (i). `mv $HOME/include .`: The file or directory named _include_ present in the logged in user's home directory is moved to the current working directory.
 
     (ii). `cp -r bar1 bar2`: Recursively copy the contents of _bar1_ to _bar2_. If _bar2_ exists, and is a directory, recursively copy contents of _bar1_ into _bar2_, thus making a copy of _bar1_ a sub-directory of _bar2_.
 
-    (iii). `mv * ../bin`: Moves all the files and directories in the current directory into a directory named _bin_ in the parent directory. The command fails if the directory _bin_ doesn't exist.
+    (iii). `mv * ../bin`: Moves all the files and directories in the current directory into a directory named _bin_ in the parent directory.
 
 ##
 
-06. The three possible reasons could be:
+06. The three possible reasons can be:
 
     (i). Read permission is not available for the file _hosts_.
 
@@ -50,35 +50,33 @@
 
 ##
 
-07. Assuming that the statement **first a is empty** mean that the directory _a_ doesn't contain any file (even hidden), just the sub-directory _a_.
-
-    To accomplish the said task, execute the following command-line:
+07. Execute the following command-line:
 
     `cd ; mv a temp ; mv temp/a . ; rmdir temp`
 
     Individual commands in the above command-line are described as below:
 
-    -   `cd`: Change the working directory to home directory.
+    -   `cd`: Change the working directory to user's home directory.
 
-    -   `mv a temp`: Rename the directory _a_ under home directory to something other than _a_, say _temp_.
+    -   `mv a temp`: Rename the directory _a_ under home directory to _temp_.
 
-    -   `mv temp/a .`: Move the directory hierarchy _a_ under _temp_ directory to the current directory i.e. the home directory.
+    -   `mv temp/a .`: Move the directory hierarchy _a_ under _temp_ directory to the home directory.
 
-    -   `rmdir temp`: Remove the _temp_ directory normally as it is empty.
+    -   `rmdir temp`: Remove the directory named _temp_.
 
 ##
 
-08. Using repeat factor, an internal command can be repeated **n** number of times.
+08. Using repeat factor, an internal command can be made to run multiple times.
 
     Type `/include` to locate the first occurrence of the pattern. Continue pressing the key `n` to repeat the search for further occurrences.
 
-    Using repeat factor, a command can be executed for a fixed number of times. The dot command on the other hand simply repeats the last command once.
+    Using repeat factor, a command can be executed for a set number of times. The dot command on the other hand simply repeats the last command once.
 
 ##
 
 09. We can ensure that the file is indeed a Postscript file by executing `file` command with the filename as argument and checking for the type information.
 
-    Postscript files are properly formatted for input to Postscript printers.
+    Postscript files are properly formatted for input to Postscript printer.
 
 ##
 
@@ -92,11 +90,11 @@
 
     `od -bc foo`
 
-    and verifying the presence of a space character (ASCII value of space character is `040` in octal).
+    and checking for the presence of space character in the output.
 
 ##
 
-11. DOS and UNIX text files differ by using different line ending characters. DOS uses the combination of **carriage return** and **line feed** characters (`\r\n`), whereas, UNIX uses **line feed** (`\n`) as the line ending character.
+11. DOS and UNIX text files differ by using different line ending characters. DOS uses a combination of **carriage return** and **line feed** characters (**\r\n**), whereas, UNIX uses **line feed** (**\n**) as the line ending character.
 
     `dos2unix` command converts a text file from DOS format to UNIX format by removing the extra carriage return characters from the places where the line ending character combination occurs. `unix2dos` command reverses the process by appending the carriage return character before every occurrence of the line feed character.
 
@@ -130,13 +128,13 @@
 
 ##
 
-14. The three advantages of using `zip` over `gzip` are:
+14. The three advantages of using **zip** over **gzip** are:
 
     -   zip files can he handled easily both in Windows and UNIX.
 
-    -   `zip` combines archiving and compressing under a single command.
+    -   zip combines archiving and compressing under a single command.
 
-    -   `zip` command provides facility to add/append files to an existing compressed archive.
+    -   zip command provides facility to add/append files to an existing compressed archive.
 
     To compress and archive a directory hierarchy to send via email execute:
 
@@ -152,12 +150,12 @@
 
     Examples of commands which support recursive operation are:
 
-    -   `cp -R`: recursively copies a directory hierarchy.
+    -   `cp -R`: Recursively copies a directory hierarchy.
 
-    -   `ls -R`: recursively list files in a directory hierarchy.
+    -   `ls -R`: Recursively lists files in a directory hierarchy.
 
-    -   `rm -r`: recursively deletes files in a directory hierarchy.
+    -   `rm -r`: Recursively deletes files in a directory hierarchy.
 
-    -   `zip -r`: recursively compress and archives a directory hierarchy.
+    -   `zip -r`: Recursively compress and archives a directory hierarchy.
 
 ##
