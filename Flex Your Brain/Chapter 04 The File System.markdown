@@ -1,28 +1,34 @@
-01. Ordinary files can be classified into two types: **text** and **binary**. A text file generally contains only printable characters from the ASCII character set, whereas a binary file contain characters from the entire spectrum of the ASCII character set.
+01. Two types of ordinary files are:
 
-    C program source code, Perl script file and ASCII text readme files are examples of text files.
+    - **text** file, and
 
-    Compiled C executable, PNG image file and WAV audio file are examples of binary files.
+    - **binary** file.
 
-##
+    A text file contains only printable characters from the ASCII character set, whereas a binary file can contain characters from the entire spectrum of the ASCII character set.
 
-02. A device file helps in accessing a device by making itself available for reading and writing via system calls and by setting appropriate file attributes.
+    C or Jave program source code, Perl or shell script and ASCII text readme file are examples of text file.
 
-##
-
-03. (i). `mkdir a/b/c`: Won't work. Directory `a` and `a/b` need to exist before attempting to create directory `a/b/c`.
-
-    (ii). `mkdir a a/b`: Will work. Directory `a` will be created first followed by directory `a/b`.
-
-    (iii). `rmdir a/b/c`: Won't work. Directory `a/b/c` does not exist yet.
-
-    (iv). `rmdir a a/b`: Will work partially. Directory `a` won't be removed as it's non-empty. Directory `a/b` will be removed as it's empty.
-
-    (v). `mkdir /bin/foo`: Won't work. `/bin` is writable only by the root user. To create a file or directory in `/bin`, either login as root user or use `sudo`.
+    Executable program, PNG or JPG image and WAV audio file are examples of binary file.
 
 ##
 
-04. Either _test_ already exists as a file or directory in the current directory, or the user doesn't have write permission for the current directory.
+02. A device file helps in accessing the device by setting appropriate file attributes.
+
+##
+
+03. (i). `mkdir a/b/c`: Won't work. Directory _a_ and _a/b_ need to exist before attempting to create directory _a/b/c_.
+
+    (ii). `mkdir a a/b`: Will work. Directory _a_ will be created first followed by directory _a/b_.
+
+    (iii). `rmdir a/b/c`: Won't work. Directory _a/b/c_ does not exist yet.
+
+    (iv). `rmdir a a/b`: Will work partially. Directory _a_ won't be removed as it's non-empty. Directory _a/b_ will be removed as it's empty.
+
+    (v). `mkdir /bin/foo`: Won't work for ordinary user. _/bin_ is writable only by the root user.
+
+##
+
+04. Either _test_ already exists as a file or directory in the current directory, or the user doesn't have write permission in the current directory.
 
 ##
 
@@ -30,7 +36,7 @@
 
 ##
 
-06. The directory _bar_ may contain hidden files and hence may not actually be empty.
+06. The directory _bar_ contains hidden files or directories which are not displayed when running `ls bar`.
 
 ##
 
@@ -38,11 +44,13 @@
 
 ##
 
-08. `cd ~charlie` changes the current working directory to charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named _charlie_ inside current user's home directory. The latter may fail if no such directory exists.
+08. `cd ~charlie` changes the current working directory to user charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named _charlie_ in current user's home directory.
+
+    The former command will fail if there is no user named charlie. The latter command will fail if no directory named _charlie_ exists in current user's home directory.
 
 ##
 
-09. To refer to the _update.sh_ file present in the current directory and not some other file with the same name existing in a directory listed in the user's **PATH**. This measure could also be required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
+09. To refer to _update.sh_ file present in the current directory and not some other file with the same name existing in a directory listed in **PATH** variable. This measure could also be required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
 
 ##
 
@@ -50,12 +58,12 @@
 
 ##
 
-11. (i). `cd ../..`: Changes the current directory to the root directory `/`. It will work successfully if the user has execute permission available for the root directory.
+11. (i). `cd ../..`: Changes the current directory to the root directory _/_. It will work successfully if the user has execute permission available for the root directory.
 
-    (ii). `mkdir ../bin`: Create a directory named `bin` under `/home` directory. The command will fail if either the user doesn't have write permission available for `/home` or `/home/bin` already exists as a directory or file.
+    (ii). `mkdir ../bin`: Create a directory named _bin_ under _/home_ directory. The command will fail if either the user doesn't have write permission available for _/home_ or _/home/bin_ already exists as a directory or file.
 
-    (iii). `rmdir ..`: Won't work. This command attempts to remove the parent directory i.e. `/home` while being placed in the child directory `/home/kumar`, which the shell won't permit.
+    (iii). `rmdir ..`: Won't work. This command attempts to remove the parent directory i.e. _/home_ while being placed in the child directory _/home/kumar_, which the shell won't permit.
 
-    (iv). `ls ..`: This command will attempt to list the contents of the parent directory i.e. `/home`. Will succeed only if the user has read permission available for `/home` directory.
+    (iv). `ls ..`: This command will attempt to list the contents of the parent directory i.e. _/home_. Will succeed only if the user has read permission available for _/home_ directory.
 
 ##
