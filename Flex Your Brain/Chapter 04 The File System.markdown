@@ -1,14 +1,14 @@
 01. Two types of ordinary files are:
 
-    - **text** file, and
+    - **text** file
 
-    - **binary** file.
+    - **binary** file
 
     A text file contains only printable characters from the ASCII character set, whereas a binary file can contain characters from the entire spectrum of the ASCII character set.
 
     C or Jave program source code, Perl or shell script and ASCII text readme file are examples of text file.
 
-    Executable program, PNG or JPG image and WAV audio file are examples of binary file.
+    Executable program, PNG or JPEG image and WAV audio file are examples of binary file.
 
 ##
 
@@ -40,17 +40,17 @@
 
 ##
 
-07. By referring to charlie's home directory as `~charlie`.
+07. By referring to charlie's home directory as **~charlie**.
 
 ##
 
-08. `cd ~charlie` changes the current working directory to user charlie's home directory. `cd ~/charlie` attempts to change the current working directory to a directory named _charlie_ in current user's home directory.
+08. `cd ~charlie` changes the current working directory to user charlie's home directory. `cd ~/charlie` changes the current working directory to a directory named _charlie_ in current user's home directory.
 
-    The former command will fail if there is no user named charlie. The latter command will fail if no directory named _charlie_ exists in current user's home directory.
+    The former command will fail if there is no user named **charlie**. The latter command will fail if no directory named _charlie_ exists in current user's home directory.
 
 ##
 
-09. To refer to _update.sh_ file present in the current directory and not some other file with the same name existing in a directory listed in **PATH** variable. This measure could also be required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
+09. To refer to _update.sh_ file present in the current directory and not some other file with the same name existing in a directory listed in **PATH** variable. This measure is also required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
 
 ##
 

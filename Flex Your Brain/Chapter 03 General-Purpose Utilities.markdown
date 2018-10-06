@@ -14,11 +14,11 @@
 
 ##
 
-03. (i). Supply `-e` option to `echo` command. The modified command will be:
+03. (i). Supply `-e` option to `echo` command. The modified command is:
 
     `echo -e "Filename: \c"`.
 
-    (ii). Supply `-n` option to `echo` command.  The modified command will be:
+    (ii). Supply `-n` option to `echo` command.  The modified command is:
 
     `echo -n "Filename: \c"`.
 
@@ -28,7 +28,7 @@
 
     - As per the syntax of `printf` command, it is invalid to supply a comma character between arguments.
 
-    - **fname** needs to be evaluated as a variable and should be preceded by `$` character.
+    - `fname` needs to be evaluated as a variable and should be preceded by `$` character.
 
     The corrected command-line is:
 
@@ -68,7 +68,7 @@
 
 ##
 
-09. To hide keybord input from getting displayed on the terminal, executing:
+09. To hide keybord input from getting displayed on the terminal execute:
 
     `stty -echo`
 
@@ -78,7 +78,7 @@
 
 ##
 
-10. A machine can be identified by checking its hostname by executing the following command:
+10. A machine can be identified by checking its hostname by executing the command:
 
     `uname -n`
 
@@ -96,6 +96,6 @@
 
     `stty kill \^c`
 
-    No. The settings doesn't persist between login sessions.
+    No, the settings doesn't persist between login sessions.
 
 ##
