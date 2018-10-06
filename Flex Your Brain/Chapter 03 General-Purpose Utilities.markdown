@@ -4,7 +4,7 @@
 
 ##
 
-02. An escape sequence is a sequence of characters that does not represent the characters themselves literally, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (`\`) character.
+02. An escape sequence is a sequence of characters that does not represent the characters themselves literally, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (**\\**) character.
 
     Three escape sequences used by `echo` command, with their significance are:
 

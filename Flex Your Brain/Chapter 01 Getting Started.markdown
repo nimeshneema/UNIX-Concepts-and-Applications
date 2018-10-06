@@ -21,11 +21,11 @@
 
 04. The output of `ls` command is saved in a file named _list_ in the current directory.
 
-    The shell sees the redirection operator (`>`) when interpreting the command-line. It opens the named file following the redirection operator (here, _list_). Next the command `ls` is run which reads the directory contents. The shell has manipulated things so that the output of the `ls` command doesn't go to the terminal, but is written to the file opened by the shell on its behalf.
+    The shell sees the redirection operator (**>**) when interpreting the command-line. It opens the named file following the redirection operator (here, _list_). Next the command `ls` is run which reads the directory contents. The shell has manipulated things so that the output of the `ls` command doesn't go to the terminal, but is written to the file opened by the shell on its behalf.
 
 ##
 
-05. The shell programming syntax requires that there should be no spaces on either side of `=` operator.
+05. The shell programming syntax requires that there should be no spaces on either side of **=** operator.
 
     When entering `x =10`, `x` is treated as a command by the shell. There is no command (internal or external) named `x`, the shell shows an error message stating that the command couldn't be found.
 

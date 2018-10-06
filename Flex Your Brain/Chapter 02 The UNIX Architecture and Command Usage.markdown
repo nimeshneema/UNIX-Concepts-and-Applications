@@ -56,7 +56,7 @@
 
 ##
 
-08. The program file named _foo_ present in the current directory is not executed if the current directory (represented by `.`) is not listed in the **PATH** environment variable.
+08. The program file named _foo_ present in the current directory is not executed if the current directory (represented by **.**) is not listed in the **PATH** environment variable.
 
 ##
 
