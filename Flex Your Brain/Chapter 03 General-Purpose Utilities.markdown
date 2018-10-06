@@ -96,6 +96,6 @@
 
     `stty kill \^c`
 
-    No, the settings doesn't persist between login sessions.
+    No, the setting doesn't persist between login sessions.
 
 ##

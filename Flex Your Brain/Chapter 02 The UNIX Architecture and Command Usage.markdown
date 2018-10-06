@@ -64,7 +64,7 @@
 
 ##
 
-10. By specifying the section number as an argument to `man` command. as follows:
+10. By specifying the section number as an argument to `man` command as follows:
 
     - `man -s1 command`
 
