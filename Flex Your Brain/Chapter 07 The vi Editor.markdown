@@ -1,6 +1,36 @@
-01. The three modes of **vi** are: **Command Mode**, **Input Mode** and **ex Mode** (or **Last Line Mode**).
+01. The three modes of **vi** are:
 
-    The editor starts in **Command Mode** by default. To switch to **Input Mode**, enter one of the `i`, `I`, `a`, `A`, `r`, `R`, `s`, `S`, `o`, or `O` keys. To switch back to **Command Mode**, press the `[Esc]` key. To enter **ex Mode**, switch to **Command Mode** and press the `:` key followed by **ex Mode** command. **ex Mode** command is executed by pressing the `[Enter]` key, which on completion switches the editor back to **Command Mode**.
+    - **Command Mode**
+
+    - **Input Mode**
+
+    - **ex Mode** (or **Last Line Mode**)
+
+    The editor starts in **Command Mode** by default. To switch to **Input Mode**, enter one of the following keys:
+
+    - `i`: Insert text towards the left side of the cursor.
+
+    - `I`: Insert text towards the beginning of the line.
+
+    - `a`: Append text towards the right side of the cursor.
+
+    - `A`: Append text towards the end of the line.
+
+    - `r`: Replace the character under cursor.
+
+    - `R`: Replace all text starting from the cursor to the end of the line.
+
+    - `s`: Substitute text under the cursor.
+
+    - `S`: Substitue the entire line.
+
+    - `o`: Open a new line below the current line.
+
+    - `O`: Open a new line above the current line.
+
+    To switch back to **Command Mode**, press the `[Esc]` key. Repeated/unneeded pressing of `[Esc]` key sounds a beep.
+
+    To enter **ex Mode**, switch to **Command Mode** and press the `:` key followed by **ex Mode** command. **ex Mode** command is executed upon pressing the `[Enter]` key, which upon completion switches the editor back to **Command Mode**.
 
 ##
 
@@ -16,7 +46,7 @@
 
     To write the lines to a file named _newfile_, execute the **ex Mode** command:
 
-    `:.,$w newfile`.
+    `:.,$w newfile`
 
 ##
 
@@ -72,7 +102,7 @@
 
     - `a`: Enter **Input Mode** to append text to right of cursor.
 
-    - `stderr, `: Enter the string **stderr** followed by comma and space character.
+    - `stderr, `: Enter the string **stderr** followed by a **comma** and **space** character.
 
     - `[Esc]`: Switch to **Command Mode**.
 
@@ -88,7 +118,7 @@
 
 08. By running the `who` command by executing **ex Mode** command `:!who`.
 
-    Switch to shell without quitting the editor by executing **ex Mode** command `:sh`. Quitting the shell will returns to the editor session.
+    Switch to shell without quitting the editor by executing **ex Mode** command `:sh`. Quitting the shell resumes the editor session.
 
 ##
 
@@ -98,7 +128,7 @@
 
     The step-by-step explanation is as follows:
 
-    - `:/#include`: **ex Mode** command to search for the occurrence of string **#include**.
+    - `:/#include`: **ex Mode** command to search for the occurrence of the string **#include**.
 
     - `[Enter]`: Pressing the enter key executes the above **ex Mode** command and positions the cursor on the first match of the **#include** string.
 
@@ -108,13 +138,19 @@
 
     - `[Enter]`: Execute the above **ex Mode** command.
 
-    - `P`: Paste the deleted content of the four lines here.
+    - `P`: Paste the deleted content of the four lines before the first line.
 
 ##
 
-10. To achieve the desired substitution with global effect, execute the following **ex Mode** substitute command sequence:
+10. The desired command sequence to replace the occurances of the text in the current line is:
 
-    `:1,$s/printf(/fprintf(stderr,/g`.
+    `:.s/printf(/fprintf(stderr,/g`
+
+    The above is a **ex Mode** substitute command sequence.
+
+    To achieve the desired substitution with global effect, execute:
+
+    `:1,$s/printf(/fprintf(stderr,/g`
 
 ##
 
@@ -124,27 +160,27 @@
 
 ##
 
-12. The desired **ex Mode** command sequences are as shown below:
+12. The desired command sequences are as shown below:
 
-    (i). `:1,10s/cnt/count/g`.
+    (i). `:1,10s/cnt/count/g`
 
-    (ii). `:.s/cnt/count/g`.
+    (ii). `:.s/cnt/count/g`
 
-    (iii). `:1,$s/cnt/count/g`.
+    (iii). `:1,$s/cnt/count/g`
 
-    To repeat the exercise in an interactive manner, change the flag from `g` to `gc`. The updated **ex Mode** command sequences are as shown below:
+    To repeat the exercise in an interactive manner, change the flag from **g** to **gc**.
 
-    (i). `:1,10s/cnt/count/gc`.
+    (i). `:1,10s/cnt/count/gc`
 
-    (ii). `:.s/cnt/count/gc`.
+    (ii). `:.s/cnt/count/gc`
 
-    (iii). `:1,$s/cnt/count/gc`.
+    (iii). `:1,$s/cnt/count/gc`
 
 ##
 
-13. If the power to the machine is cut off while an editing session is action, the temporary swap file created by the vi editor can remain on disk. Subsequently the editor will complain when an attempt is made to open the file.
+13. A temporary swap file created by the vi editor can persist on disk. In such case, upon restarting and resuming the work subsequently, the editor will complain when an attempt is made to open the file.
 
-    It is advised to use `:recover` **ex Mode** command to recover as much of the file data as possible.
+    To salvage, use `:recover` **ex Mode** command to recover as much of the file data as possible.
 
 ##
 
@@ -170,7 +206,7 @@
 
     - `:11,20w passwd2`
 
-    - `:21,$w passwd3`.
+    - `:21,$w passwd3`
 
 ##
 
