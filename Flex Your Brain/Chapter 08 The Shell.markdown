@@ -1,6 +1,20 @@
-01. The shell performs all the actions represented by the meta-characters before executing the command-line.
+01. The shell performs all the actions represented by the metacharacters before executing the command line.
 
-    After completing the pre-processing step consisting of wild-card expansion, variable evaluation, command substitution, opening appropriate files, connecting streams, the shell submits the command-line to the kernel for final execution.
+    After completing the pre-processing step consisting of:
+
+    - **Parsing**: Breaking the command line into individual meaningful words (tokens).
+
+    - **Variable Evaluation**: Evaluating values of **$** prefixed items.
+
+    - **Command Substitution**: Executing command line enclosed in backticks and substituting their output.
+
+    - **Redirection**: Looking for redirection operations and opening appropriate files.
+
+    - **Wild-card Interpretation**: Interpreting wildcard characters and make appropriate substitutions.
+
+    - **PATH evaluation**: Traversing directories listed in PATH variable to locate the command file.
+
+     the shell submits the command line to the kernel for final execution.
 
 ##
 
@@ -28,7 +42,7 @@
 
     (iii). A filename which doesn't end with a numeric character.
 
-    (iv). A non-hidden filename with two character extension where first character is not `s`, second character is not `h` and the extension is not `.sh`.
+    (iv). A non-hidden filename with two character extension where first character is not **s**, second character is not **h** and the extension is not **.sh**.
 
 ##
 
@@ -44,7 +58,7 @@
 
 ##
 
-07. By executing the command-line:
+07. By executing the command line:
 
     `rm -rf "*" "My Documents"`.
 
@@ -54,8 +68,6 @@
 
 ##
 
-line words and bytes
-
 09. `wc foo`: The `wc` command opens the file named _foo_ and displays the count of lines, words and bytes in the file on the standard output.
 
     `wc < foo`: The `wc` command reads the stream input coming from the file _foo_ and displays the count of lines, words and bytes in the file on the standard output.
@@ -64,7 +76,7 @@ line words and bytes
 
 ##
 
-10. By executing the command-line:
+10. By executing the command line:
 
     `cat foo1 - foo2`
 
@@ -106,7 +118,7 @@ line words and bytes
 
 ##
 
-16. By executing the following command-line:
+16. By executing the following command line:
 
     `who | wc -l`.
 
@@ -118,17 +130,17 @@ line words and bytes
 
 ##
 
-18. (i). Total size of all C source files (in bytes) can be stored in the variable named **count** by executing the following command-line:
+18. (i). Total size of all C source files (in bytes) can be stored in the variable named **count** by executing the following command line:
 
     `count=$(cat *.c | wc -c)`.
 
-    (ii). Assuming that the file is named _foo.c_, the total number of lines can be stored in the variable named **count** by executing the following command-line:
+    (ii). Assuming that the file is named _foo.c_, the total number of lines can be stored in the variable named **count** by executing the following command line:
 
     `count=$(cat foo.c | wc -l)`.
 
 ##
 
-19. By executing the command-line:
+19. By executing the command line:
 
     `count="$(cat `cat foo` | wc -m)"`
 
