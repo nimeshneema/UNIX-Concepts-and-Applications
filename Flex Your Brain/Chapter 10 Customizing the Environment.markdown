@@ -1,6 +1,6 @@
-01. An interactive shell presents a prompt and waits for input from user. A non-interactive shell on the other hand only executes shell scripts.
+01. An interactive shell presents a prompt and waits for input from user. A non-interactive shell on the other hand only executes shell scripts. There are certain shell features which are exclusive to interactive shell.
 
-    Job control and history features have no significance in a non-interactive shell.
+    Job control, aliases and history features have significance only in an interactive shell.
 
 ##
 
@@ -8,17 +8,17 @@
 
 ##
 
-03. **$HOME** and **$SHELL** representing users users home directory and login shell respectively are set by reading _/etc/passwd_ file.
+03. **HOME** and **SHELL** representing users home directory and login shell respectively are set by reading _/etc/passwd_ file.
 
 ##
 
-04. The location of users mailbox is stored in **MAIL** variable. The value of **MAILCHECK** variable on the other hand determines the interval of time in minutes after which the shell checks the mailbox for the arrival of new mail.
+04. The location of users mailbox is stored in **MAIL** variable. The value of **MAILCHECK** variable on the other hand determines the interval of time in seconds after which the shell checks the mailbox for the arrival of new mail.
 
-    The arrival of new mail is intimated to the user by shell by printing a message on terminal.
+    The arrival of new mail is intimated to the user by shell by printing a message on the terminal.
 
 ##
 
-05. (i). Set **$PS1** variable by executing: `PS1="[\H-\u \w]"`.
+05. (i). Set **PS1** variable by executing: `PS1="[\H-\u \w]"`.
 
     (ii). By restarting the login session, thereby reverting to the original value for **PS1** environment variable.
 
@@ -26,25 +26,25 @@
 
 06. The alias can be created by executing the following command-line:
 
-    `alias rm='rm -R'`.
+    `alias rm='rm -R'`
 
     Original `rm` command can be executed without unaliasing by appending the command with a `\` character as follows:
 
-    `\rm`.
+    `\rm`
 
 ##
 
 07. The accidental file overwriting can be prevented by setting **noclobber** option in Korn and Bash by executing the following:
 
-    `set -o noclobber`.
+    `set -o noclobber`
 
     To override this protection feature, `|` symbol needs to be appended to `>` symbol as shown:
 
-    `ls -l >| list.txt`.
+    `ls -l >| list.txt`
 
 ##
 
-08. (i). `!50`: Executes command-line corresponding to event number **50** as indicated by output of `history` shell built-in command.
+08. (i). `!50`: Executes command line corresponding to event number **50** as indicated by output of `history` shell built-in command.
 
     (ii). `!-2:p`: Display the command-line prior to the previously executed command.
 
@@ -54,13 +54,13 @@
 
     The Korn shell equivalent are listed below:
 
-    (i). `r 50`.
+    (i). `r 50`
 
-    (ii). `fc -l -2`.
+    (ii). `fc -l -2`
 
-    (iii). `r`.
+    (iii). `r`
 
-    (iv). `r doc=bak`.
+    (iv). `r doc=bak`
 
 ##
 
@@ -68,25 +68,25 @@
 
 ##
 
-10. (i). `cp *.c c_progs ; cd $_`.
+10. (i). `cp *.c c_progs ; cd $_`
 
-    (ii). `cmp foo foo.bak ; ^bak^doc`.
+    (ii). `cmp foo foo.bak ; ^bak^doc`
 
 ##
 
-11. (i). `r`.
+11. (i). `r`
 
-    (ii). `!!`.
+    (ii). `!!`
 
 ##
 
 12. In Korn enter:
 
-    `r tar`.
+    `r tar`
 
     In Bash enter:
 
-    `!tar`.
+    `!tar`
 
 ##
 
@@ -94,13 +94,13 @@
 
     (ii). Change the current working directory to the directory named _henry_ in logged in user's home directory.
 
-    (iii). Change the current working directory to the immediate previous working directory.
+    (iii). Change the current working directory to previous working directory.
 
     (iv). Same as (iii).
 
 ##
 
-14. A profile file is executed once in a session. On the other hand the contents of a rc file are executed every time a sub-shell is invoked.
+14. A profile file is executed once in a session, upon login. On the other hand the contents of a rc file are executed every time a sub-shell is invoked.
 
     Commands to initialize environment variables, set aliases, and shell options are set in these files.
 
