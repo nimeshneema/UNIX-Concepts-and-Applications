@@ -1,8 +1,8 @@
 ## README
 
-This is a compilation of solutions for **Flex Your Brain** exercises appearing at the end of each chapter in the book [UNIX Concepts and Applications - Fourth Edition][Book] (ISBN-13: 978-0-07-063546-3). The book is authored by **Sumitabha Das** and is published in India by [McGraw-Hill Education][Publisher].
+This project contains solutions for **Flex Your Brain** exercises appearing at the end of each chapter in the book [UNIX Concepts and Applications - Fourth Edition][Book] (ISBN-13: 978-0-07-063546-3). The book is authored by **Sumitabha Das** and is published in India by [McGraw-Hill Education][Publisher].
 
-This book is a recommended reading for many Computer Applications and Information Technology courses across India. It is also quite popular among students who are UNIX/Linux newbies.
+The book is recommended reading for many Computer Science, Computer Applications and Information Technology courses across universities in India. It is also quite popular among students who are UNIX/Linux newbies.
 
 The questions covered under **Flex Your Brain** exercises are slightly difficult to solve, and the answers for the same are not provided in the book. This project aims to provide a study aid by compiling solutions for the same.
 
