@@ -6,7 +6,7 @@ The book is recommended reading for many Computer Science, Computer Applications
 
 The questions covered under **Flex Your Brain** exercises are slightly difficult to solve, and the answers for the same are not provided in the book. This project aims to provide a study aid by compiling solutions for the same.
 
-The exercises are solved on a computer running latest release of [macOS Mojave][macOS], a POSIX compliant UNIX operating system with [Bash 4.4][Bash] as the choice of shell.
+The exercises are solved on a computer running the latest release of [macOS Catalina][macOS], a POSIX compliant UNIX operating system with [Bash 5.0][Bash] as the choice of shell.
 
 Every effort has been made to ensure that the answers are correct and complete. It is advised to refer to the system provided documentation (in the form of `man` pages) as needed.
 
