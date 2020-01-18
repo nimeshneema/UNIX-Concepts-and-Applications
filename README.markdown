@@ -1,6 +1,6 @@
 ## README
 
-This project contains solutions for **Flex Your Brain** exercises appearing at the end of each chapter in the book [UNIX Concepts and Applications - Fourth Edition][Book] (**ISBN-13**: [978-0-07-063546-3][ISBN]). The book is authored by **Sumitabha Das** and is published in India by [McGraw-Hill Education][Publisher].
+This project contains solutions for **Flex Your Brain** exercises appearing at the end of each chapter in the book [UNIX Concepts and Applications - Fourth Edition][Book] authored by **Sumitabha Das**.
 
 The book is recommended reading for many Computer Science, Computer Applications and Information Technology courses across universities in India. It is also quite popular among students who are UNIX/Linux newbies.
 
@@ -23,9 +23,7 @@ The following conventions are used in the solutions:
 - File and path names are _italicised_.
 
 [Book]:			http://mhhe.com/das/uca
-[Publisher]:	https://www.mheducation.co.in
 [macOS]:		https://www.apple.com/macos/mojave/
 [Bash]:			https://www.gnu.org/software/bash
 [Amazon]:		https://amzn.to/2xAJ2lJ
 [Flipkart]:		https://www.flipkart.com/unix-concepts-applications-4th/p/itmczynvf32hxm3f
-[ISBN]:			https://isbnsearch.org/isbn/9780070635463
