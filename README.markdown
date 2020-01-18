@@ -10,8 +10,6 @@ The exercises are solved on a computer running the latest release of [macOS Cata
 
 Every effort has been made to ensure that the answers are correct and complete. It is advised to refer to the system provided documentation (in the form of `man` pages) as needed.
 
-A copy of the book can be bought online from [Amazon][Amazon] or [Flipkart][Flipkart].
-
 ### Conventions Used
 
 The following conventions are used in the solutions:
@@ -25,5 +23,3 @@ The following conventions are used in the solutions:
 [Book]:			http://mhhe.com/das/uca
 [macOS]:		https://www.apple.com/macos/mojave/
 [Bash]:			https://www.gnu.org/software/bash
-[Amazon]:		https://amzn.to/2xAJ2lJ
-[Flipkart]:		https://www.flipkart.com/unix-concepts-applications-4th/p/itmczynvf32hxm3f
