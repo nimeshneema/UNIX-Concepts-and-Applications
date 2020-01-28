@@ -4,7 +4,7 @@ This project attempts to compile solutions for **Flex Your Brain** exercises app
 
 The book is a recommended reading for many Computer Science, Computer Applications and Information Technology courses across universities in India. It is also quite popular among students who are UNIX/Linux newbies.
 
-The questions covered under **Flex Your Brain** exercises are slightly involved, and the answers for the same are not made available. This project aims to create a study aid for students.
+The questions covered under **Flex Your Brain** exercises are slightly involved, and the answers for the same are not made available. This project aims to create a study aid for students by compiling the answers for the same.
 
 The exercises are solved and tested on computers running:
  
