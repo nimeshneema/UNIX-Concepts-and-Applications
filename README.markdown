@@ -6,7 +6,13 @@ The book is a recommended reading for many Computer Science, Computer Applicatio
 
 The questions covered under **Flex Your Brain** exercises are slightly involved, and the answers for the same are not made available. This project aims to create a study aid for students.
 
-The exercises are solved and tested on a computer running the latest public release of [macOS][macOS], a POSIX compliant UNIX operating system, running the latest public release of [Bash][Bash] shell.
+The exercises are solved and tested on computers running:
+ 
+-	[macOS Catalina][macOS], a POSIX compliant UNIX operating system.
+
+-	[Ubuntu Desktop Linux][Ubuntu], 18.04.3 LTS (Bionic Beaver), a free and open-source Linux distribution based on [Debian][Debian].
+
+Both the computers use [Bash 5.0][Bash] as the choice of shell.
 
 While every effort has been made to ensure correctness and completeness of answers, it is generally advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation).
 
@@ -20,8 +26,10 @@ The following conventions are used:
 
 -	File and path names are _italicised_.
 
-[Book]:			http://mhhe.com/das/uca
+[Book]:			http://mhhe.com/das/uca/
 [macOS]:			https://www.apple.com/macos/
-[Bash]:			https://www.gnu.org/software/bash
+[Ubuntu]:			https://ubuntu.com/download/desktop/
+[Debian]:			https://www.debian.org/
+[Bash]:			https://www.gnu.org/software/bash/
 
 ---
