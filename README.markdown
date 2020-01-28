@@ -14,7 +14,7 @@ The exercises are solved and tested on computers running:
 
 Both computers use [Bash 5.0][Bash] as the choice of shell.
 
-Efforts have been made to ensure correctness and completeness of answers and to indicate the difference in command-line options, and behaviour between the two platforms, present due to the implementation differences.
+All efforts have been made to ensure correctness and completeness of answers while keeping the differences between the two platforms in mind.
 
 However, it is advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation as available).
 
