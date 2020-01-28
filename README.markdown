@@ -14,7 +14,9 @@ The exercises are solved and tested on computers running:
 
 Both the computers use [Bash 5.0][Bash] as the choice of shell.
 
-While every effort has been made to ensure correctness and completeness of answers, it is generally advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation).
+Efforts have been made to ensure correctness and completeness of answers and to indicate the difference in command options and behaviour between the two platforms, due to the implementation differences.
+
+However, it is advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation as available).
 
 ### Conventions Used
 
