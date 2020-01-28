@@ -8,13 +8,13 @@ The questions covered under **Flex Your Brain** exercises are slightly involved,
 
 The exercises are solved and tested on computers running:
  
--	[macOS Catalina][macOS], a POSIX compliant UNIX operating system.
+-	[macOS Catalina][macOS], a POSIX compliant UNIX operating system, for [Apple's Mac][Mac] computers.
 
 -	[Ubuntu Desktop Linux][Ubuntu], 18.04.3 LTS (Bionic Beaver), a free and open-source Linux distribution based on [Debian][Debian].
 
-Both the computers use [Bash 5.0][Bash] as the choice of shell.
+Both computers use [Bash 5.0][Bash] as the choice of shell.
 
-Efforts have been made to ensure correctness and completeness of answers and to indicate the difference in command options and behaviour between the two platforms, due to the implementation differences.
+Efforts have been made to ensure correctness and completeness of answers and to indicate the difference in command-line options, and behaviour between the two platforms, present due to the implementation differences.
 
 However, it is advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation as available).
 
@@ -30,6 +30,7 @@ The following conventions are used:
 
 [Book]:			http://mhhe.com/das/uca/
 [macOS]:			https://www.apple.com/macos/
+[Mac]:				https://www.apple.com/mac/
 [Ubuntu]:			https://ubuntu.com/download/desktop/
 [Debian]:			https://www.debian.org/
 [Bash]:			https://www.gnu.org/software/bash/
