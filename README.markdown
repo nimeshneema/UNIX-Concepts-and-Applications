@@ -28,11 +28,11 @@ The following conventions are used:
 
 -	File and path names are _italicised_.
 
-[Book]:			http://mhhe.com/das/uca/
-[macOS]:			https://www.apple.com/macos/
-[Mac]:				https://www.apple.com/mac/
-[Ubuntu]:			https://ubuntu.com/download/desktop/
-[Debian]:			https://www.debian.org/
-[Bash]:			https://www.gnu.org/software/bash/
+[Book]:   http://mhhe.com/das/uca/
+[macOS]:  https://www.apple.com/macos/
+[Mac]:    https://www.apple.com/mac/
+[Ubuntu]: https://ubuntu.com/download/desktop/
+[Debian]: https://www.debian.org/
+[Bash]:   https://www.gnu.org/software/bash/
 
 ---
