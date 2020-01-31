@@ -26,13 +26,13 @@
 
 03.	The program called user's login shell starts executing at the terminal as soon as she logs in. Some of the popular shell programs available on a UNIX system are:
 
-	- **sh**: Bourne shell.
+	-	**sh**: Bourne shell.
 	
-	- **csh**: C shell.
+	-	**csh**: C shell.
 	
-	- **ksh**: KornShell.
+	-	**ksh**: KornShell.
 	
-	- **bash**: Bourne Again SHell.
+	-	**bash**: Bourne Again SHell.
 
 ##
 
@@ -82,15 +82,15 @@
 
 11.	Some of the duties of a systems administrator are:
 
-	- Backing up files.
+	-	Backing up files.
 
-	- Restoring the system to a usable state in case of a crash.
+	-	Restoring the system to a usable state in case of a crash.
 
-	- Startup, shutdown and maintenance of the system.
+	-	Startup, shutdown and maintenance of the system.
 
-	- Creating and administering user accounts.
+	-	Creating and administering user accounts.
 
-	- Updating system date.
+	-	Updating system date.
 
 ##
 

@@ -2,7 +2,7 @@
 
 01.	The UNIX system divides the labor between two agencies:
 
-	- **Kernel**
+	-	**Kernel**
 
 	and
 
@@ -20,11 +20,11 @@
 
 ##
 
-03.	**Multiprogramming**: Ability to keep multiple programs in the system memory at the same time.
+03.	-	**Multiprogramming**: Ability to keep multiple programs in the system memory at the same time.
 
-	**Multiuser**: Ability to support multiple users at the same time and allowing them to use a single installation of operating system simultaneously.
+	-	**Multiuser**: Ability to support multiple users at the same time and allowing them to use a single installation of operating system simultaneously.
 
-	**Multitasking**: Ability to execute multiple tasks concurrently by a user and even switch between them.
+	-	**Multitasking**: Ability to execute multiple tasks concurrently by a user and even switch between them.
 
 ##
 
@@ -88,9 +88,9 @@
 
 ##
 
-12.	**Interrupt character** represented by `[Control-c]` is used to interrupt a long-running or an unresponsive program.
+12.	-	**Interrupt character** represented by `[Control-c]` is used to interrupt a long-running or an unresponsive program.
 
-	**eof character** represented by `[Control-d]` can be used to terminate user input or to log out from the current session.
+	-	**eof character** represented by `[Control-d]` can be used to terminate user input or to log out from the current session.
 
 ##
 
