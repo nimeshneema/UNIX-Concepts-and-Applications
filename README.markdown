@@ -12,7 +12,7 @@ The exercises are solved and tested on computers running:
 
 -	[Ubuntu Desktop Linux][Ubuntu] 20.04.1 LTS (Focal Fossa), a free and open-source Linux distribution based on [Debian][Debian].
 
-Both computers are running the latest available version of [Bash][Bash] as the choice of shell.
+Both computers are running version 5.0 of [GNU Bash][Bash] as the choice of shell.
 
 All the efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation as available).
 
