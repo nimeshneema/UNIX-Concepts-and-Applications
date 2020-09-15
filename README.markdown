@@ -14,19 +14,17 @@ The exercises are solved and tested on computers running:
 
 Both computers are running the latest available version of [Bash][Bash] as the choice of shell.
 
-All efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind.
-
-However, it is advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation as available).
+All the efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation as available).
 
 ### Conventions Used
 
 The following conventions are used:
 
--	Key terms are shown in **Bold**.
+-	Key terms are shown in **Bold**
 
--	Command-line, expressions and symbols are wrapped in `backticks`.
+-	Command-line, expressions and symbols are wrapped in `backticks`
 
--	File and path names are _italicised_.
+-	File and path names are _italicised_
 
 [Book]:   http://mhhe.com/das/uca/
 [macOS]:  https://www.apple.com/macos/
