@@ -20,29 +20,29 @@
 
 ##
 
-02.	A program generally can't read a file by itself. Instead, it places a request to access the file to the operating system. The operating system, in turn, performs the job and makes the file data available to the program.
+02.	A program can't read a file by itself. Instead, it places a request to access the file to the operating system. The operating system in turn reads the file and makes the file data available to the program.
 
 ##
 
-03.	The program called user's login shell starts executing at the terminal as soon as she logs in. Some of the popular shell programs available on a UNIX system are:
+03.	The program is called users login shell. Some of the popular shell programs available on a UNIX system are:
 
-	-	**sh**: Bourne shell.
+	-	**sh**: Bourne shell
 	
-	-	**csh**: C shell.
+	-	**csh**: C shell
 	
-	-	**ksh**: KornShell.
+	-	**ksh**: KornShell
 	
-	-	**bash**: Bourne Again SHell.
+	-	**bash**: Bourne Again Shell
 
 ##
 
 04.	The output produced by executing `ls` command is saved in a file named _list_ in the current directory.
 
-	The user's shell sees the redirection operator (`>`) when interpreting the command-line. It opens the named file following the redirection operator (here, _list_). Next, the command `ls` is run, which reads the directory contents. The shell has manipulated things such that the output of the `ls` command doesn't go to the terminal, but is written to the file opened by the shell on its behalf.
+	The shell sees the redirection operator (`>`) when interpreting the command-line. It opens a named file following the redirection operator (here, _list_). Next, the command `ls` is run, which reads the directory contents. The shell has manipulated things such that the output of the `ls` command doesn't go to the terminal, but is written to the file opened by the shell.
 
 ##
 
-05.	The shell programming syntax requires that there should be no spaces on either side of the `=` operator.
+05.	The shell programming syntax requires that there be no spaces on either side of the `=` operator.
 
 	When entering `x =10`, `x` is treated as a command by the shell. As (in the default installation) there's no command named `x`, the shell shows an error message stating that the command couldn't be found.
 
@@ -52,7 +52,9 @@
 
 06.	Two empty files named _README_ and _readme_ are created in the current directory.
 
-	(**Note**: When running on a case-insensitive file-system (the default installation of macOS), only one file named _README_ is created. If either of the two files exists already, it is replaced by an empty file.)
+	If either of the two files exists already, it is replaced by an empty file.
+
+	When running the commands on a case-insensitive file-system (which is the case with default installation of macOS), only one file named _README_ is created.
 
 ##
 
@@ -60,19 +62,19 @@
 
 	`tty`: Prints the file name of the terminal connected to the standard input.
 
-	(ii). `ps`: Lists all the currently running processes corresponding to the logged-in user.
+	(ii). `ps`: Lists all the currently running processes associated with logged-in user.
 
-	`echo $$`: Prints the integer **PID** (Process ID) corresponding to the running shell process.
-
-##
-
-08.	`[Control-d]`, `logout` and `exit`. `exit` command is guaranteed to always work.
+	`echo $$`: Prints the integer **PID** (Process ID) associated with the running shell process.
 
 ##
 
-09.	A user's ID is used to uniquely identify her in the operating system.
+08.	`Control + d` key sequence, `logout` and `exit`. `exit` command is guaranteed to always work.
 
-	It is used by associating it with any file or process created by the user.
+##
+
+09.	A user's user-id is used to uniquely identify her in the operating system.
+
+	It is associating with any file or process created by the user.
 
 ##
 
