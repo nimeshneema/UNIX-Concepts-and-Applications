@@ -1,6 +1,6 @@
 ## Chapter 02 - The UNIX Architecture and Command Usage
 
-01.	The UNIX system divides the labor between two agencies:
+01.	The UNIX system architecture divides the system workload between two agencies:
 
 	-	**Kernel**
 
@@ -8,15 +8,15 @@
 
 	-	**Shell**
 
-	The kernel interacts with the machine's hardware. It is responsible for all sorts of system management activities. It also provides services to the user programs in the form of system calls.
+	The kernel interacts with the machine hardware. It is responsible for all sorts of system management activities. It also provides the services to the user programs in the form of system calls.
 
 	The shell interacts with the user. It provides the user interface to the computer. It performs the job of command interpretation and gets a command line executed with the help of the kernel.
 
 ##
 
-02.	A file is simply an array of bytes stored on disk and can practically contain anything. A file getting executed as a program is called a process.
+02.	A file is simply an array of bytes stored on disk and can practically contain anything. A file when executed as a program gives rise to a process.
 
-	UNIX systems predominantly use text files as they are easy to edit. UNIX started as an operating system targeted towards engineering community, and engineers often used to tinker with configuration files and share it with their peers. Using a text file format makes it easy to do so.
+	UNIX systems was originally desined to predominantly use text files as they are easy to edit. UNIX started as an operating system targeted towards engineering community, and engineers often tinker with configuration files and share it with their peers. Using a text file format makes it easy to do so as well as analyse and debug them if need be.
 
 ##
 
@@ -24,7 +24,7 @@
 
 	-	**Multiuser**: Ability to support multiple users at the same time and allowing them to use a single installation of operating system simultaneously.
 
-	-	**Multitasking**: Ability to execute multiple tasks concurrently by a user and even switch between them.
+	-	**Multitasking**: Ability to execute multiple tasks concurrently by a single user and even switch between them.
 
 ##
 
@@ -42,9 +42,9 @@
 
 ##
 
-06.	The statement is not precisely true. `wc` command can be used, not just with files, but also with input coming from standard input or the output of some other command. This is illustrated with the following examples:
+06.	The statement is partially true. `wc` command can be used, not just with files, but also with input coming from standard input or the output of some other command. This is illustrated with the following examples:
 
-	Execute `wc` command without any argument. The command prompt won't return. Enter some text and terminate the input by entering a newline, and immediately following it by the end-of-file character using `[Control-d]`. The output will represent the count of the characters in the entered text.
+	Execute `wc` command without any argument. The command prompt won't return. Enter some text and terminate the input by entering a newline, and immediately following it by the end-of-file character using `Control + d` key sequence. The output will represent the count of the words, lines and characters in the entered text.
 
 	Pipe the output of a command such as `ls` to `wc -l` to count the number of non-hidden files and directories in the current directory. Enter the command line as:
 
@@ -58,7 +58,7 @@
 
 	-	Windows commands work irrespective of the presence of whitespace between the command and its options, unlike UNIX where whitespace is mandatory.
 
-	-	UNIX commands make use of POSIX systems calls whereas Windows commands don't.
+	-	UNIX commands make use of POSIX systems calls whereas Windows commands doesn't.
 
 ##
 
@@ -66,7 +66,7 @@
 
 ##
 
-09.	Any contiguous sequence of one or more **space**, **tab** and **newline** characters are called whitespace.
+09.	Any contiguous sequence of one or more **space**, **tab** and **newline** characters is called whitespace.
 
 	If multiple contiguous whitespaces are present between the command and its arguments, the shell automatically compresses it to a single space character.
 
@@ -88,9 +88,9 @@
 
 ##
 
-12.	-	**Interrupt character** represented by `[Control-c]` is used to interrupt a long-running or an unresponsive program.
+12.	-	**Interrupt character** represented by `Control + c` key sequence is used to interrupt a long-running or an unresponsive program.
 
-	-	**eof character** represented by `[Control-d]` can be used to terminate user input or to log out from the current session.
+	-	**eof character** represented by `Control + d` key sequence can be used to terminate user input or to log out from the current session.
 
 ##
 
