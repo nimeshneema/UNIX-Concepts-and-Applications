@@ -20,13 +20,13 @@
 
 ##
 
-05.	(i). Set **PS1** variable by executing the command-line: `PS1="[\H-\u \w]"`
+05.	(i). Set **PS1** variable by executing the command line: `PS1="[\H-\u \w]"`
 
 	(ii). By restarting the login session, thereby reverting to the original value for **PS1** environment variable.
 
 ##
 
-06.	The alias can be created by executing the following command-line:
+06.	The alias can be created by executing the following command line:
 
 	`alias rm='rm -R'`
 
@@ -36,7 +36,7 @@
 
 ##
 
-07.	The accidental file overwriting can be prevented by setting the **noclobber** option in Korn and Bash shell by executing the following command-line:
+07.	The accidental file overwriting can be prevented by setting the **noclobber** option in Korn and Bash shell by executing the following command line:
 
 	`set -o noclobber`
 
@@ -46,9 +46,9 @@
 
 ##
 
-08.	(i). Execute the command-line corresponding to event number **50** as indicated by the output of the `history` shell built-in command.
+08.	(i). Execute the command line corresponding to event number **50** as indicated by the output of the `history` shell built-in command.
 
-	(ii). Display the command-line before the previously executed command.
+	(ii). Display the command line before the previously executed command.
 
 	(iii). Execute the last command.
 

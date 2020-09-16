@@ -44,11 +44,11 @@
 
 ##
 
-07.	By executing the following command-line:
+07.	By executing the following command line:
 
 	`cd ; mv a temp ; mv temp/a . ; rmdir temp`
 
-	Individual commands in the above command-line are described below:
+	Individual commands in the above command line are described below:
 
 	-	`cd`: Changes the working directory to the user's home directory.
 
@@ -74,7 +74,7 @@
 
 ##
 
-10.	(i). We can count the number of filenames by executing the command-line:
+10.	(i). We can count the number of filenames by executing the command line:
 
 	`wc -l < foo`
 
@@ -96,7 +96,7 @@
 
 ##
 
-12.	The desired list can be created by executing the command-line:
+12.	The desired list can be created by executing the command line:
 
 	`comm -13 foo1 foo2`
 
@@ -104,7 +104,7 @@
 
 ##
 
-13.	To add the two files to an archive and compress it, execute the command-line:
+13.	To add the two files to an archive and compress it, execute the command line:
 
 	`tar -cvf archive.tar foo.html bar.html ; gzip archive.tar`
 
@@ -112,7 +112,7 @@
 
 	`rm foo.html bar.html`
 
-	To reverse the process, uncompress and unarchive the files by executing the command-line:
+	To reverse the process, uncompress and unarchive the files by executing the command line:
 
 	`tar -xvf archive.tar.gz`
 

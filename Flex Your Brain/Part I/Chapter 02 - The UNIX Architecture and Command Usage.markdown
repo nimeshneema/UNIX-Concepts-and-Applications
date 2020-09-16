@@ -10,7 +10,7 @@
 
 	The kernel interacts with the machine's hardware. It is responsible for all sorts of system management activities. It also provides services to the user programs in the form of system calls.
 
-	The shell interacts with the user. It provides the user interface to the computer. It performs the job of command interpretation and gets a command-line executed with the help of the kernel.
+	The shell interacts with the user. It provides the user interface to the computer. It performs the job of command interpretation and gets a command line executed with the help of the kernel.
 
 ##
 
@@ -46,7 +46,7 @@
 
 	Execute `wc` command without any argument. The command prompt won't return. Enter some text and terminate the input by entering a newline, and immediately following it by the end-of-file character using `[Control-d]`. The output will represent the count of the characters in the entered text.
 
-	Pipe the output of a command such as `ls` to `wc -l` to count the number of non-hidden files and directories in the current directory. Enter the command-line as:
+	Pipe the output of a command such as `ls` to `wc -l` to count the number of non-hidden files and directories in the current directory. Enter the command line as:
 
 	`ls | wc -l`
 

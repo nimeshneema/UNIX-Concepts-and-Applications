@@ -22,7 +22,7 @@ The following conventions are used:
 
 -	Key terms are shown in **Bold**
 
--	Command-line, expressions and symbols are wrapped in `backticks`
+-	Command line, expressions and symbols are wrapped in `backticks`
 
 -	File and path names are _italicised_
 

@@ -14,7 +14,7 @@
 
 	03.	Time of last access.
 
-	To display them for the file _foo_ execute the following command-line:
+	To display them for the file _foo_ execute the following command line:
 
 	-	`ls -l foo`: Display the time of last modification.
 
@@ -84,13 +84,13 @@
 
 ##
 
-11.	(i). The former command-line displays a list of files and directories in the current directory in a long listing format, sorted in an ASCII collating sequence by name.
+11.	(i). The former command line displays a list of files and directories in the current directory in a long listing format, sorted in an ASCII collating sequence by name.
 
-	The latter command-line displays a similar output, only the order of listing is by modification time instead of name.
+	The latter command line displays a similar output, only the order of listing is by modification time instead of name.
 
-	(ii). The former command-line sorts the listing by the time of last access.
+	(ii). The former command line sorts the listing by the time of last access.
 
-	The latter command-line sorts the listing by the time of last access followed by the time of modification.
+	The latter command line sorts the listing by the time of last access followed by the time of modification.
 
 ##
 

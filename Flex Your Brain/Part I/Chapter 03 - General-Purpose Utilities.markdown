@@ -1,6 +1,6 @@
 ## Chapter 03 - General-Purpose Utilities
 
-01.	By running the following command-line:
+01.	By running the following command line:
 
 	`date +"%d-%m-%y/%H:%M:%S"`
 
@@ -18,23 +18,23 @@
 
 ##
 
-03.	(i). Supply `-e` option to `echo` command. The modified command-line is:
+03.	(i). Supply `-e` option to `echo` command. The modified command line is:
 
 	`echo -e "Filename: \c"`
 
-	(ii). Supply `-n` option to `echo` command.  The modified command-line is:
+	(ii). Supply `-n` option to `echo` command.  The modified command line is:
 
 	`echo -n "Filename: \c"`
 
 ##
 
-04.	There are a couple of mistakes in the command-line:
+04.	There are a couple of mistakes in the command line:
 
 	-	As per the syntax of `printf` command, it is invalid to supply a comma character between arguments.
 
 	-	`fname` needs to be evaluated as a variable and should be preceded by `$` character.
 
-	The corrected command-line is:
+	The corrected command line is:
 
 	`printf "Filename: %s\n" $fname`
 
@@ -52,7 +52,7 @@
 	<br/>
 	`192`
 
-	(ii). Convert 192 to octal and hexadecimal by executing the following command-line:
+	(ii). Convert 192 to octal and hexadecimal by executing the following command line:
 
 	`printf "The value of 192 in octal is %o and hexadecimal is %x\n" 192 192`
 
@@ -82,7 +82,7 @@
 
 ##
 
-10.	A machine can be identified by checking its hostname by executing the command-line:
+10.	A machine can be identified by checking its hostname by executing the command line:
 
 	`uname -n`
 

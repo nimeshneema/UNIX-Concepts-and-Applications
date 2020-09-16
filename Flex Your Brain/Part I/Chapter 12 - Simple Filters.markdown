@@ -1,6 +1,6 @@
 ## Chapter 12 - Simple Filters
 
-01.	Assume that the file is named _foo_. Execute the following command-line to print it in reverse:
+01.	Assume that the file is named _foo_. Execute the following command line to print it in reverse:
 
 	`pr -n -t foo | sort -nr | cut -f 2 -`
 
@@ -12,7 +12,7 @@
 
 ##
 
-03.	Assume that the file in question is named _foo_. Execute the following command-lines:
+03.	Assume that the file in question is named _foo_. Execute the following command lines:
 
 	(i). `head -n 10 foo | tail -n -6`
 
@@ -20,7 +20,7 @@
 
 ##
 
-04.	By executing the following command-line:
+04.	By executing the following command line:
 
 	`date | tr -s '\040' | tr '\040' '\012'`
 
@@ -30,13 +30,13 @@
 
 ##
 
-05.	By executing the following command-line:
+05.	By executing the following command line:
 
 	`ps -A | tr -s "\040" | sort -t"\040" -k 4`
 
 ##
 
-06.	Assume that the file is named _foo_. Execute the following command-line:
+06.	Assume that the file is named _foo_. Execute the following command line:
 
 	`tr -cd '?' < foo | wc -m`
 
@@ -58,7 +58,7 @@
 
 ##
 
-11.	Executing the following command-line sets the variable named **length** to the length of line **xxx** of the file _emp.lst_:
+11.	Executing the following command line sets the variable named **length** to the length of line **xxx** of the file _emp.lst_:
 
 	`length=$(head -n xxx emp.lst | tail -n 1 | wc -m)`
 
@@ -72,7 +72,7 @@
 
 	The resulting output for files _foo1_ and _foo2_ are saved in files _foo11_ and _foo22_ respectively.
 
-	Now, executing the following command-line achieves the desired results:
+	Now, executing the following command line achieves the desired results:
 
 	(i). `comm -23 foo11 foo22`
 
@@ -96,7 +96,7 @@
 
 ##
 
-15.	By executing the following command-line:
+15.	By executing the following command line:
 
 	`tr -s " " < foo | cut -d " " -f 2,3,6 | sort | uniq -c | sort -n`
 

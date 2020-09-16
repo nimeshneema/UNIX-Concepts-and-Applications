@@ -1,6 +1,6 @@
 ## Chapter 06 - Basic File Attributes
 
-01.	Executing the command-line:
+01.	Executing the command line:
 
 	`ls -lR / > listing`
 
@@ -40,11 +40,11 @@
 
 ##
 
-06.	(i). By executing the command-line:
+06.	(i). By executing the command line:
 
 	`chmod u+rwx,o-rwx foo`
 
-	(ii). By executing the command-line:
+	(ii). By executing the command line:
 
 	`chmod 740 foo`
 

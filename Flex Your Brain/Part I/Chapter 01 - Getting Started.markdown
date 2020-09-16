@@ -38,7 +38,7 @@
 
 04.	The output produced by executing `ls` command is saved in a file named _list_ in the current directory.
 
-	The shell sees the redirection operator (`>`) when interpreting the command-line. It opens a named file following the redirection operator (here, _list_). Next, the command `ls` is run, which reads the directory contents. The shell has manipulated things such that the output of the `ls` command doesn't go to the terminal, but is written to the file opened by the shell.
+	The shell sees the redirection operator (`>`) when interpreting the command line. It opens a named file following the redirection operator (here, _list_). Next, the command `ls` is run, which reads the directory contents. The shell has manipulated things such that the output of the `ls` command doesn't go to the terminal, but is written to the file opened by the shell.
 
 ##
 
