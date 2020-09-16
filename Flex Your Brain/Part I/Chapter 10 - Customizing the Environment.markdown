@@ -10,11 +10,11 @@
 
 ##
 
-03.	**HOME** and **SHELL** representing users home directory and login shell respectively are set by reading the _/etc/passwd_ file.
+03.	**HOME** and **SHELL** representing user's home directory and login shell respectively are set by reading the _/etc/passwd_ file.
 
 ##
 
-04.	The location of users mailbox is stored in the **MAIL** variable. The value of the **MAILCHECK** variable, on the other hand, determines the interval of time in seconds after which the shell checks the mailbox for the arrival of a new mail.
+04.	The location of user's mailbox is stored in the **MAIL** variable. The value of the **MAILCHECK** variable, on the other hand, determines the interval of time in seconds after which the shell checks the mailbox for the arrival of a new mail.
 
 	The arrival of a new mail is intimated to the user by the shell, by printing a message on the terminal.
 

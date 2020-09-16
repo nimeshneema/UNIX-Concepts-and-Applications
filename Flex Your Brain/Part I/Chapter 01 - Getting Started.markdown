@@ -24,7 +24,7 @@
 
 ##
 
-03.	The program is called users login shell. Some of the popular shell programs available on a UNIX system are:
+03.	The program is called user's login shell. Some of the popular shell programs available on a UNIX system are:
 
 	-	**sh**: Bourne shell
 	
@@ -58,7 +58,7 @@
 
 ##
 
-07.	(i). `who`: Lists all the users currently logged in. It produces a four-column output showing user's login name, terminal name, date & time of the last login, and hostname if not local.
+07.	(i). `who`: Lists all the users currently logged in. It produces a four-column output showing a user's login name, terminal name, date & time of the last login, and hostname if not local.
 
 	`tty`: Prints the file name of the terminal connected to the standard input.
 

@@ -18,11 +18,11 @@
 
 ##
 
-03.	(i). Supply `-e` option to `echo` command. The modified command line is:
+03.	(i). Supply `-e` option to the `echo` command. The modified command line is:
 
 	`echo -e "Filename: \c"`
 
-	(ii). Supply `-n` option to `echo` command.  The modified command line is:
+	(ii). Supply `-n` option to the `echo` command. The modified command line is:
 
 	`echo -n "Filename: \c"`
 
@@ -64,7 +64,7 @@
 
 ##
 
-07.	`mailx` command can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can be automated.
+07.	`mailx` command can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can also be automated via scripting.
 
 ##
 
@@ -96,7 +96,7 @@
 
 ##
 
-12.	By setting `[Control-c]` corresponding to **kill** keyword using `stty` command as:
+12.	By setting `Control + d` key sequence corresponding to **kill** keyword using `stty` command as:
 
 	`stty kill \^c`
 

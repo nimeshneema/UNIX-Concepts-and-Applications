@@ -80,7 +80,7 @@
 
 	which outputs the total number of lines in the file _foo_.
 
-	(ii). By displaying the octal dump of the file's contents by executing:
+	(ii). By displaying the octal dump of the files contents by executing:
 
 	`od -bc foo`
 

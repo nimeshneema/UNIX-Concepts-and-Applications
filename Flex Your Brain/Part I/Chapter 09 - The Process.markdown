@@ -84,7 +84,7 @@
 
 ##
 
-10.	Both `&` and `nohup` are employed for running a process in the background. `nohup` allows the user to log out while the background job is running, but the shell's `&` operator provides no such guarantee.
+10.	Both `&` and `nohup` are employed for running a process in the background. `nohup` allows the user to log out while the background job is running, but the shell `&` operator provides no such guarantee.
 
 ##
 
@@ -100,7 +100,7 @@
 
 	(ii). **False**. The parent process may not always wait for the child process to complete its run and return. The parent may also die leaving the child process as an orphan. A child process may continue executing without returning.
 
-	(iii). **True**. A single program (a single file of the disk) can be executed by same or different users to give rise to multiple processes. A single user can log in from multiple terminals to give rise to more than one shell process (using the same shell program).
+	(iii). **True**. A single program (a single file of the disk) can be executed by same or different user to give rise to multiple processes. A single user can log in from multiple terminals to give rise to more than one shell process (using the same shell program).
 
 ##
 
