@@ -82,7 +82,7 @@
 
 ##
 
-10.	A machine can be identified by checking its hostname by executing the command line:
+10.	By identifying the machine by determining its hostname obtained from executing the command line:
 
 	`uname -n`
 
