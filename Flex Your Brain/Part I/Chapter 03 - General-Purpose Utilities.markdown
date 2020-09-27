@@ -102,4 +102,6 @@
 
 	No, the setting doesn't persist between login sessions.
 
+	(Note that both macOS and Linux have the said key sequence set for interruption by default and need not be set explicitly.)
+
 ##
