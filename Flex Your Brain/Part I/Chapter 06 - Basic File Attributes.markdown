@@ -6,6 +6,8 @@
 
 	saves the listing of all the files and directories in the whole system in a file named _listing_ in the current directory.
 
+	However, it is worth noting that executing the above command line as a non root user may cause the directories without read permission to be skipped and the error message displayed on the console.
+
 ##
 
 02.	The significance of the first four fields in `ls -l` output is as described below:
