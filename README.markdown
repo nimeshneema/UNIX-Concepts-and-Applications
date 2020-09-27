@@ -8,7 +8,7 @@ The questions covered under **Flex Your Brain** exercises are slightly involve
 
 The exercises are solved and tested on computers running:
  
--	[macOS][macOS] Catalina 10.15.6 (19G2021), a POSIX compliant UNIX operating system, which is developed to run on [Apple's Mac][Mac] computers.
+-	[macOS][macOS] Catalina 10.15.7 (19H2), a POSIX compliant UNIX operating system, which is developed to run on [Apple's Mac][Mac] computers.
 
 -	[Ubuntu Desktop Linux][Ubuntu] 20.04.1 LTS (Focal Fossa), a free and open-source Linux distribution based on [Debian][Debian].
 
