@@ -16,7 +16,7 @@
 
 02.	A file is simply an array of bytes stored on disk and can practically contain anything. A file when executed as a program gives rise to a process.
 
-	UNIX systems was originally desined to predominantly use text files as they are easy to edit. UNIX started as an operating system targeted towards engineering community, and engineers often tinker with configuration files and share it with their peers. Using a text file format makes it easy to do so as well as analyse and debug them if need be.
+	UNIX systems was originally desined to predominantly use text files as they are easy to read, understand and edit. UNIX started as an operating system targeted towards engineering community, and engineers often tinkered with configuration files and shared it with their peers. Using a text file format makes it easy to do so as well as analyse and debug them if need be.
 
 ##
 
@@ -42,7 +42,7 @@
 
 ##
 
-06.	The statement is partially true. `wc` command can be used, not just with files, but also with input coming from standard input or the output of some other command. This is illustrated with the following examples:
+06.	The statement is partially true. `wc` command can be used, not just with files, but also with input coming from standard input or the output from some other command. This is illustrated with the following examples:
 
 	Execute `wc` command without any argument. The command prompt won't return. Enter some text and terminate the input by entering a newline, and immediately following it by the end-of-file character using `Control + d` key sequence. The output will represent the count of the words, lines and characters in the entered text.
 
@@ -72,13 +72,25 @@
 
 ##
 
-10.	By specifying the section number as an argument to the `man` command (as depicted):
+10.	By specifying the section number as an argument to the `man` command. The options used to specify section number differ between macOS and Linux. Form the usage forms are depicted below::
 
-	-	`man -s1 command`
+	-	**macOS**
 
-	-	`man -s5 filename`
+		-	`man -s1 command`
 
-	-	`man -s2 system_call`
+		-	`man -s5 filename`
+
+		-	`man -s2 system_call`
+
+	-	**Linux**
+
+		-	`man -s 1 command`
+
+		-	`man -s 5 filename`
+
+		-	`man -s 2 system_call`
+
+	(In Linux, the option `-s` is followed by a whitespace and the section number, while in macOS, the section number is appended to `-s` option.)
 
 ##
 
