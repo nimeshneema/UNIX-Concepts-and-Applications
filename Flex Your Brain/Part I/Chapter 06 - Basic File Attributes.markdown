@@ -100,9 +100,9 @@
 
 ##
 
-11.	No.
+11.	No, it could not be done. No file can be created or deleted as the write permission has been revoked for everyone, owner included.
 
-	No.
+	No, the latter command revokes write permission for everyone on the file/directory named _foo_.
 
 ##
 
