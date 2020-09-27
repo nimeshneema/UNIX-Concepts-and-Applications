@@ -96,7 +96,7 @@
 
 ##
 
-12.	By setting `Control + d` key sequence corresponding to **kill** keyword using `stty` command as:
+12.	By setting `Control + c` key sequence corresponding to **kill** keyword using `stty` command as:
 
 	`stty kill \^c`
 
