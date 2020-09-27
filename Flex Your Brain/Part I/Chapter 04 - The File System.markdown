@@ -6,7 +6,7 @@
 
 	-	**Binary** file
 
-	A text file contains only printable characters from the ASCII character set. On the other hand, a binary file can contain characters from the entire spectrum of the ASCII character set.
+	A text file contains only the commonly identifiable printable characters. On the other hand, a binary file can contain characters from the entire spectrum of the ASCII character set which can include non-printable characters too.
 
 	C program source code, Perl script and ASCII text files are some examples of a text file.
 
@@ -14,7 +14,7 @@
 
 ##
 
-02.	A device file helps in accessing the device by setting appropriate file attributes.
+02.	A device file helps in accessing the device by setting appropriate file attributes on the file representing the device.
 
 ##
 
@@ -42,7 +42,7 @@
 
 ##
 
-07.	By referring to charlie's home directory as **~charlie**.
+07.	By referring to charlie's home directory as **~charlie**. (Assuming that charlie's username remains the same.)
 
 ##
 
