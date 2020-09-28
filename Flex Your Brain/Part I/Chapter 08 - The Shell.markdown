@@ -50,7 +50,7 @@
 
 05.	`cp chap{0[1-9],1[0-9],2[0-6]} ../`
 
-	Yes.
+	Yes, a single wild-card pattern can match all the files.
 
 ##
 
@@ -60,7 +60,7 @@
 
 ##
 
-07.	By executing the command line:
+07.	The said file and directory can be removed by executing the following command line:
 
 	`rm -rf "*" "My Documents"`
 
@@ -78,7 +78,7 @@
 
 ##
 
-10.	By executing the command line:
+10.	By executing the following command line:
 
 	`cat foo1 - foo2`
 
@@ -120,15 +120,19 @@
 
 ##
 
-16.	By executing the following command line:
+16.	A count of number of logged in users can be obtained by executing the following command line:
 
 	`who | wc -l`
 
 ##
 
-17.	(i). `echo "$(cal)"`
+17.	(i). Use the following command line to print the calendar of the current month using command substitution:
 
-	(ii). `echo "$(cat list)"`
+	`echo "$(cal)"`
+
+	(ii). Use the following command line to print a listing of a group of filenames stored in a file:
+
+	`echo "$(cat list)"`
 
 ##
 
