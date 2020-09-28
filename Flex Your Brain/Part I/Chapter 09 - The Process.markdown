@@ -2,13 +2,13 @@
 
 01.	Both of them are special environment variables available in the shell.
 
-	01.	`$$`: Stores the PID of the user's login shell.
+	-	`$$`: This shell variable stores the PID of the user's login shell.
 
-	02.	`$!`: Stores the PID of the last background job.
+	-	`$!`: This shell variable stores the PID of the last background job.
 
 ##
 
-02.	(i). Both have certain attributes.
+02.	(i). Both processes and files have certain attributes.
 
 	(ii). Attributes for both are stored in a special structure maintained by the operating system (called process table for processes and inode for files).
 
@@ -44,7 +44,7 @@
 
 ##
 
-05.	A process is created via three distinct phases using three system calls as discussed below:
+05.	A process is created via three distinct phases using three system calls, in order, as discussed below:
 
 	01.	**fork**: The `fork` system call causes a copy of the invoking process to be made. The newly created child process has identical value for its process parameters except for the value of PID and PPID.
 
@@ -56,7 +56,7 @@
 
 ##
 
-06.	The important process attributes inherited by a child process from its parent process are:
+06.	The five important process attributes inherited by a child process from its parent process are:
 
 	(i). Real UID and GID.
 
@@ -106,7 +106,7 @@
 
 13.	`jobs` is a shell built-in command in Bash and doesn't throw up this error message.
 
-	A discussion on the question can be read [here](https://unix.stackexchange.com/q/111349/280308) on Unix & Linux Stack Exchange.
+	A discussion on the question can be found on a Unix & Linux Stack Exchange thread [here](https://unix.stackexchange.com/q/111349/280308).
 
 ##
 
