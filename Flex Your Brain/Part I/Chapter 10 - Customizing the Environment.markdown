@@ -20,9 +20,11 @@
 
 ##
 
-05.	(i). Set **PS1** variable by executing the command line: `PS1="[\H-\u \w]"`
+05.	(i). The prompt string can be changed to look as desired by setting the **PS1** environment variable by executing the following command line:
 
-	(ii). By restarting the login session, thereby reverting to the original value for **PS1** environment variable.
+	`PS1="[\H-\u \w]"`
+
+	(ii). The prompt string can be reverted back to the original value by restarting the login session, thereby resetting the vale for the **PS1** environment variable.
 
 ##
 
@@ -66,17 +68,21 @@
 
 ##
 
-09.	(iii).
+09.	(iii) the last command beginning with ca.
 
 ##
 
-10.	(i). `cp *.c c_progs ; cd $_`
+10.	The condenced command sequences are as follows:
+
+	(i). `cp *.c c_progs ; cd $_`
 
 	(ii). `cmp foo foo.bak ; ^bak^doc`
 
 ##
 
-11.	(i). `r`
+11.	By running the following command lines:
+
+	(i). `r`
 
 	(ii). `!!`
 
@@ -112,11 +118,13 @@
 
 	`. ~/.alias` or `source ~/.alias`
 
-	Yes.
+	Yes, the aliases will be available in a shell script in both Korn and Bash shell.
 
 ##
 
-16.	(i). Restarting the login session, thereby automatically executing the updated _.profile_ file.
+16.	The two ways of changing _.profile_ file are:
+
+	(i). Restarting the login session, thereby automatically executing the updated _.profile_ file.
 
 	(ii). Executing the _.profile_ file in the current shell by running:
 
