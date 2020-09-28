@@ -30,13 +30,13 @@
 
 	- `O`: Open a new line above the current line.
 
-	To switch back to **Command Mode**, press the `[Esc]` key. Repeated/un-needed pressing of the `[Esc]` key sounds a beep.
+	To switch back to **Command Mode**, press the `Esc` key. Repeated/un-needed pressing of the `Esc` key sounds a beep.
 
-	To enter **ex Mode**, switch to the **Command Mode** and press the `:` key, followed by the **ex Mode** command. An **ex Mode** command is executed upon pressing the `[Enter]` key, which upon completion switches the editor back to the **Command Mode**.
+	To enter **ex Mode**, switch to the **Command Mode** and press the `:` key, followed by the **ex Mode** command. An **ex Mode** command is executed upon pressing the `Enter` key, which upon completion switches the editor back to the **Command Mode**.
 
 ##
 
-02.	First, navigate to the desired line using appropriate navigation keys. Press `I` to insert text at the beginning of the line. Enter `/*` and press `[Esc]` key to switch back to the **Command Mode**. Now press `A` key to append text at the end of the line. Enter `*/` and press the `[Esc]` key to switch back to the **Command Mode**.
+02.	First, navigate to the desired line using appropriate navigation keys. Press `I` to insert text at the beginning of the line. Enter `/*` and press `Esc` key to switch back to the **Command Mode**. Now press `A` key to append text at the end of the line. Enter `*/` and press the `Esc` key to switch back to the **Command Mode**.
 
 ##
 
@@ -44,7 +44,7 @@
 
 ##
 
-04.	To move to line number 100, enter `:100` followed by pressing the `[Enter]` key.
+04.	To move to line number 100, enter `:100` followed by pressing the `Enter` key.
 
 	To write the lines to a file named _newfile_, execute the **ex Mode** command:
 
@@ -68,7 +68,7 @@
 
 07.	Enter the character sequence as shown below:
 
-	(i). `e`, `a`, ` -n`, `[Esc]`, `w`, `r"`, `3e`, `2x`, `r"`
+	(i). `e`, `a`, ` -n`, `Esc`, `w`, `r"`, `3e`, `2x`, `r"`
 
 	The step-by-step explanation is as follows:
 
@@ -78,7 +78,7 @@
 
 	-	` -n`: Enter the three characters, **space**, **hyphen** and alphabet **n**.
 
-	-	`[Esc]`: Press the escape key to switch back to the **Command Mode**.
+	-	`Esc`: Press the escape key to switch back to the **Command Mode**.
 
 	-	`w`: Move forward to the beginning of the word.
 
@@ -92,7 +92,7 @@
 
     <br/>
 
-	(ii). `I`, `f`, `[Esc]`, `w`, `a`, `stderr, `, `[Esc]`, `6e`, `a`, `"`, `[Esc]`
+	(ii). `I`, `f`, `Esc`, `w`, `a`, `stderr, `, `Esc`, `6e`, `a`, `"`, `Esc`
 
 	The step-by-step explanation is as follows:
 
@@ -100,7 +100,7 @@
 
 	-	`f`: Insert the alphabet `f`.
 
-	-	`[Esc]`: Switch to the **Command Mode**.
+	-	`Esc`: Switch to the **Command Mode**.
 
 	-	`w`: Move forward to the beginning of the word.
 
@@ -108,7 +108,7 @@
 
 	-	`stderr, `: Enter the string **stderr**, followed by a **comma**, and a **space** character.
 
-	-	`[Esc]`: Switch to the **Command Mode**.
+	-	`Esc`: Switch to the **Command Mode**.
 
 	-	`6e`: Move forward to the end of the word, repeated six times.
 
@@ -116,7 +116,7 @@
 
 	-	`"`: Insert a double quote character.
 
-	-	`[Esc]`: Switch to the **Command Mode**.
+	-	`Esc`: Switch to the **Command Mode**.
 
 ##
 
@@ -128,19 +128,19 @@
 
 09.	Make sure you are in the **Command Mode**. Enter the character sequence as shown below:
 
-	`:/#include`, `[Enter]`, `4dd`, `:1`, `[Enter]`, `P`
+	`:/#include`, `Enter`, `4dd`, `:1`, `Enter`, `P`
 
 	The step-by-step explanation is as follows:
 
 	-	`:/#include`: The **ex Mode** command to search for the occurrence of the string **#include**.
 
-	-	`[Enter]`: Pressing the enter key executes the above **ex Mode** command, and positions the cursor on the first match of the **#include** string.
+	-	`Enter`: Pressing the enter key executes the above **ex Mode** command, and positions the cursor on the first match of the **#include** string.
 
 	-	`4dd`: Delete 4 lines, starting from the current line.
 
 	-	`:1`: The **ex Mode** command to move to the first line of the file buffer.
 
-	-	`[Enter]`: Execute the above **ex Mode** command.
+	-	`Enter`: Execute the above **ex Mode** command.
 
 	-	`P`: Paste the deleted content of the four lines before the first line.
 
@@ -224,7 +224,7 @@
 
 	-	`#include <stdio.h>`: Enter this string verbatim.
 
-	-	`[Esc]`: Switch back to the **Command Mode**.
+	-	`Esc`: Switch back to the **Command Mode**.
 
 	-	`j`: Move a line below.
 
@@ -238,7 +238,7 @@
 
 	-	` `: Enter a single space character just after include.
 
-	-	`[Esc]`: Switch back to the **Command Mode**.
+	-	`Esc`: Switch back to the **Command Mode**.
 
 	-	`j`: Move a line below.
 
@@ -250,7 +250,7 @@
 
 	-	`, int exit_status`: Enter this string verbatim.
 
-	-	`[Esc]`: Switch back to the **Command Mode**.
+	-	`Esc`: Switch back to the **Command Mode**.
 
 	-	`J`: Join the current and the next line.
 
@@ -262,13 +262,13 @@
 
 	-	`/* `: Enter this string verbatim.
 
-	-	`[Esc]`: Switch back to the **Command Mode**.
+	-	`Esc`: Switch back to the **Command Mode**.
 
 	-	`A`: Enter the **Input Mode** to append text to the end of the line.
 
 	-	` */`: Enter this string verbatim.
 
-	-	`[Esc]`: Switch back to the **Command Mode**.
+	-	`Esc`: Switch back to the **Command Mode**.
 
 	-	`o`: Open a line below and enter the **Input Mode**.
 
@@ -276,7 +276,7 @@
 
 	-	`fpritnf(stderr, "Error number %d, quitting program\n", errno);`: Enter this string verbatim.
 
-	-	`[Esc]`: Switch back to the **Command Mode**.
+	-	`Esc`: Switch back to the **Command Mode**.
 
 	-	`j`: Move a line below.
 
@@ -288,7 +288,7 @@
 
 	-	`exit_status`: Enter this string verbatim.
 
-	-	`[Esc]`: Switch back to the **Command Mode**.
+	-	`Esc`: Switch back to the **Command Mode**.
 
 	-	`:w` or `:w somefile`: Optionally save the updated buffer contents to a disk file.
 
