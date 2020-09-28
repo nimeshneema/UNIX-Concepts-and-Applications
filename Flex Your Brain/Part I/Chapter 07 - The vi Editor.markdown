@@ -1,12 +1,12 @@
 ## Chapter 07 - The vi Editor
 
-01.	The three modes of the **vi** editor are:
+01.	The three modes of **vi** editor are:
 
 	-	**Command Mode**
 
 	-	**Input Mode**
 
-	-	**ex Mode** (or **Last Line Mode**)
+	-	**ex Mode** (also called **Last Line Mode**)
 
 	The editor starts in **Command Mode** by default. To switch to the **Input Mode**, enter one of the following keys:
 
@@ -58,9 +58,11 @@
 
 06.	(i). This command saves the lines from the current line to 10th line below in a file named _foo_.
 
-	(ii). This command saves the last line in a file named _foo_. Overwrite the file _foo_ if it already exists.
+	(ii). This command saves the last line in a file named _foo_.
 
-	Both the above commands are executed in the **ex Mode**. If the file _foo_ already exists, a warning message is shown by the vi editor upon executing the `:w` **ex Mode** command. The warning can be overridden by appending the `!` character to the `:w` command.
+	Both the above commands are executed in the **ex Mode**. If the file _foo_ already exists, a warning message is shown by the vi editor upon executing the `:w` **ex Mode** command. The warning message can be overridden by appending the `!` character to the `:w` command.
+
+	So the second command overwrite the file _foo_ if it already exists in the current directory.
 
 ##
 
@@ -170,7 +172,7 @@
 
 	(iii). `:1,$s/cnt/count/g`
 
-	To repeat the exercise interactively, change the flag from **g** to **gc**.
+	To repeat the exercise interactively, change the flag from **g** to **gc**. The corresponding command sequences are as shown below:
 
 	(i). `:1,10s/cnt/count/gc`
 
@@ -212,7 +214,7 @@
 
 ##
 
-16.	Press the key-sequence as mentioned below:
+16.	Use the key-sequence as mentioned below (along with explanation):
 
 	-	`:1`: Move to the first line in the text.
 
