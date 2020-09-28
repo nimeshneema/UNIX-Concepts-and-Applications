@@ -8,9 +8,9 @@
 
 02.	The former command displays the contents of the file named _foo_ present in the current directory.
 
-	The latter command returns a secondary prompt and lets the user type any text. Upon encountering the end-of-file (`[Control-d]`) character, the entered text is saved in a file named _foo_ in the current directory.
+	The latter command returns a secondary prompt and lets the user type any text. Upon encountering the end-of-file (`Control + d`) character, the entered text is saved in a file named _foo_ in the current directory.
 
-	Use of `[Control-d]` is required when entering the text from standard input to let the shell know that the text entry is over.
+	Use of `Control + d` is required when entering the text from standard input to let the shell know that the text entry is over.
 
 ##
 
