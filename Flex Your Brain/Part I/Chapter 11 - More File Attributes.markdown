@@ -2,7 +2,7 @@
 
 01.	True.
 
-	In a UNIX system, each available file system directory structure is headed by a root directory. Among all the available file systems, one of them is demarcated as the root file system. At the time of booting, all the secondary file systems attach themselves to the root file system, thereby creating an illusion of a single file system.
+	In a UNIX system, each available file system directory structure is headed by a root directory. Among all the available file systems, one of them is designated as the root file system. At the time of booting, all the secondary file systems attach themselves to the root file system, thereby creating an illusion of a single file system.
 
 ##
 
@@ -44,7 +44,7 @@
 
 	(ii). Freedom from maintaining separate disk files for programs with little difference.
 
-	Two disadvantages of hard links are:
+	Two main disadvantages of using hard links are:
 
 	(i). A hard link for a file cannot be created on a separate file system.
 
@@ -94,7 +94,9 @@
 
 ##
 
-12.	(i). `find ~ \( -name "*.html" -o -name "*.HTML") -print`
+12.	The desired `find` command line are:
+
+	(i). `find ~ \( -name "*.html" -o -name "*.HTML") -print`
 
 	(ii). `find ~ -inum 9076 -print`
 
@@ -102,11 +104,13 @@
 
 	(iv). `find ~ -mtime 1 -print`
 
-	No.
+	None of the above commands would fail.
 
 ##
 
-13.	(i). `find . -mtime -1 -exec mv ../posix {} \;`
+13.	The desired `find` command line are:
+
+	(i). `find . -mtime -1 -exec mv ../posix {} \;`
 
    	(ii). `find ~ \( -name a.out -o -name core\) -exec rm -fi {} \;` or `find ~ \( -name a.out -o -name core\) -ok rm -fi {} \;`
 
