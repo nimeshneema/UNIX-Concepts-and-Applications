@@ -1,4 +1,4 @@
-## Chapter 12 - Simple Filters
+p## Chapter 12 - Simple Filters
 
 01.	Assume that the file is named _foo_. Execute the following command line to print it in reverse:
 
@@ -6,9 +6,11 @@
 
 ##
 
-02.	Executing the alias `lastedit` as shown below will bring up the last modified file from among all the files present in the current directory hierarchy and open it with the vi editor. It works with both Korn and Bash shell.
+02.	Run the following command line to create the desired alias:
 
 	`alias lastedit="vi $(ls -t | head -n 1)"`
+
+	Executing `lastedit` will bring up the last modified file from among all the files present in the current directory hierarchy and open it with the vi editor. It would work with both Korn and Bash shell.
 
 ##
 
@@ -20,17 +22,17 @@
 
 ##
 
-04.	By executing the following command line:
+04.	`data` command output with each filed on a separate line can be produced by executing the command line:
 
 	`date | tr -s '\040' | tr '\040' '\012'`
 
-	To join the fields to get back the original output, execute:
+	To join the fields to get back the original output, execute the command line:
 
 	`date | tr '\040' '\012' | tr '\012' '\040'`
 
 ##
 
-05.	By executing the following command line:
+05.	Execute the following command line:
 
 	`ps -A | tr -s "\040" | sort -t"\040" -k 4`
 
@@ -64,7 +66,7 @@
 
 ##
 
-12.	First of all, we need to get rid of the extra information present in both the files, except username, sort the resulting list, and then save them in different files. The same can be accomplished by executing the following:
+12.	First of all, we need to get rid of the extra information present in both the files, except username, sort the resulting list, and then save them in different files. The same can be accomplished by executing the following command lines:
 
 	`cut -d ":" -f1 foo1 | sort -u > foo11`
 
@@ -82,7 +84,7 @@
 
 ##
 
-13.	(i). Execute the following command:
+13.	(i). Execute the following command line:
 
 	`who | cut -d " " -f1 | sort | uniq -c | sort -n | grep -v "1 " | cut -c 6-`
 
