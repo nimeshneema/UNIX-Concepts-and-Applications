@@ -98,104 +98,58 @@
 
 ##
 
-10.	Assuming that the name of the file is foo, the following command lines can be used to remove blank lines containing nothing or whitespace characters (i.e. one or more space, tab or newline character)
-
-	(i)	`grep -v -e "^$" -E "^(\r\n|\n|\r)|[\t ]+)$" foo`
-        
-	(ii) `sed -n '/(^$|\t+|\n|\r\n|\r)/d' foo` or `sed -n '/^$/d' foo`
+10.	
 
 ##
 
-11.	Locate lines containing only printf but not fprintf using (i) grep (ii) sed? (printf can also occur at the beginning of a line.)
-
-	(i)	`grep (^printf|[^f]printf) foo`
-
-	(ii) `sed -n '/(^printf|[^f]printf)/p' foo`
+11.	
 
 ##
 
-12.	Locate all nonblank lines that don't begin with #, /* or //?
-
-	`grep -v ^(#|/*|//|^$)`
+12.	
 
 ##
 
-13.	Locate lines longer than 100 and smaller than 150 characters using (i) grep, (ii) sed.
-
-	(i) `grep {100,150}`
-
-	(ii) `sed `
+13.	
 
 ##
 
-14.	Find out the occurrences of three consecutive and identical word characters (like aaa or bbb) using (i) grep, (ii) sed.
-
-	(i) `grep .{3}`
-
-	(ii) `sed`
+14.	
 
 ##
 
-15.	Devise a sequence to locate those users who have logged in yesterday or earlier but have not logged out, and mail the list to root. Users logged in more than once should feature only once in the list.
-
-	Get a who listing along with login time and filter to find the unique members and pipe the result to mail command such that the email goes to the root user.
+15.	
 
 ##
 
-16.	```grep -c ENCRYPTION foo``` outputsthe number of lines containing ENCRYPTION, but if the pattern sometimes occurs more than once in a line, how do you then obtain a count of all these occurrences? (HINT: Use sed also.)
-
-	Need to better understand the working of sed to crack this problem.
+16.	
 
 ##
 
-17.	Frame a command sequence that looks at romeo's mailbox to tell him that either he has received a message from henry or the Subject: line contains the word urgent or immediate in lower- or uppercase.
-
-	The command line should take into consideration the location of mail files and write a pattern match search to look for the desired patterns.
+17.	
 
 ##
 
-18.	Using sed, how do you add the tags <HTML> at the beginning and >/HTML> at the end of a file?
-
-	Need to look into how to accomplish this.
+18.	
 
 ##
 
-19.	How do you delete all leading and trailing spaces in all lines of a file?
-
-	Need to write a sed script to accomplish this
+19.	
 
 ##
 
-20.	How do you locate lines beginning and ending with a dot using (i) grep, (ii) sed
-
-	(i) For grep, use a regular expression.
-
-	(ii) For sed, use a regular expression too I guess.
+20.
 
 ##
 
-21.	Explain what these commands do and if there's anything wrong with them:
-
-	(i) sed -e 's/print/printf/g'  -e 's/printf/print/g' foo
-	
-	(ii) sed -e 's/compute/calculate/g' -e 's/computer/host/g' foo
-
-	substitute globally, -e enables us to use multiple expressions, foo is the name of the file.
-
-	The first expression of the first command line changes all the occurrences of print to printf. It also touches embedded strings. All the occurrences of `print` are converted to `printf` and then all the occurrences of `printf` are converted back to `print`. Thereby the file remains unchanged.
-
-	In the second expression, all the occurences of compute will be replaced with calculate. Also, the occurrences of computer would be affected. So the second expression would not get to act at all and is therfore unnecessary.
+21.
 
 ##
 
-22.	Every <B> tag in an HTML file has a closing </B> tag as well. Convert them to <STRONG> and </STRONG>, respectively, using sed with a single s command.
-
-	Need to frame a sed substitute command.
+22.	
 
 ##
 
-23.	Specify the command sequence needed to remove the directory /usr/local/bin from the PATH defined in $HOME/.profile.
-
-	This would require a sed expression while acts on the file $HOME/.profile.
+23.
 
 ##
