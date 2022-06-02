@@ -20,11 +20,11 @@ All the efforts have been made to ensure correctness and completeness of solutio
 
 The following conventions are used:
 
--	Key terms are shown in **Bold**
+-   Key terms are shown in **Bold**
 
--	Command line, expressions and symbols are wrapped in `backticks`
+-   Command line, expressions and symbols are wrapped in `backticks`
 
--	File and path names are _italicised_
+-   File and path names are _italicised_
 
 [Book]:   http://mhhe.com/das/uca/
 [macOS]:  https://www.apple.com/macos/
