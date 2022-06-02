@@ -4,15 +4,15 @@ This project aims at compiling solutions for **Flex Your Brain** exercises appea
 
 The book is a recommended reading for many Computer Science, Computer Applications and Information Technology courses across universities in India. It is also quite popular among students who are UNIX and GNU/Linux, newbies.
 
-The questions covered under **Flex Your Brain** exercises are slightly involved, and the solutions for the same are not made available with the book. This project aims to create a study aid for students by compiling the same.
+The questions covered under **Flex Your Brain** exercises are slightly involved, and the solutions for the same are not made available with the book. This project aims to create a study aid for students by compiling the same.
 
 The exercises are solved and tested on computers running:
- 
--	[macOS][macOS] Catalina 10.15.7 (19H2), a POSIX compliant UNIX operating system, which is developed to run on [Apple's Mac][Mac] computers.
 
--	[Ubuntu Desktop Linux][Ubuntu] 20.04.1 LTS (Focal Fossa), a free and open-source Linux distribution based on [Debian][Debian].
+-   [macOS Monterey][macOS] 12.4 (21F79), a POSIX compliant UNIX operating system, which is developed to run on [Apple's Mac][Mac] computers.
 
-Both the computers are running version 5.0 of [GNU Bash][Bash] as the choice of shell.
+-   [Ubuntu Desktop Linux][Ubuntu] 22.04 LTS (Jammy Jellyfish), a [Debian][Debian] based Linux distribution.
+
+Both the computers are running version 5.1.16(1)-release of [GNU Bash][Bash] as the choice of shell.
 
 All the efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advisable to refer to the system provided documentation for commands (using `man` pages, `info` pages or online command help documentation as available).
 
