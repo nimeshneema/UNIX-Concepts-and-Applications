@@ -32,5 +32,3 @@ The following conventions are used:
 [Ubuntu]: https://ubuntu.com/download/desktop/
 [Debian]: https://www.debian.org/
 [Bash]:   https://www.gnu.org/software/bash/
-
----
