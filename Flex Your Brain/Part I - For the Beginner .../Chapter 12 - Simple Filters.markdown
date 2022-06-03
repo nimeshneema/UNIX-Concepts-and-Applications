@@ -1,105 +1,105 @@
-p## Chapter 12 - Simple Filters
+##  Chapter 12 - Simple Filters
 
-01.	Assume that the file is named _foo_. Execute the following command line to print it in reverse:
+01. Assume that the file is named _foo_. Execute the following command line to print it in reverse:
 
-	`pr -n -t foo | sort -nr | cut -f 2 -`
-
-##
-
-02.	Run the following command line to create the desired alias:
-
-	`alias lastedit="vi $(ls -t | head -n 1)"`
-
-	Executing `lastedit` will bring up the last modified file from among all the files present in the current directory hierarchy and open it with the vi editor. It would work with both Korn and Bash shell.
+    `pr -n -t foo | sort -nr | cut -f 2 -`
 
 ##
 
-03.	Assume that the file in question is named _foo_. Execute the following command lines:
+02. Run the following command line to create the desired alias:
 
-	(i). `head -n 10 foo | tail -n -6`
+    `alias lastedit="vi $(ls -t | head -n 1)"`
 
-	(ii). `tail -n 2 foo | head -n 1`
-
-##
-
-04.	`data` command output with each filed on a separate line can be produced by executing the command line:
-
-	`date | tr -s '\040' | tr '\040' '\012'`
-
-	To join the fields to get back the original output, execute the command line:
-
-	`date | tr '\040' '\012' | tr '\012' '\040'`
+    Executing `lastedit` will bring up the last modified file from among all the files present in the current directory hierarchy and open it with the vi editor. It would work with both Korn and Bash shell.
 
 ##
 
-05.	Execute the following command line:
+03. Assume that the file in question is named _foo_. Execute the following command lines:
 
-	`ps -A | tr -s "\040" | sort -t"\040" -k 4`
+    (i). `head -n 10 foo | tail -n -6`
 
-##
-
-06.	Assume that the file is named _foo_. Execute the following command line:
-
-	`tr -cd '?' < foo | wc -m`
+    (ii). `tail -n 2 foo | head -n 1`
 
 ##
 
-07.	`cut -d ":" -f1 /etc/passwd | tail -n +11`
+04. `data` command output with each filed on a separate line can be produced by executing the command line:
+
+    `date | tr -s '\040' | tr '\040' '\012'`
+
+    To join the fields to get back the original output, execute the command line:
+
+    `date | tr '\040' '\012' | tr '\012' '\040'`
 
 ##
 
-08.	`echo $PATH | tr ":" "\012"`
+05. Execute the following command line:
+
+    `ps -A | tr -s "\040" | sort -t"\040" -k 4`
 
 ##
 
-09.	`sort -t ":" -n -k 3 -k 4 /etc/passwd`
+06. Assume that the file is named _foo_. Execute the following command line:
+
+    `tr -cd '?' < foo | wc -m`
 
 ##
 
-10.	`ls -S | head -5`
+07. `cut -d ":" -f1 /etc/passwd | tail -n +11`
 
 ##
 
-11.	Executing the following command line sets the variable named **length** to the length of line **xxx** of the file _emp.lst_:
-
-	`length=$(head -n xxx emp.lst | tail -n 1 | wc -m)`
+08. `echo $PATH | tr ":" "\012"`
 
 ##
 
-12.	First of all, we need to get rid of the extra information present in both the files, except username, sort the resulting list, and then save them in different files. The same can be accomplished by executing the following command lines:
-
-	`cut -d ":" -f1 foo1 | sort -u > foo11`
-
-	`cut -d ":" -f1 foo2 | sort -u > foo22`
-
-	The resulting output for files _foo1_ and _foo2_ are saved in files _foo11_ and _foo22_ respectively.
-
-	Now, executing the following command line achieves the desired results:
-
-	(i). `comm -23 foo11 foo22`
-
-	(ii). `comm -13 foo11 foo22`
-
-	(iii). `comm -12 foo11 foo22`
+09. `sort -t ":" -n -k 3 -k 4 /etc/passwd`
 
 ##
 
-13.	(i). Execute the following command line:
-
-	`who | cut -d " " -f1 | sort | uniq -c | sort -n | grep -v "1 " | cut -c 6-`
-
-	Each logged-in user is listed with a count of their number of logins. Users who have logged in more than once can be easily identified from this list.
-
-	(ii). `mailx -s "Logged in Users" root < $(who | cut -d " " -f1 | sort | uniq)`
+10. `ls -S | head -5`
 
 ##
 
-14.	Both `sort -u` and `uniq` removes repeated lines from a file. While `sort -u` both sorts a file and displays unique lines, `uniq` expects a sorted file as input.
+11. Executing the following command line sets the variable named **length** to the length of line **xxx** of the file _emp.lst_:
+
+    `length=$(head -n xxx emp.lst | tail -n 1 | wc -m)`
 
 ##
 
-15.	By executing the following command line:
+12. First of all, we need to get rid of the extra information present in both the files, except username, sort the resulting list, and then save them in different files. The same can be accomplished by executing the following command lines:
 
-	`tr -s " " < foo | cut -d " " -f 2,3,6 | sort | uniq -c | sort -n`
+    `cut -d ":" -f1 foo1 | sort -u > foo11`
+
+    `cut -d ":" -f1 foo2 | sort -u > foo22`
+
+    The resulting output for files _foo1_ and _foo2_ are saved in files _foo11_ and _foo22_ respectively.
+
+    Now, executing the following command line achieves the desired results:
+
+    (i). `comm -23 foo11 foo22`
+
+    (ii). `comm -13 foo11 foo22`
+
+    (iii). `comm -12 foo11 foo22`
+
+##
+
+13. (i). Execute the following command line:
+
+    `who | cut -d " " -f1 | sort | uniq -c | sort -n | grep -v "1 " | cut -c 6-`
+
+    Each logged-in user is listed with a count of their number of logins. Users who have logged in more than once can be easily identified from this list.
+
+    (ii). `mailx -s "Logged in Users" root < $(who | cut -d " " -f1 | sort | uniq)`
+
+##
+
+14. Both `sort -u` and `uniq` removes repeated lines from a file. While `sort -u` both sorts a file and displays unique lines, `uniq` expects a sorted file as input.
+
+##
+
+15. By executing the following command line:
+
+    `tr -s " " < foo | cut -d " " -f 2,3,6 | sort | uniq -c | sort -n`
 
 ##

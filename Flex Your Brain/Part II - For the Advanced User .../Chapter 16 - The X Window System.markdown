@@ -1,25 +1,25 @@
-## Chapter 16 - The X Window System
+##  Chapter 16 - The X Window System
 
-01.	
-
-##
-
-02.	
+01. 
 
 ##
 
-03.	
+02. 
 
 ##
 
-04.	
+03. 
 
 ##
 
-05.	
+04. 
 
 ##
 
-06.	
+05. 
+
+##
+
+06. 
 
 ##

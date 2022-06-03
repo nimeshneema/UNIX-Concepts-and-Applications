@@ -1,107 +1,107 @@
-## Chapter 03 - General-Purpose Utilities
+##  Chapter 03 - General-Purpose Utilities
 
-01.	By running the following command line:
+01. By running the following command line:
 
-	`date +"%d-%m-%y/%H:%M:%S"`
-
-##
-
-02.	An escape sequence is a sequence of characters that does not represent the character itself, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (**\\**) character.
-
-	Three escape sequences used by `echo` command, with their significance are:
-
-	-	`\n`: Represents newline character.
-
-	-	`\b`: Represents backspace character.
-
-	-	`\\`: Represents backslash character.
+    `date +"%d-%m-%y/%H:%M:%S"`
 
 ##
 
-03.	(i). Supply `-e` option to the `echo` command. The modified command line is:
+02. An escape sequence is a sequence of characters that does not represent the character itself, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (**\\**) character.
 
-	`echo -e "Filename: \c"`
+    Three escape sequences used by `echo` command, with their significance are:
 
-	(ii). Supply `-n` option to the `echo` command. The modified command line is:
+    -   `\n`: Represents newline character.
 
-	`echo -n "Filename: \c"`
+    -   `\b`: Represents backspace character.
 
-##
-
-04.	There are a couple of mistakes in the command line:
-
-	-	As per the syntax of `printf` command, it is invalid to supply a comma character between arguments.
-
-	-	`fname` needs to be evaluated as a variable and should be preceded by `$` character.
-
-	The corrected command line is:
-
-	`printf "Filename: %s\n" $fname`
+    -   `\\`: Represents backslash character.
 
 ##
 
-05.	(i). Convert 192 to octal by executing the following `bc` internal commands:
+03. (i). Supply `-e` option to the `echo` command. The modified command line is:
 
-	`obase=8`
-	<br/>
-	`192`
+    `echo -e "Filename: \c"`
 
-	Convert 192 to hexadecimal by executing the following `bc` internal commands:
+    (ii). Supply `-n` option to the `echo` command. The modified command line is:
 
-	`obase=16`
-	<br/>
-	`192`
-
-	(ii). Convert 192 to octal and hexadecimal by executing the following command line:
-
-	`printf "The value of 192 in octal is %o and hexadecimal is %x\n" 192 192`
-
-	`bc` command can be used to display the number in binary by setting `obase=2`.
+    `echo -n "Filename: \c"`
 
 ##
 
-06.	Running `script` command spawns a new sub-shell process.
+04. There are a couple of mistakes in the command line:
+
+    -   As per the syntax of `printf` command, it is invalid to supply a comma character between arguments.
+
+    -   `fname` needs to be evaluated as a variable and should be preceded by `$` character.
+
+    The corrected command line is:
+
+    `printf "Filename: %s\n" $fname`
 
 ##
 
-07.	`mailx` command can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can also be automated via scripting.
+05. (i). Convert 192 to octal by executing the following `bc` internal commands:
+
+    `obase=8`
+    <br/>
+    `192`
+
+    Convert 192 to hexadecimal by executing the following `bc` internal commands:
+
+    `obase=16`
+    <br/>
+    `192`
+
+    (ii). Convert 192 to octal and hexadecimal by executing the following command line:
+
+    `printf "The value of 192 in octal is %o and hexadecimal is %x\n" 192 192`
+
+    `bc` command can be used to display the number in binary by setting `obase=2`.
 
 ##
 
-08.	When a new email message is received, it is stored in a file referred to as _mailbox_. Once the email message is read, it automatically moves to a file named _mbox_ which is generally stored in the user's home directory.
+06. Running `script` command spawns a new sub-shell process.
 
 ##
 
-09.	To hide the keyboard input from getting displayed on the terminal execute:
-
-	`stty -echo`
-
-	The above setting can be reversed by executing:
-
-	`stty echo`
+07. `mailx` command can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can also be automated via scripting.
 
 ##
 
-10.	By identifying the machine by determining its hostname obtained from executing the command line:
-
-	`uname -n`
+08. When a new email message is received, it is stored in a file referred to as _mailbox_. Once the email message is read, it automatically moves to a file named _mbox_ which is generally stored in the user's home directory.
 
 ##
 
-11.	By examining the output of:
+09. To hide the keyboard input from getting displayed on the terminal execute:
 
-	`stty -a`
+    `stty -echo`
 
-	and reading values corresponding to **erase**, **kill** and **eof** keys.
+    The above setting can be reversed by executing:
+
+    `stty echo`
 
 ##
 
-12.	By setting `Control + c` key sequence corresponding to **kill** keyword using `stty` command as:
+10. By identifying the machine by determining its hostname obtained from executing the command line:
 
-	`stty kill \^c`
+    `uname -n`
 
-	No, the setting doesn't persist between login sessions.
+##
 
-	(Note that both macOS and Linux have the said key sequence set for interruption by default and need not be set explicitly.)
+11. By examining the output of:
+
+    `stty -a`
+
+    and reading values corresponding to **erase**, **kill** and **eof** keys.
+
+##
+
+12. By setting `Control + c` key sequence corresponding to **kill** keyword using `stty` command as:
+
+    `stty kill \^c`
+
+    No, the setting doesn't persist between login sessions.
+
+    (Note that both macOS and Linux have the said key sequence set for interruption by default and need not be set explicitly.)
 
 ##

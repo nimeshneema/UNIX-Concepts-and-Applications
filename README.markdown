@@ -1,4 +1,4 @@
-## README
+##  README
 
 The project aims to compile solutions for **Flex Your Brain** exercises appearing at the end of each chapter in the book [UNIX Concepts and Applications - Fourth Edition][book], authored by **Sumitabha Das**.
 
@@ -26,9 +26,9 @@ The following convensions are used:
 
 -   File and path names are _italicised_
 
-[Book]:   http://mhhe.com/das/uca/
-[macOS]:  https://www.apple.com/macos/
-[Mac]:    https://www.apple.com/mac/
-[Ubuntu]: https://ubuntu.com/download/desktop/
-[Debian]: https://www.debian.org/
-[Bash]:   https://www.gnu.org/software/bash/
+[Book]:     http://mhhe.com/das/uca/
+[macOS]:    https://www.apple.com/macos/
+[Mac]:      https://www.apple.com/mac/
+[Ubuntu]:   https://ubuntu.com/download/desktop/
+[Debian]:   https://www.debian.org/
+[Bash]:     https://www.gnu.org/software/bash/

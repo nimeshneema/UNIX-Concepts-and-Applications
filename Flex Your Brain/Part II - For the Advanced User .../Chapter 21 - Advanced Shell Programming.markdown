@@ -1,33 +1,33 @@
-## Chapter 21 - Advanced Shell Programming
+##  Chapter 21 - Advanced Shell Programming
 
-01.	
-
-##
-
-02.	
+01. 
 
 ##
 
-03.	
+02. 
 
 ##
 
-04.	
+03. 
 
 ##
 
-05.	
+04. 
 
 ##
 
-06.	
+05. 
 
 ##
 
-07.	
+06. 
 
 ##
 
-08.	
+07. 
+
+##
+
+08. 
 
 ##
