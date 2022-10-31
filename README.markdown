@@ -8,11 +8,11 @@ The questions in the exercises are slightly involved, and the solutions for the 
 
 All the exercise questions are solved and tested on computers running:
 
--   [macOS Monterey][macOS] version 12.4 (21F79), a POSIX-compliant UNIX operating system developed to run on Apple Mac computers.
+-   [macOS Ventura][macOS] version 13.0 (22A380), a POSIX-compliant UNIX operating system developed to run on Apple Mac computers.
 
--   [Ubuntu Desktop Linux][Ubuntu] version 22.04 LTS (Jammy Jellyfish), a Debian-based GNU/Linux distribution.
+-   [Ubuntu Desktop Linux][Ubuntu] version 22.04.1 LTS (Jammy Jellyfish), a Debian-based GNU/Linux distribution.
 
-Both the computers are running version 5.1.16(1)-release of [GNU Bash][Bash] as the choice of shell.
+Both the computers are running version 5.2 of [GNU Bash][Bash] as the choice of shell.
 
 Every effort has been made to ensure the correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advisable to refer to the available documentation for the commands (using `man` pages, `info` pages or online help).
 
