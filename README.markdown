@@ -26,6 +26,12 @@ The following convensions are used:
 
 -   File and path names are _italicised_
 
+### Notes
+
+-   Starting with macOS Big Sur 11.0 which was released in November 2020, macOS is compiled for both Intel chips (x86_64 architecture) and Apple Silicon chips. The current version of Bash is natively compiled for both Intel x86_64 architecture as well as Apple Silicon ARM architecture. All the exercises are tested on both the builds of Bash on Intel and Apple Silicon Macs.
+
+-   Linux is not a replacement for UNIX. The examples are tested on Ubuntu Linux, a prominent Linux distribution as it's a widely used operating system with more students having access.
+
 [Book]:     http://mhhe.com/das/uca/
 [macOS]:    https://www.apple.com/macos/
 [Mac]:      https://www.apple.com/mac/
