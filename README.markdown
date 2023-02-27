@@ -14,23 +14,55 @@ All the exercise questions are solved and tested on computers running:
 
 Both the computers are running version 5.2 of [GNU Bash][Bash] as the choice of shell.
 
-All efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advisable to refer to the available documentation for the commands (using `man` pages, `info` pages or online help).
+All efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advised to refer to available documentation for the commands (using `man` pages, `info` pages or online help).
+
+---
 
 ### Conventions
 
-The following convensions are used:
+1. Command or Program Name, Key Term:
 
--   Key terms are shown in **Bold**
+    **bold**
 
--   Command line, expressions and symbols are wrapped in `backticks`
+2. Command-line and Option Thereof, User Input, Expression, Symbol:
 
--   File and path names are _italicised_
+    `back-tick quotes`
+
+3. Command Output Message, Program Source Code:
+
+    ```
+    quotes (three back-ticks)
+    ```
+
+4. File/Folder Name or Path:
+
+    _"italicized inside quotes"_
+
+5. String:
+
+    "Double Quotes"
+
+6. Domain Name, Email Address, URL:
+
+    _Italics_
+
+7. Emphasized Text in Bold:
+
+    **bold**
+
+8. Emphasized Text in Italics:
+
+    _italics_
+
+---
 
 ### Notes
 
--   Starting with macOS Big Sur 11.0 which was released in November 2020, macOS is compiled for both Intel chips (x86_64 architecture) and Apple Silicon chips. The current version of Bash is natively compiled for both Intel x86_64 architecture as well as Apple Silicon ARM architecture. All the exercises are tested on both the builds of Bash on Intel and Apple Silicon Macs.
+-   Starting with macOS Big Sur 11.0 which was released in November 2020, macOS is compiled for both Intel chips (x86_64 architecture) and Apple Silicon chips (ARM architecture). The current version of Bash is natively compiled for both Intel x86_64 architecture as well as Apple Silicon ARM architecture. All the exercises are tested on both the builds of Bash on Intel and Apple Silicon Macs.
 
--   Linux is not a replacement for UNIX. The examples are tested on Ubuntu Linux, a prominent Linux distribution as it's a widely used operating system with more students having access.
+-   Linux is not a replacement for UNIX. Ubuntu Linux has been used as the choice of Linux distribution due to its popularity and wide adoption.
+
+---
 
 [Book]:     http://mhhe.com/das/uca/
 [macOS]:    https://www.apple.com/macos/
