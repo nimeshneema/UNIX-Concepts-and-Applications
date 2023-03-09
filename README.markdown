@@ -40,7 +40,7 @@ All efforts have been made to ensure correctness and completeness of solutions w
 
     "double quote"
 
-6. Domain Name, Email Address, URL:
+6. Domain name, email address, URL:
 
     _italicized_
 
