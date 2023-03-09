@@ -46,11 +46,11 @@ All efforts have been made to ensure correctness and completeness of solutions w
 
 ---
 
-### Notes
+## Notes
 
--   Starting with macOS Big Sur 11.0 which was released in November 2020, macOS is compiled for both Intel chips (x86_64 architecture) and Apple Silicon chips (ARM architecture). The current version of Bash is natively compiled for both Intel x86_64 architecture as well as Apple Silicon ARM architecture. All the exercises are tested on both the builds of Bash on Intel and Apple Silicon Macs.
+-   macOS Big Sur 11.0 and later versions are available for Intel and Apple Silicon Mac. Recent versions of Bash are compiled natively for both the architecture. All command-lines are tested on both Macs.
 
--   Linux is not a replacement for UNIX. Ubuntu Linux has been used as the choice of Linux distribution due to its popularity and wide adoption.
+-   Linux is not a replacement for UNIX. Ubuntu Linux is used as the choice of distribution due to its ease of use and mass adoption.
 
 ---
 
