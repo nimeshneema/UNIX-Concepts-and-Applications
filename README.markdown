@@ -1,5 +1,3 @@
-##  README
-
 The project aims to compile solutions for **Flex Your Brain** exercises appearing at the end of each chapter in the book [UNIX Concepts and Applications - Fourth Edition][book], authored by **Sumitabha Das**.
 
 This book is a recommended reading in many Computer Science, Computer Applications and Information Technology courses across universities in India. It is also quite popular among students learning UNIX and GNU/Linux.
@@ -10,9 +8,9 @@ All the exercise questions are solved and tested on computers running:
 
 -   [macOS Ventura][macOS] version 13.0, a POSIX compliant UNIX operating system developed to run on Apple Mac computers.
 
--   [Ubuntu Desktop Linux][Ubuntu] version Ubuntu 22.10 Kinetic Kudu, a Debian based GNU/Linux distribution.
+-   [Ubuntu Desktop Linux][ubuntu] version Ubuntu 22.10 Kinetic Kudu, a Debian based GNU/Linux distribution.
 
-Both the computers are running version 5.2 of [GNU Bash][Bash] as the choice of shell.
+Both the computers are running version 5.2 of [GNU Bash][bash] as the choice of shell.
 
 All efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advised to refer to available documentation for the commands (using `man` pages, `info` pages or online help).
 
@@ -64,9 +62,7 @@ All efforts have been made to ensure correctness and completeness of solutions w
 
 ---
 
-[Book]:     http://mhhe.com/das/uca/
+[book]:     http://mhhe.com/das/uca/
 [macOS]:    https://www.apple.com/macos/
-[Mac]:      https://www.apple.com/mac/
-[Ubuntu]:   https://ubuntu.com/download/desktop/
-[Debian]:   https://www.debian.org/
-[Bash]:     https://www.gnu.org/software/bash/
+[ubuntu]:   https://ubuntu.com/download/desktop/
+[bash]:     https://www.gnu.org/software/bash/
