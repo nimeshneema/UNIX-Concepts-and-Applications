@@ -14,8 +14,6 @@ Both the computers are running version 5.2 of [GNU Bash][bash] as the choice of 
 
 All efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advised to refer to available documentation for the commands (using `man` pages, `info` pages or online help).
 
----
-
 ## Conventions Used
 
 1. Command, program name, key term:
@@ -44,15 +42,11 @@ All efforts have been made to ensure correctness and completeness of solutions w
 
     _italicized_
 
----
-
 ## Notes
 
 -   macOS Big Sur 11.0 and later versions are available for Intel and Apple Silicon Mac. Recent versions of Bash are compiled natively for both the architecture. All command-lines are tested on both Macs.
 
 -   Linux is not a replacement for UNIX. Ubuntu Linux is used as the choice of distribution due to its ease of use and mass adoption.
-
----
 
 [book]:     http://mhhe.com/das/uca/
 [macOS]:    https://www.apple.com/macos/
