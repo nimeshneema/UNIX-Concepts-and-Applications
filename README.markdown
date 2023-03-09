@@ -32,7 +32,7 @@ All efforts have been made to ensure correctness and completeness of solutions w
     code block
     ```
 
-4. File/Folder Name or Path:
+4. File/folder name, path:
 
     _"italicized inside double quote"_
 
