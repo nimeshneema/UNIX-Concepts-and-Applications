@@ -16,41 +16,33 @@ All efforts have been made to ensure correctness and completeness of solutions w
 
 ---
 
-### Conventions
+## Conventions Used
 
-1. Command or Program Name, Key Term:
+1. Command, program name, key term:
 
     **bold**
 
-2. Command-line and Option Thereof, User Input, Expression, Symbol:
+2. Command-line and option(s) thereof, user input, expression, symbol:
 
-    `back-tick quotes`
+    `code span`
 
-3. Command Output Message, Program Source Code:
+3. Command output, script, source code:
 
     ```
-    quotes (three back-ticks)
+    code block
     ```
 
 4. File/Folder Name or Path:
 
-    _"italicized inside quotes"_
+    _"italicized inside double quote"_
 
 5. String:
 
-    "Double Quotes"
+    "double quote"
 
 6. Domain Name, Email Address, URL:
 
-    _Italics_
-
-7. Emphasized Text in Bold:
-
-    **bold**
-
-8. Emphasized Text in Italics:
-
-    _italics_
+    _italicized_
 
 ---
 
