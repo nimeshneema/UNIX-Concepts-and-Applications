@@ -18,11 +18,11 @@
 
     -   Sending e-mail messages, backing up files etc.
 
-##
+---
 
 02. A program can't read a file by itself. Instead, it places a request to access the file to the operating system. The operating system in turn reads the file and makes the file data available to the program.
 
-##
+---
 
 03. The program is called user's login shell. Some of the popular shell programs available on a UNIX system are:
 
@@ -34,13 +34,13 @@
 
     -   **bash**: Bourne Again Shell
 
-##
+---
 
 04. The output produced by executing `ls` command is saved in a file named _list_ in the current directory.
 
     The shell sees the redirection operator (`>`) when interpreting the command line. It opens a named file following the redirection operator (here, _list_). Next, the command `ls` is run, which reads the directory contents. The shell has manipulated things such that the output of the `ls` command doesn't go to the terminal, but is written to the file opened by the shell.
 
-##
+---
 
 05. The shell programming syntax requires that there be no spaces on either side of the `=` operator.
 
@@ -48,7 +48,7 @@
 
     A similar error occurs in case `x= 10` is entered, where `10` is treated as a command. The shell tries to locate and execute it but fails to do so. The `x=` part is seen as a variable assignment valid only for the scope of `10` command.
 
-##
+---
 
 06. Two empty files named _README_ and _readme_ are created in the current directory.
 
@@ -56,7 +56,7 @@
 
     When running the commands on a case-insensitive file-system (which is the case with default installation of macOS), only one file named _README_ is created.
 
-##
+---
 
 07. (i). `who`: Lists all the users currently logged in. It produces a multi-columnar output showing a user's login name, terminal name, date & time of the last login, and hostname (only in Linux) if not local.
 
@@ -72,21 +72,21 @@
 
     `echo $$`: Prints the integer **PID** (Process ID) associated with the running shell process.
 
-##
+---
 
 08. `Control + d` key sequence, `logout` and `exit`. `exit` command is guaranteed to always work.
 
-##
+---
 
 09. A user's user-id is used to uniquely identify her in the operating system.
 
     It is associating with any file or process created by the user.
 
-##
+---
 
 10. Directories, devices, terminals and printers are all represented as files in the UNIX file-system.
 
-##
+---
 
 11. Some of the duties of a systems administrator are:
 
@@ -100,8 +100,8 @@
 
     -   Updating system date.
 
-##
+---
 
 12. AT&T and University of California, Berkeley (UCB).
 
-##
+---

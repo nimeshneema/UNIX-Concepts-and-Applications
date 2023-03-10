@@ -6,7 +6,7 @@
 
     Regular expressions use its own set of special characters called metacharacters, which overshadows the wildcard characters used by the shell. Quoting is used to ensure that the shell doesn't attempt to interpret the regular expression characters.
 
-##
+---
 
 02. The asterisk character is used thrice in the command line. Here's the meaning of each occurrence:
 
@@ -16,7 +16,7 @@
 
     Thus, the command line searches for the lines matching the pattern starting with _botswana_ and ending with _birds_, in all the files in the current directory, which contain the string `.htm` in their filename.
 
-##
+---
 
 03. Use the following command line:
 
@@ -38,7 +38,7 @@
 
     While the `cut` command has been discussed previously in the text, `tr` command is not. Refer to the `tr` command man page to learn more about it and the available options.
 
-##
+---
 
 04. The command line displays the same number of lines as present in the file named _foo_. The mentioned Basic Regular Expression is trying to match occurrences of zero or more characters, which is technically every line in the file.
 
@@ -54,17 +54,17 @@
 
     Since the filename _foo_ occurres as the last argument, every one of its line would be displayed too in a similar manner, but after the contents of all the hidden files listed before it are displayed.
 
-##
+---
 
 05. The command line would print the string `foo` on standard output if the file _foo_ contains a tab character.
 
-##
+---
 
 06. Use the following command line:
 
     ```grep "`date +"%d/%m"`" emp.lst | cut -d "|" -f2```
 
-##
+---
 
 07. (i) The former expression matches a numric string containing the digits 0 to 9, with the string of length zero or more.
 
@@ -76,7 +76,7 @@
 
     The latter matches the presence of the string `^^` at the beginning of a line.
 
-##
+---
 
 08. The first command line matches all the lines in the file foo, that has, as its first character, anything other than small case alphabet.
 
@@ -84,7 +84,7 @@
 
     Thus, the two commands are equivalent.
 
-##
+---
 
 09. (i) `jeff[er][er](ie|y)s?`
 
@@ -96,60 +96,60 @@
 
     (v) `[Mm](c|a)gh?ee`
 
-##
+---
 
 10. 
 
-##
+---
 
 11. 
 
-##
+---
 
 12. 
 
-##
+---
 
 13. 
 
-##
+---
 
 14. 
 
-##
+---
 
 15. 
 
-##
+---
 
 16. 
 
-##
+---
 
 17. 
 
-##
+---
 
 18. 
 
-##
+---
 
 19. 
 
-##
+---
 
 20. 
 
-##
+---
 
 21. 
 
-##
+---
 
 22. 
 
-##
+---
 
 23. 
 
-##
+---

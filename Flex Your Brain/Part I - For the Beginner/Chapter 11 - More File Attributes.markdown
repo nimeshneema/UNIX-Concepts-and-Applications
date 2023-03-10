@@ -4,7 +4,7 @@
 
     In a UNIX system, each available file system directory structure is headed by a root directory. Among all the available file systems, one of them is designated as the root file system. At the time of booting, all the secondary file systems attach themselves to the root file system, thereby creating an illusion of a single file system.
 
-##
+---
 
 02. The three time stamps maintained in the inode for every file are:
 
@@ -20,7 +20,7 @@
 
     -   `ls -lu foo`: Display the time of last access.
 
-##
+---
 
 03. When a file is linked (hard link), the link count of the file in incremented by one in the inode.
 
@@ -28,7 +28,7 @@
 
     In the case of soft link, no changes are made in the inode.
 
-##
+---
 
 04. (i). A file named _bar_ in created anew.
 
@@ -36,7 +36,7 @@
 
     (iii). A file named _foo_ is created inside the directory _bar_.
 
-##
+---
 
 05. Two application areas of hard links are:
 
@@ -50,29 +50,29 @@
 
     (ii). It is not possible to create a hard link for a directory.
 
-##
+---
 
 06. Fast symbolic link is a feature available in Linux, where the pathname is stored in the inode itself.
 
     When the original file pointed to by a symbolic link is deleted, the link itself becomes useless and is called a dangling symbolic link.
 
-##
+---
 
 07. By creating a symbolic link to the new location with the old path by executing the following:
 
     `ln -s $HOME/internet/progs $HOME/progs`
 
-##
+---
 
 08. The command can fail if the execute permission is not available for the directory _bar_.
 
-##
+---
 
 09. Whether the file can be deleted or not depends upon the write permission available for the containing directory. The file can be deleted with write permission set on directory otherwise not.
 
     The presence or absence of execute permission of either file or directory has no role to play here.
 
-##
+---
 
 10. (i). Any newly created directory will have open permissions for all users. Anyone can read it, create/delete files in it, or change to it, thereby compromising on privacy. Any newly created files will be writable by anyone.
 
@@ -82,7 +82,7 @@
 
     In simpler terms, anyone in the system can read any file without restriction.
 
-##
+---
 
 11. (i). The former command line displays a list of files and directories in the current directory in a long listing format, sorted in an ASCII collating sequence by name.
 
@@ -92,7 +92,7 @@
 
     The latter command line sorts the listing by the time of last access followed by the time of modification.
 
-##
+---
 
 12. The desired `find` command line are:
 
@@ -106,7 +106,7 @@
 
     None of the above commands would fail.
 
-##
+---
 
 13. The desired `find` command line are:
 
@@ -118,4 +118,4 @@
 
     (iv). `find ~ -type d -exec chmod 755 {} \; ; find ~ -type f -exec chmod 644 {} \;`
 
-##
+---

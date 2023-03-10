@@ -8,7 +8,7 @@
 
     However, it is worth noting that executing the above command line as a non root user may cause the directories without read permission to be skipped and the error message displayed on the console.
 
-##
+---
 
 02. The significance of the first four fields in `ls -l` output is as described below:
 
@@ -24,23 +24,23 @@
 
     Only the system administrator can change the group ownership of a file to a group to which the owner doesn't belong.
 
-##
+---
 
 03. (i). This command shows the attributes of the current directory in a long listing format.
 
     (ii). This command lists the contents of the parent directory in a long listing format.
 
-##
+---
 
 04. (i). If _bar_ is an ordinary file, both the commands display _bar_ as the output.
 
     (ii). If _bar_ is a directory that contains only a single file or directory also named _bar_, than both the commands display _bar_ as the output.
 
-##
+---
 
 05. No. The group owner of a file can be changed to a group to which the file owner is not a member of by the system administrator.
 
-##
+---
 
 06. (i). By executing the command line:
 
@@ -52,17 +52,17 @@
 
     In case of absolute assignment, we need to know the default permissions for the file _foo_ to preserve the group permissions.
 
-##
+---
 
 07. The read permission may not be available for the source file. To copy the file, the appropriate read permission is required which can be set either by the file owner or the superuser.
 
-##
+---
 
 08. (i). No one, including the owner of the file, can do anything with the file. The file is technically inaccessible.
 
     (ii). Anyone can read, write or execute the file. The file is publicly accessible.
 
-##
+---
 
 09. _kumar_ is the group owner of the file _foo_.
 
@@ -74,7 +74,7 @@
 
     (iv). _kumar_ cannot change the ownership of the file _foo_ as she is not the owner of the file.
 
-##
+---
 
 10. Assume that the file is named _foo_.
 
@@ -98,14 +98,14 @@
 
     (iv). `chmod 000 foo`
 
-##
+---
 
 11. No, it could not be done. No file can be created or deleted as the write permission has been revoked for everyone, owner included.
 
     No, the latter command revokes write permission for everyone on the file/directory named _foo_.
 
-##
+---
 
 12. On an AT&T system, the owner can change the owner and the group of a file. On a BSD system, the owner of a file can be changed only by the system administrator and the user can change the group of a file only to a group to which she already belongs.
 
-##
+---
