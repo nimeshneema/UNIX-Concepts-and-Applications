@@ -18,7 +18,7 @@ All exercise solutions have been developed and thoroughly tested on computers ru
 
 Both systems utilize [GNU Bash][bash] version 5.2 as the chosen shell.
 
-All efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advised to refer to available documentation for the commands (using **man**/**info** pages or online help).
+Every effort has been made to ensure the correctness and completeness of these solutions, taking into account differences between the two platforms. However, it is always recommended to consult official documentation for commands (e.g., using **man** or **info** pages, or online help).
 
 ## Conventions Used
 
