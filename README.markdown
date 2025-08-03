@@ -12,9 +12,9 @@ The **"Flex Your Brain"** exercises are often challenging, and official solution
 
 All exercise solutions have been developed and thoroughly tested on computers running:
 
--   [macOS Ventura][macOS] version 13.0, a POSIX compliant UNIX operating system developed to run on Apple Mac computers.
+-   [macOS Sequoia (version 15)][macOS], a POSIX-compliant UNIX operating system developed by Apple.
 
--   [Ubuntu Desktop Linux][ubuntu] version 22.10 Kinetic Kudu, a Debian based GNU/Linux distribution.
+-   [Ubuntu Desktop Linux 25.04 (Plucky Puffin)][ubuntu], a Debian-based GNU/Linux distribution.
 
 Both the computers are running version 5.2 of [GNU Bash][bash] as the choice of shell.
 
