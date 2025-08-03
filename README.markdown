@@ -22,31 +22,21 @@ Every effort has been made to ensure the correctness and completeness of these s
 
 ## Conventions Used
 
-1. Command, program name, key term:
+1.  **Command, program name, key term:** **bold**
 
-    **bold**
+2.  **Command-line, option(s), user input, expression, symbol:** `code span`
 
-2. Command-line and option(s) thereof, user input, expression, symbol:
-
-    `code span`
-
-3. Command output, script, source code:
+3.  **Command output, script, source code:**
 
     ```
     code block
     ```
 
-4. File/folder name, path:
+4.  **File/folder name, path:** _"italicized inside double quote"_
 
-    _"italicized inside double quote"_
+5.  **String:** "double quotes"
 
-5. String:
-
-    "double quote"
-
-6. Domain name, email address, URL:
-
-    _italicized_
+6.  **Domain name, email address, URL:** _italicized_
 
 ## Notes
 
