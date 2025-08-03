@@ -1,10 +1,10 @@
-# UNIX : Concepts and Applications,Fourth Edition - Sumitabha Das
+# UNIX: Concepts and Applications, Fourth Edition by Sumitabha Das
 
 <p align="center">
-    <a href="http://mhhe.com/das/uca/"><img src="https://highered.mheducation.com/sites/dl/free/0070635463/cover/coverL.gif" alt="UNIX : Concepts and Applications,Fourth Edition - Sumitabha Das - Book Cover"></a>
+    <a href="http://mhhe.com/das/uca/"><img src="https://highered.mheducation.com/sites/dl/free/0070635463/cover/coverL.gif" alt="UNIX: Concepts and Applications, Fourth Edition by Sumitabha Das - Book Cover"></a>
 </p>
 
-This project aims to compile solutions for **Flex Your Brain** exercises appearing at the end of each chapter in the book [UNIX : Concepts and Applications,Fourth Edition][book], authored by **Sumitabha Das**.
+This project aims to compile solutions for **Flex Your Brain** exercises appearing at the end of each chapter in the book [UNIX: Concepts and Applications, Fourth Edition][book], authored by **Sumitabha Das**.
 
 The book is a recommended reading in many Computer Science, Computer Applications and Information Technology courses across universities in India. It is quite popular among students learning UNIX and GNU/Linux.
 
