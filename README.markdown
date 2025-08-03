@@ -10,7 +10,7 @@ The book is a widely recommended text in Computer Science, Computer Applications
 
 The **"Flex Your Brain"** exercises are often challenging, and official solutions are not publicly available. This project aims to serve as a valuable study aid for students.
 
-All the exercise questions are solved and tested on computers running:
+All exercise solutions have been developed and thoroughly tested on computers running:
 
 -   [macOS Ventura][macOS] version 13.0, a POSIX compliant UNIX operating system developed to run on Apple Mac computers.
 
