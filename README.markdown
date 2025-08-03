@@ -50,9 +50,11 @@ Every effort has been made to ensure the correctness and completeness of these s
 
 ## Notes
 
--   macOS Big Sur 11.0 and later versions are available for Intel and Apple Silicon Mac. Recent versions of Bash are compiled natively for both the architecture. All command-lines are tested on both Macs.
+-   macOS Big Sur 11.0 and later versions are compatible with both Intel and Apple Silicon Macs. Recent Bash versions are compiled natively for both architectures, and all command lines in the solutions have been tested to work on both.
 
--   Linux is not a replacement for UNIX. Ubuntu Linux is used as the choice of distribution due to its ease of use and mass adoption.
+-   Ubuntu Desktop Linux is available for both Intel x86_64 and ARM64 architectures, and all command lines in the solutions have been tested to work on both.
+
+-   Linux is not a replacement for UNIX. Ubuntu Linux was chosen as the distribution for this project due to its widespread adoption and ease of use.
 
 [book]:     http://mhhe.com/das/uca/
 [macOS]:    https://www.apple.com/macos/
