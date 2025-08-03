@@ -6,7 +6,7 @@
 
 This project compiles solutions for the **"Flex Your Brain"** exercises found at the end of each chapter in the book [UNIX: Concepts and Applications, Fourth Edition][book], authored by **Sumitabha Das**.
 
-The book is a recommended reading in many Computer Science, Computer Applications and Information Technology courses across universities in India. It is quite popular among students learning UNIX and GNU/Linux.
+The book is a widely recommended text in Computer Science, Computer Applications, and Information Technology courses across Indian universities. It is particularly popular among students learning UNIX or GNU/Linux.
 
 The questions in the exercise are slightly involved, and the solutions for the same are not made available. The project aims at creating a study aid for the students.
 
