@@ -16,7 +16,7 @@ All exercise solutions have been developed and thoroughly tested on computers ru
 
 -   [Ubuntu Desktop Linux 25.04 (Plucky Puffin)][ubuntu], a Debian-based GNU/Linux distribution.
 
-Both the computers are running version 5.2 of [GNU Bash][bash] as the choice of shell.
+Both systems utilize [GNU Bash][bash] version 5.2 as the chosen shell.
 
 All efforts have been made to ensure correctness and completeness of solutions while keeping the differences between the two platforms in mind. However, it is advised to refer to available documentation for the commands (using **man**/**info** pages or online help).
 
