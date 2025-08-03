@@ -8,7 +8,7 @@ This project compiles solutions for the **"Flex Your Brain"** exercises found at
 
 The book is a widely recommended text in Computer Science, Computer Applications, and Information Technology courses across Indian universities. It is particularly popular among students learning UNIX or GNU/Linux.
 
-The "Flex Your Brain" exercises are often challenging, and official solutions are not publicly available. This project aims to serve as a valuable study aid for students.
+The **"Flex Your Brain"** exercises are often challenging, and official solutions are not publicly available. This project aims to serve as a valuable study aid for students.
 
 All the exercise questions are solved and tested on computers running:
 
