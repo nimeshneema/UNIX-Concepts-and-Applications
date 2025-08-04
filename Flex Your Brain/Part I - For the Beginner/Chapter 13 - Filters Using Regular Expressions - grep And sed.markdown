@@ -1,4 +1,4 @@
-##  Chapter 13 - Filters Using Regular Expressions - grep And sed
+# Chapter 13 - Filters Using Regular Expressions - grep And sed
 
 01. Both wildcards and regular expressions are used to define a search pattern. However, wildcards are a feature of the shell, while regular expressions are not.
 

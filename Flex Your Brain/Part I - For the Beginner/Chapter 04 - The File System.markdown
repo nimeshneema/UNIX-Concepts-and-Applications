@@ -1,4 +1,4 @@
-##  Chapter 04 - The File System
+# Chapter 04 - The File System
 
 01. Two types of ordinary files are:
 

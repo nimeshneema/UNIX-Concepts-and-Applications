@@ -1,4 +1,4 @@
-##  Chapter 07 - The vi Editor
+# Chapter 07 - The vi Editor
 
 01. The three modes of **vi** editor are:
 

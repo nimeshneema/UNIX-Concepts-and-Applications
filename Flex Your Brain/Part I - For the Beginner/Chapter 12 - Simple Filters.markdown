@@ -1,4 +1,4 @@
-##  Chapter 12 - Simple Filters
+# Chapter 12 - Simple Filters
 
 01. Assume that the file is named _foo_. Execute the following command line to print it in reverse:
 

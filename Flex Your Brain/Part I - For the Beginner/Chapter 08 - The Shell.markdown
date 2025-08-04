@@ -1,4 +1,4 @@
-##  Chapter 08 - The Shell
+# Chapter 08 - The Shell
 
 01. The shell performs all the actions represented by the metacharacters before executing the command line.
 

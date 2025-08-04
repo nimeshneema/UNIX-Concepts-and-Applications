@@ -1,4 +1,4 @@
-##  Chapter 01 - Getting Started
+# Chapter 01 - Getting Started
 
 01. Computer hardware is a bare machine with no intelligence of its own. An operating system like UNIX is a special software which provides it with basic intelligence. This intelligence is used to provide services for both the programs and users.
 

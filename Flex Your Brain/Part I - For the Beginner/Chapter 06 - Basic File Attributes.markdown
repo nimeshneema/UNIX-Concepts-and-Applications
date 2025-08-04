@@ -1,4 +1,4 @@
-##  Chapter 06 - Basic File Attributes
+# Chapter 06 - Basic File Attributes
 
 01. Executing the command line:
 

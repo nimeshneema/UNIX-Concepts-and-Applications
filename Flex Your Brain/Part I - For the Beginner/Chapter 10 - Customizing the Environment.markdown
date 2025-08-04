@@ -1,4 +1,4 @@
-##  Chapter 10 - Customizing the Environment
+# Chapter 10 - Customizing the Environment
 
 01. An interactive shell presents a prompt and waits for input from the user. A non-interactive shell on the other hand only executes shell scripts. There are certain shell features which are exclusive to the interactive shell.
 
