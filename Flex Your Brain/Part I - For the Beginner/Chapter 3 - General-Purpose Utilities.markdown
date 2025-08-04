@@ -1,4 +1,4 @@
-# Chapter 03 - General-Purpose Utilities
+# Chapter 3 - General-Purpose Utilities
 
 1.  By running the following command line:
 

@@ -1,4 +1,4 @@
-# Chapter 02 - The UNIX Architecture and Command Usage
+# Chapter 2 - The UNIX Architecture and Command Usage
 
 1.  The UNIX system architecture divides the system workload between two agencies:
 

@@ -1,4 +1,4 @@
-# Chapter 09 - The Process
+# Chapter 9 - The Process
 
 1.  Both of them are special environment variables available in the shell.
 

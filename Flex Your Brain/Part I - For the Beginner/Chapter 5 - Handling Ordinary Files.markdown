@@ -1,4 +1,4 @@
-# Chapter 05 - Handling Ordinary Files
+# Chapter 5 - Handling Ordinary Files
 
 1.  A directory is technically a file containing the name and the inode number of files and sub-directories that it contains. The entries are updated by the kernel on the user's behalf when files and sub-directories are added, renamed or deleted.
 
