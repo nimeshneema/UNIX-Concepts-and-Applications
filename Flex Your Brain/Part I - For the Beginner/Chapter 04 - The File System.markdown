@@ -46,4 +46,4 @@
 
     (iii). This command won't work. It attempts to remove the parent directory i.e. _/home_ while being placed in the child directory _/home/kumar_, which the shell won't permit.
 
-    0(iv). This command will attempt to list the contents of the parent directory i.e. _/home_. It will succeed only if the user has read permission available for _/home_ directory.
+    (iv). This command will attempt to list the contents of the parent directory i.e. _/home_. It will succeed only if the user has read permission available for _/home_ directory.
