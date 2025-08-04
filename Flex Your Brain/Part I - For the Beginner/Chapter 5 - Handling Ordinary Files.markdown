@@ -10,31 +10,29 @@
 
     Use of `Control + d` is required when entering the text from standard input to let the shell know that the text entry is over.
 
-3.  (i). Yes, the command would work. The file _foo_ would be copied into the directory named _bar_.
+3.  1.  Yes, the command would work. The file _foo_ would be copied into the directory named _bar_.
 
-    (ii). No, the command won't work. An error message is displayed stating that _foo_ is a directory and is not copied.
+    2.  No, the command won't work. An error message is displayed stating that _foo_ is a directory and is not copied.
 
 4.  The first command will delete the directory _bar_ along with all the files and sub-directories recursively, disregarding the write protection status of any files or sub-directory and non-emptiness of any sub-directory.
 
     The second command will work only when the directory _bar_ is empty and its parent directory (current directory here) is not write-protected.
 
-5.  (i). The file or directory named _include_ present in the logged-in user's home directory is moved to the current working directory.
+5.  1.  The file or directory named _include_ present in the logged-in user's home directory is moved to the current working directory.
 
-    (ii). The command recursively copies the contents of _bar1_ to _bar2_. If _bar2_ exists and is a directory, recursively copy contents of _bar1_ into _bar2_, thus making a copy of _bar1_ a sub-directory of _bar2_.
+    2.  The command recursively copies the contents of _bar1_ to _bar2_. If _bar2_ exists and is a directory, recursively copy contents of _bar1_ into _bar2_, thus making a copy of _bar1_ a sub-directory of _bar2_.
 
-    (iii). The command moves all the files and directories in the current directory into a directory named _bin_ in the parent directory.
+    3.  The command moves all the files and directories in the current directory into a directory named _bin_ in the parent directory.
 
 6.  The three possible reasons can be:
 
-    (i). Read permission is not available for the file _hosts_.
+    1.  Read permission is not available for the file _hosts_.
 
-    (ii). Write permission is not available for the file _backup/hosts.bak_.
+    2.  Write permission is not available for the file _backup/hosts.bak_.
 
-    (iii). Execute permission is not available for the directory _backup_.
+    3.  Execute permission is not available for the directory _backup_.
 
-7.  By executing the following command line:
-
-    `cd ; mv a temp ; mv temp/a . ; rmdir temp`
+7.  By executing the command-line: `cd ; mv a temp ; mv temp/a . ; rmdir temp`
 
     Individual commands in the above command line are described below:
 
@@ -56,17 +54,9 @@
 
     Postscript files are properly formatted for input to a Postscript printer.
 
-10. (i). We can count the number of filenames by executing the command line:
+10. 1.  We can count the number of filenames by executing the command-line, `wc -l < foo`, which outputs the total number of lines in the file _foo_.
 
-    `wc -l < foo`
-
-    which outputs the total number of lines in the file _foo_.
-
-    (ii). By displaying the octal dump of the files contents by executing:
-
-    `od -bc foo`
-
-    and checking for the presence of space character in the output.
+    2.  By displaying the octal dump of the files contents by executing the command-line, `od -bc foo` and checking for the presence of space character in the output.
 
 11. DOS and UNIX text files differ by using different line ending characters. DOS uses a combination of **carriage return** and **line feed** characters (**\r\n**), whereas, UNIX uses **line feed** (**\n**) as the line ending character.
 
@@ -74,27 +64,15 @@
 
     `unix2dos` command reverses the process by appending the carriage return character before every occurrence of the line feed character.
 
-12. The desired list can be created by executing the command line:
+12. The desired list can be created by executing the command-line `comm -13 foo1 foo2` which will list the entries unique to the file _foo2_. The command will not work properly when the files are unsorted, or the files contains more than one name per line.
 
-    `comm -13 foo1 foo2`
+13. To add the two files to an archive and compress it, execute the command-line `tar -cvf archive.tar foo.html bar.html ; gzip archive.tar`.
 
-    which will list the entries unique to the file _foo2_. The command will not work properly when the files are unsorted, or the files contains more than one name per line.
+    The compressed archive will be saved as _archive.tar.gz_. To delete the original files execute the command-line `rm foo.html bar.html`.
 
-13. To add the two files to an archive and compress it, execute the command line:
+    To reverse the process, uncompress and unarchive the files by executing the command-line `tar -xvf archive.tar.gz`.
 
-    `tar -cvf archive.tar foo.html bar.html ; gzip archive.tar`
-
-    The compressed archive will be saved as _archive.tar.gz_. To delete the original files execute:
-
-    `rm foo.html bar.html`
-
-    To reverse the process, uncompress and unarchive the files by executing the command line:
-
-    `tar -xvf archive.tar.gz`
-
-    This can be followed by deleting the compressed archive by running the command:
-
-    `rm archive.tar.gz`
+    This can be followed by deleting the compressed archive by running the command-line `rm archive.tar.gz`.
 
     to completely reverse the process.
 
@@ -106,13 +84,9 @@
 
     -   zip command provides facility to add/append files to an existing compressed archive.
 
-    To compress and archive a directory hierarchy to send via email execute:
+    To compress and archive a directory hierarchy to send via email execute the command-line `zip -r archive.zip direcotry_path`.
 
-    `zip -r archive.zip direcotry_path`
-
-    The recipient can easily recreate the directory structure by executing:
-
-    `unzip archive.zip`
+    The recipient can easily recreate the directory structure by executing the command-line `unzip archive.zip`.
 
 15. A command behaves recursively when it can descent a directory hierarchy and execute over all the files, sub-directories and files thereof.
 

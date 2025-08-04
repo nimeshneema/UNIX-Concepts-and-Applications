@@ -14,9 +14,7 @@
 
     Thus, the command line searches for the lines matching the pattern starting with _botswana_ and ending with _birds_, in all the files in the current directory, which contain the string `.htm` in their filename.
 
-3.  Use the following command line:
-
-    `ls -l | grep "^-r-xr-xr-x"`
+3.  Use the following command-line: `ls -l | grep "^-r-xr-xr-x"`
 
     This will give a `ls` long listing of all the ordinary files in the current directory which are not writable by any user.
 
@@ -50,19 +48,17 @@
 
 5.  The command line would print the string `foo` on standard output if the file _foo_ contains a tab character.
 
-6.  Use the following command line:
+6.  Use the following command-line: `grep "`date +"%d/%m"`" emp.lst | cut -d "|" -f2`
 
-    ```grep "`date +"%d/%m"`" emp.lst | cut -d "|" -f2```
+7.  1.  The former expression matches a numric string containing the digits 0 to 9, with the string of length zero or more.
 
-7.  (i) The former expression matches a numric string containing the digits 0 to 9, with the string of length zero or more.
+        The latter matches a numeric string while ensuring that the string contains at least one digit.
 
-    The latter matches a numeric string while ensuring that the string contains at least one digit.
+        So, the former expression can match zero length numeric strings while the latter matches the string consisting of at least one digit.
 
-    So, the former expression can match zero length numeric strings while the latter matches the string consisting of at least one digit.
+    2.  The former matches a single character at the beginning of a line which could be anything but the caret (`^`) character.
 
-    (ii) The former matches a single character at the beginning of a line which could be anything but the caret (`^`) character.
-
-    The latter matches the presence of the string `^^` at the beginning of a line.
+        The latter matches the presence of the string `^^` at the beginning of a line.
 
 8.  The first command line matches all the lines in the file foo, that has, as its first character, anything other than small case alphabet.
 
@@ -70,12 +66,12 @@
 
     Thus, the two commands are equivalent.
 
-9.  (i) `jeff[er][er](ie|y)s?`
+9.  1.  `jeff[er][er](ie|y)s?`
 
-    (ii) `hitch(e|i)ng?`
+    2.  `hitch(e|i)ng?`
 
-    (iii) `[Hh](e|i)a?rd`
+    3.  `[Hh](e|i)a?rd`
 
-    (iv) `di(x|ck)s?(on)?`
+    4.  `di(x|ck)s?(on)?`
 
-    (v) `[Mm](c|a)gh?ee`
+    5.  `[Mm](c|a)gh?ee`

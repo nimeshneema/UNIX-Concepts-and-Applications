@@ -6,23 +6,23 @@
 
     -   `$!`: This shell variable stores the PID of the last background job.
 
-2.  (i). Both processes and files have certain attributes.
+2.  1.  Both processes and files have certain attributes.
 
-    (ii). Attributes for both are stored in a special structure maintained by the operating system (called process table for processes and inode for files).
+    2.  Attributes for both are stored in a special structure maintained by the operating system (called process table for processes and inode for files).
 
-    (iii). Both constitute a parent-child relationship.
+    3.  Both constitute a parent-child relationship.
 
 3.  The two options available to a parent after spawning a child process are:
 
-    (i). Wait for the child process to die before spawning another process.
+    1.  Wait for the child process to die before spawning another process.
 
-    (ii). Do not wait for the child process to die and continue to spawn other child processes.
+    2.  Do not wait for the child process to die and continue to spawn other child processes.
 
     The shell can be made to behave in both the aforementioned modes as discussed:
 
-    (i). The shell can be made to behave in waiting mode simply by waiting for the completion of the child process before presenting the prompt again.
+    1.  The shell can be made to behave in waiting mode simply by waiting for the completion of the child process before presenting the prompt again.
 
-    (ii). The shell can be made to behave in non-waiting mode by executing the command in the background by using `&` operator or the `nohup` command.
+    2.  The shell can be made to behave in non-waiting mode by executing the command in the background by using `&` operator or the `nohup` command.
 
 4.  Daemons are special system processes that keep running all the time. The standard input and standard output of these process are not connected to the terminal, i.e. they have no controlling terminal. They are called without a specific request from the user. Many of these daemons are sleeping and wake up only when they receive input.
 
@@ -38,25 +38,25 @@
 
 5.  A process is created via three distinct phases using three system calls, in order, as discussed below:
 
-    01. **fork**: The `fork` system call causes a copy of the invoking process to be made. The newly created child process has identical value for its process parameters except for the value of PID and PPID.
+    1.  **fork**: The `fork` system call causes a copy of the invoking process to be made. The newly created child process has identical value for its process parameters except for the value of PID and PPID.
 
-    02. **exec**: Using the `exec` system call, the forked child overwrites its image with the code and data of the new program.
+    2.  **exec**: Using the `exec` system call, the forked child overwrites its image with the code and data of the new program.
 
-    03. **wait**: The parent process executes the `wait` system call to wait for the child process to complete.
+    3.  **wait**: The parent process executes the `wait` system call to wait for the child process to complete.
 
     The fork-exec mechanism as discussed above is responsible for the multiplication of processes in the system.
 
 6.  The five important process attributes inherited by a child process from its parent process are:
 
-    (i). Real UID and GID.
+    1.  Real UID and GID.
 
-    (ii). Effective UID and GID.
+    2.  Effective UID and GID.
 
-    (iii). The current directory from where the process was run.
+    3.  The current directory from where the process was run.
 
-    (iv). The descriptors for all the open files.
+    4.  The descriptors for all the open files.
 
-    (v). Environment variables.
+    5.  Environment variables.
 
 7.  `cd` is the change directory command. Directory change can't be made in a separate process. If invoking `cd` command was to spawn a child process (as in case `cd` was made available as an external command), after the command has completed execution, control will return to the parent process, and the original directory would be restored. Hence the command is built into the shell.
 
@@ -74,11 +74,11 @@
 
     Using `kill` command with signal names ensures portability, as the signal numbers are not portable across various UNIX operating systems.
 
-12. (i). **False**. There are two signals namely **SIGKILL** and **SIGSTOP** that a process can't ignore or run user-defined code to handle.
+12. 1.  **False**. There are two signals namely **SIGKILL** and **SIGSTOP** that a process can't ignore or run user-defined code to handle.
 
-    (ii). **False**. The parent process may not always wait for the child process to complete its run and return. The parent may also die leaving the child process as an orphan. A child process may continue executing without returning.
+    2.  **False**. The parent process may not always wait for the child process to complete its run and return. The parent may also die leaving the child process as an orphan. A child process may continue executing without returning.
 
-    (iii). **True**. A single program (a single file of the disk) can be executed by same or different user to give rise to multiple processes. A single user can log in from multiple terminals to give rise to more than one shell process (using the same shell program).
+    3.  **True**. A single program (a single file of the disk) can be executed by same or different user to give rise to multiple processes. A single user can log in from multiple terminals to give rise to more than one shell process (using the same shell program).
 
 13. `jobs` is a shell built-in command in Bash and doesn't throw up this error message.
 
@@ -86,14 +86,14 @@
 
 14. A single disk program or external command when executed creates a process. A job is a collection of more than one process.
 
-    (i). A foreground job can be suspended by sending it the **SIGTSTP** signal generated by pressing `Control + z` on keyboard.
+    1.  A foreground job can be suspended by sending it the **SIGTSTP** signal generated by pressing `Control + z` on keyboard.
 
-    (ii). A suspended job can be moved to the background by executing the `bg` command.
+    2.  A suspended job can be moved to the background by executing the `bg` command.
 
-    (iii). A suspended job can be brought back to the foreground by executing the `fg` command.
+    3.  A suspended job can be brought back to the foreground by executing the `fg` command.
 
-15. (i). This is a valid **crontab** entry. It cause **cron** to execute the shell script _dial.sh_, every minute.
+15. 1.  This is a valid **crontab** entry. It cause **cron** to execute the shell script _dial.sh_, every minute.
 
-    (ii). This is an invalid **crontab** entry and will not work. In the first column, **00-60** is not a valid range (valid range for minute of hour is **00-59**). **30th** day of month never occurs in **February** (2nd month of year), as mentioned in the third and the fourth column.
+    2.  This is an invalid **crontab** entry and will not work. In the first column, **00-60** is not a valid range (valid range for minute of hour is **00-59**). **30th** day of month never occurs in **February** (2nd month of year), as mentioned in the third and the fourth column.
 
 16. `00,30 8-18 * * 1,3,5 connect.sh`

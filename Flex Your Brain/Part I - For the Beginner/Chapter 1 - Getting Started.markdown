@@ -46,19 +46,19 @@
 
     When running the commands on a case-insensitive file-system (which is the case with default installation of macOS), only one file named _README_ is created.
 
-7.  (i). `who`: Lists all the users currently logged in. It produces a multi-columnar output showing a user's login name, terminal name, date & time of the last login, and hostname (only in Linux) if not local.
+7.  1.  `who`: Lists all the users currently logged in. It produces a multi-columnar output showing a user's login name, terminal name, date & time of the last login, and hostname (only in Linux) if not local.
 
-    `tty`: Prints the file name of the terminal connected to the standard input.
+        `tty`: Prints the file name of the terminal connected to the standard input.
 
-    (ii). `ps`: Lists the running processes associated with the logged-in user. The output differs slightly between macOS and Linux.
+    2.  `ps`: Lists the running processes associated with the logged-in user. The output differs slightly between macOS and Linux.
 
-    In macOS, `ps` command displays a header line, followed by lines containing information about all of user processes that have controlling terminals.
+        In macOS, `ps` command displays a header line, followed by lines containing information about all of user processes that have controlling terminals.
 
-    In Linux, `ps` command displays information about a selection of the active processes.
+        In Linux, `ps` command displays information about a selection of the active processes.
 
-    (Above information is extracted from the man pages available on the respective operating system)
+        (Above information is extracted from the man pages available on the respective operating system)
 
-    `echo $$`: Prints the integer **PID** (Process ID) associated with the running shell process.
+        `echo $$`: Prints the integer **PID** (Process ID) associated with the running shell process.
 
 8.  `Control + d` key sequence, `logout` and `exit`. `exit` command is guaranteed to always work.
 

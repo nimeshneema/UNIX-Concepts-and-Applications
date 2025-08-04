@@ -1,8 +1,6 @@
 # Chapter 3 - General-Purpose Utilities
 
-1.  By running the following command line:
-
-    `date +"%d-%m-%y/%H:%M:%S"`
+1.  By running the command-line: `date +"%d-%m-%y/%H:%M:%S"`
 
 2.  An escape sequence is a sequence of characters that does not represent the character itself, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (**\\**) character.
 
@@ -14,13 +12,9 @@
 
     -   `\\`: Represents backslash character.
 
-3.  (i). Supply `-e` option to the `echo` command. The modified command line is:
+3.  1.  Supply `-e` option to the `echo` command. The modified command-line is: `echo -e "Filename: \c"`
 
-    `echo -e "Filename: \c"`
-
-    (ii). Supply `-n` option to the `echo` command. The modified command line is:
-
-    `echo -n "Filename: \c"`
+    2.  Supply `-n` option to the `echo` command. The modified command-line is: `echo -n "Filename: \c"`
 
 4.  There are a couple of mistakes in the command line:
 
@@ -28,27 +22,25 @@
 
     -   `fname` needs to be evaluated as a variable and should be preceded by `$` character.
 
-    The corrected command line is:
+    The corrected command-line is: `printf "Filename: %s\n" $fname`
 
-    `printf "Filename: %s\n" $fname`
+5.  1.  Convert 192 to octal by executing the following `bc` internal commands:
 
-5.  (i). Convert 192 to octal by executing the following `bc` internal commands:
+        `obase=8`
 
-    `obase=8`
-    <br/>
-    `192`
+        `192`
 
-    Convert 192 to hexadecimal by executing the following `bc` internal commands:
+        Convert 192 to hexadecimal by executing the following `bc` internal commands:
 
-    `obase=16`
-    <br/>
-    `192`
+        `obase=16`
 
-    (ii). Convert 192 to octal and hexadecimal by executing the following command line:
+        `192`
 
-    `printf "The value of 192 in octal is %o and hexadecimal is %x\n" 192 192`
+    2.  Convert 192 to octal and hexadecimal by executing the following command line:
 
-    `bc` command can be used to display the number in binary by setting `obase=2`.
+        `printf "The value of 192 in octal is %o and hexadecimal is %x\n" 192 192`
+
+        `bc` command can be used to display the number in binary by setting `obase=2`.
 
 6.  Running `script` command spawns a new sub-shell process.
 
@@ -56,27 +48,17 @@
 
 8.  When a new email message is received, it is stored in a file referred to as _mailbox_. Once the email message is read, it automatically moves to a file named _mbox_ which is generally stored in the user's home directory.
 
-9.  To hide the keyboard input from getting displayed on the terminal execute:
+9.  To hide the keyboard input from getting displayed on the terminal execute: `stty -echo`
 
-    `stty -echo`
+    The above setting can be reversed by executing: `stty echo`
 
-    The above setting can be reversed by executing:
+10. By identifying the machine by determining its hostname obtained from executing the command-line: `uname -n`
 
-    `stty echo`
+11. By examining the output of the command-line: `stty -a`
 
-10. By identifying the machine by determining its hostname obtained from executing the command line:
+    and reading values corresponding to `erase`, `kill` and `eof` keys.
 
-    `uname -n`
-
-11. By examining the output of:
-
-    `stty -a`
-
-    and reading values corresponding to **erase**, **kill** and **eof** keys.
-
-12. By setting `Control + c` key sequence corresponding to **kill** keyword using `stty` command as:
-
-    `stty kill \^c`
+12. By setting `Control + c` key sequence corresponding to **kill** keyword using `stty` command as: `stty kill \^c`
 
     No, the setting doesn't persist between login sessions.
 

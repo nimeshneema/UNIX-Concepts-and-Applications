@@ -4,8 +4,6 @@
 
     -   **Kernel**
 
-    and
-
     -   **Shell**
 
     The kernel interacts with the machine hardware. It is responsible for all sorts of system management activities. It also provides the services to the user programs in the form of system calls.
@@ -36,9 +34,7 @@
 
     Execute `wc` command without any argument. The command prompt won't return. Enter some text and terminate the input by entering a newline, and immediately following it by the end-of-file character using `Control + d` key sequence. The output will represent the count of the words, lines and characters in the entered text.
 
-    Pipe the output of a command such as `ls` to `wc -l` to count the number of non-hidden files and directories in the current directory. Enter the command line as:
-
-    `ls | wc -l`
+    Pipe the output of a command such as `ls` to `wc -l` to count the number of non-hidden files and directories in the current directory. Enter the command line as: `ls | wc -l`
 
 7.  Three major differences between UNIX commands and Windows programs are:
 

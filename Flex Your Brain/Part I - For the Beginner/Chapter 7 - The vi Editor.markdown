@@ -40,15 +40,13 @@
 
 4.  To move to line number 100, enter `:100` followed by pressing the `Enter` key.
 
-    To write the lines to a file named _newfile_, execute the **ex Mode** command:
-
-    `:.,$w newfile`
+    To write the lines to a file named _newfile_, execute the **ex Mode** command: `:.,$w newfile`
 
 5.  This can happen when there are unsaved changes in the buffer. To discard the unsaved changes, and exit anyways, execute the **ex Mode** command: `:q!`.
 
-6.  (i). This command saves the lines from the current line to 10th line below in a file named _foo_.
+6.  1.  This command saves the lines from the current line to 10th line below in a file named _foo_.
 
-    (ii). This command saves the last line in a file named _foo_.
+    2.  This command saves the last line in a file named _foo_.
 
     Both the above commands are executed in the **ex Mode**. If the file _foo_ already exists, a warning message is shown by the vi editor upon executing the `:w` **ex Mode** command. The warning message can be overridden by appending the `!` character to the `:w` command.
 
@@ -56,7 +54,7 @@
 
 7.  Enter the character sequence as shown below:
 
-    (i). `e`, `a`, ` -n`, `Esc`, `w`, `r"`, `3e`, `2x`, `r"`
+    1.  `e`, `a`, ` -n`, `Esc`, `w`, `r"`, `3e`, `2x`, `r"`
 
     The step-by-step explanation is as follows:
 
@@ -78,9 +76,7 @@
 
     -   `r"`: Replace **single quote** character with **double quote**.
 
-    <br/>
-
-    (ii). `I`, `f`, `Esc`, `w`, `a`, `stderr, `, `Esc`, `6e`, `a`, `"`, `Esc`
+    2.  `I`, `f`, `Esc`, `w`, `a`, `stderr, `, `Esc`, `6e`, `a`, `"`, `Esc`
 
     The step-by-step explanation is as follows:
 
@@ -144,19 +140,19 @@
 
 12. The desired command sequences are as shown below:
 
-    (i). `:1,10s/cnt/count/g`
+    1.  `:1,10s/cnt/count/g`
 
-    (ii). `:.s/cnt/count/g`
+    2.  `:.s/cnt/count/g`
 
-    (iii). `:1,$s/cnt/count/g`
+    3.  `:1,$s/cnt/count/g`
 
     To repeat the exercise interactively, change the flag from **g** to **gc**. The corresponding command sequences are as shown below:
 
-    (i). `:1,10s/cnt/count/gc`
+    1.  `:1,10s/cnt/count/gc`
 
-    (ii). `:.s/cnt/count/gc`
+    2.  `:.s/cnt/count/gc`
 
-    (iii). `:1,$s/cnt/count/gc`
+    3.  `:1,$s/cnt/count/gc`
 
 13. A temporary swap file created by the vi editor can persist on disk. In such a case, upon restarting, and resuming the work subsequently, the editor will complain when an attempt is made to open the file.
 

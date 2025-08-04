@@ -18,27 +18,27 @@
 
     the shell submits the command line to the kernel for final execution.
 
-2.  (i). `{foo[12],Foo5}`
+2.  1.  `{foo[12],Foo5}`
 
-    (ii). `quit.[coh]`
+    2.  `quit.[coh]`
 
-    (iii). `{watch.{htm,HTML},Watch.html}`
+    3.  `{watch.{htm,HTML},Watch.html}`
 
-    (iv). `.*.swp`
+    4.  `.*.swp`
 
-3.  (i). `[0-9]?*[!A-Za-z]`
+3.  1.  `[0-9]?*[!A-Za-z]`
 
-    (ii). `[!.]??*`
+    2.  `[!.]??*`
 
-    (iii). `?*2004*?`
+    3.  `?*2004*?`
 
-4.  (i). A filename comprising of at least 5 characters, where the first character is an alphabet or one of the `[`, `\`, `]`, `^`, `_` or `` ` `` characters.
+4.  1.  A filename comprising of at least 5 characters, where the first character is an alphabet or one of the `[`, `\`, `]`, `^`, `_` or `` ` `` characters.
 
-    (ii). A filename comprising of at least one numeric character.
+    2.  A filename comprising of at least one numeric character.
 
-    (iii). A filename which doesn't end with a numeric character.
+    3.  A filename which doesn't end with a numeric character.
 
-    (iv). A non-hidden filename with two character extension where the first character is not **s**, the second character is not **h** and the extension is not **.sh**.
+    4.  A non-hidden filename with two character extension where the first character is not **s**, the second character is not **h** and the extension is not **.sh**.
 
 5.  `cp chap{0[1-9],1[0-9],2[0-6]} ../`
 
@@ -48,9 +48,7 @@
 
     The second command lists all the non-hidden files in the current directory whose name ends with a dot. If there are any non-hidden sub-directories, their contents are listed.
 
-7.  The said file and directory can be removed by executing the following command line:
-
-    `rm -rf "*" "My Documents"`
+7.  The said file and directory can be removed by executing the following command-line: `rm -rf "*" "My Documents"`
 
 8.  Single and double quoting suppresses the special meaning of meta-characters and treats them literally. Double quoting is preferred when shell variable evaluation or command substitution is desired within the quoted string.
 
@@ -60,19 +58,17 @@
 
     The command `wc` opens the file in the former case and the shell opens the file in the latter.
 
-10. By executing the following command line:
-
-    `cat foo1 - foo2`
+10. By executing the following command-line: `cat foo1 - foo2`
 
     The contents of file _foo1_ will be displayed on the terminal, and the shell will wait for user input from the keyboard. Once the input from the keyboard is made, and the same is terminated with an end-of-file character, the contents of the file _foo2_ will be displayed on the terminal, and the prompt returned subsequently.
 
-11. (i). The contents of the file _foo_ are overwritten by the text entered via the standard input.
+11. 1.  The contents of the file _foo_ are overwritten by the text entered via the standard input.
 
-    (ii). The file named _foo_ is created anew, and the output of the command `who` is appended to it.
+    2.  The file named _foo_ is created anew, and the output of the command `who` is appended to it.
 
-    (iii). The file _foo_ is blanked out.
+    3.  The file _foo_ is blanked out.
 
-    (iv). The contents of the file _foo_ are replaced by a single newline `\n` character.
+    4.  The contents of the file _foo_ are replaced by a single newline `\n` character.
 
 12. The file _newlist_ is present in the list of files along with other files listed as an output of `ls` command. The file _newlist_ finds its way into the list as the shell opens the file before `ls` command comes into action.
 
@@ -90,28 +86,16 @@
 
     3.  `prog3` should be able to read from the Standard Input.
 
-16. A count of number of logged in users can be obtained by executing the following command line:
+16. A count of number of logged in users can be obtained by executing the following command-line: `who | wc -l`
 
-    `who | wc -l`
+17. 1.  Use the following command line to print the calendar of the current month using command substitution: `echo "$(cal)"`
 
-17. (i). Use the following command line to print the calendar of the current month using command substitution:
+    2.  Use the following command line to print a listing of a group of filenames stored in a file: `echo "$(cat list)"`
 
-    `echo "$(cal)"`
+18. 1.  The total size of all the C source files (in bytes) can be stored in a variable named **count** by executing the following command-line: `count=$(cat *.c | wc -c)`
 
-    (ii). Use the following command line to print a listing of a group of filenames stored in a file:
+    2.  Assuming that the file is named _foo.c_, the total number of lines can be stored in a variable named **count** by executing the following command-line: `count=$(cat foo.c | wc -l)`
 
-    `echo "$(cat list)"`
-
-18. (i). The total size of all the C source files (in bytes) can be stored in a variable named **count** by executing the following command line:
-
-    `count=$(cat *.c | wc -c)`
-
-    (ii). Assuming that the file is named _foo.c_, the total number of lines can be stored in a variable named **count** by executing the following command line:
-
-    `count=$(cat foo.c | wc -l)`
-
-19. By executing the command line:
-
-    `count="$(cat `cat foo` | wc -m)"`
+19. By executing the command-line: `count="$(cat `cat foo` | wc -m)"`
 
     First of all `cat foo` is expanded which lists all the file names. Further invocation of `cat` writes to Standard Output, the contents of all the files listed from the last step. The Standard Output from this step is piped to the `wc` command, which counts the total number of characters using `-m` option and the resulting value is assigned to the **count** variable.
