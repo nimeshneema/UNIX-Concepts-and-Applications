@@ -1,6 +1,6 @@
 # Chapter 01 - Getting Started
 
-01. Computer hardware is a bare machine with no intelligence of its own. An operating system like UNIX is a special software which provides it with basic intelligence. This intelligence is used to provide services for both the programs and users.
+1.  Computer hardware is a bare machine with no intelligence of its own. An operating system like UNIX is a special software which provides it with basic intelligence. This intelligence is used to provide services for both the programs and users.
 
     Services for programs include:
 
@@ -20,11 +20,11 @@
 
 ---
 
-02. A program can't read a file by itself. Instead, it places a request to access the file to the operating system. The operating system in turn reads the file and makes the file data available to the program.
+2.  A program can't read a file by itself. Instead, it places a request to access the file to the operating system. The operating system in turn reads the file and makes the file data available to the program.
 
 ---
 
-03. The program is called user's login shell. Some of the popular shell programs available on a UNIX system are:
+3.  The program is called user's login shell. Some of the popular shell programs available on a UNIX system are:
 
     -   **sh**: Bourne shell
 
@@ -36,13 +36,13 @@
 
 ---
 
-04. The output produced by executing `ls` command is saved in a file named _list_ in the current directory.
+4.  The output produced by executing `ls` command is saved in a file named _list_ in the current directory.
 
     The shell sees the redirection operator (`>`) when interpreting the command line. It opens a named file following the redirection operator (here, _list_). Next, the command `ls` is run, which reads the directory contents. The shell has manipulated things such that the output of the `ls` command doesn't go to the terminal, but is written to the file opened by the shell.
 
 ---
 
-05. The shell programming syntax requires that there be no spaces on either side of the `=` operator.
+5.  The shell programming syntax requires that there be no spaces on either side of the `=` operator.
 
     When entering `x =10`, `x` is treated as a command by the shell. As (in the default installation) there's no command named `x`, the shell shows an error message stating that the command couldn't be found.
 
@@ -50,7 +50,7 @@
 
 ---
 
-06. Two empty files named _README_ and _readme_ are created in the current directory.
+6.  Two empty files named _README_ and _readme_ are created in the current directory.
 
     If either of the two files exists already, it is replaced by an empty file.
 
@@ -58,7 +58,7 @@
 
 ---
 
-07. (i). `who`: Lists all the users currently logged in. It produces a multi-columnar output showing a user's login name, terminal name, date & time of the last login, and hostname (only in Linux) if not local.
+7.  (i). `who`: Lists all the users currently logged in. It produces a multi-columnar output showing a user's login name, terminal name, date & time of the last login, and hostname (only in Linux) if not local.
 
     `tty`: Prints the file name of the terminal connected to the standard input.
 
@@ -74,11 +74,11 @@
 
 ---
 
-08. `Control + d` key sequence, `logout` and `exit`. `exit` command is guaranteed to always work.
+8.  `Control + d` key sequence, `logout` and `exit`. `exit` command is guaranteed to always work.
 
 ---
 
-09. A user's user-id is used to uniquely identify her in the operating system.
+9.  A user's user-id is used to uniquely identify her in the operating system.
 
     It is associating with any file or process created by the user.
 

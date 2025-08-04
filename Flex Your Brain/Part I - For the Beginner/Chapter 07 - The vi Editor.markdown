@@ -1,6 +1,6 @@
 # Chapter 07 - The vi Editor
 
-01. The three modes of **vi** editor are:
+1.  The three modes of **vi** editor are:
 
     -   **Command Mode**
 
@@ -36,15 +36,15 @@
 
 ---
 
-02. First, navigate to the desired line using appropriate navigation keys. Press `I` to insert text at the beginning of the line. Enter `/*` and press `Esc` key to switch back to the **Command Mode**. Now press `A` key to append text at the end of the line. Enter `*/` and press the `Esc` key to switch back to the **Command Mode**.
+2.  First, navigate to the desired line using appropriate navigation keys. Press `I` to insert text at the beginning of the line. Enter `/*` and press `Esc` key to switch back to the **Command Mode**. Now press `A` key to append text at the end of the line. Enter `*/` and press the `Esc` key to switch back to the **Command Mode**.
 
 ---
 
-03. Since the cursor is still placed at the last character of the line, press the `x` key twice to delete two characters at the end of the line. Now press the `0` key to move to the beginning of the line. Again press the `x` key twice to delete the two characters at the beginning of the line.
+3.  Since the cursor is still placed at the last character of the line, press the `x` key twice to delete two characters at the end of the line. Now press the `0` key to move to the beginning of the line. Again press the `x` key twice to delete the two characters at the beginning of the line.
 
 ---
 
-04. To move to line number 100, enter `:100` followed by pressing the `Enter` key.
+4.  To move to line number 100, enter `:100` followed by pressing the `Enter` key.
 
     To write the lines to a file named _newfile_, execute the **ex Mode** command:
 
@@ -52,11 +52,11 @@
 
 ---
 
-05. This can happen when there are unsaved changes in the buffer. To discard the unsaved changes, and exit anyways, execute the **ex Mode** command: `:q!`.
+5.  This can happen when there are unsaved changes in the buffer. To discard the unsaved changes, and exit anyways, execute the **ex Mode** command: `:q!`.
 
 ---
 
-06. (i). This command saves the lines from the current line to 10th line below in a file named _foo_.
+6.  (i). This command saves the lines from the current line to 10th line below in a file named _foo_.
 
     (ii). This command saves the last line in a file named _foo_.
 
@@ -66,7 +66,7 @@
 
 ---
 
-07. Enter the character sequence as shown below:
+7.  Enter the character sequence as shown below:
 
     (i). `e`, `a`, ` -n`, `Esc`, `w`, `r"`, `3e`, `2x`, `r"`
 
@@ -120,13 +120,13 @@
 
 ---
 
-08. By running the `who` command by executing the **ex Mode** command `:!who`.
+8.  By running the `who` command by executing the **ex Mode** command `:!who`.
 
     Switch to the shell without quitting the editor by executing the **ex Mode** command `:sh`. Quitting the shell resumes the editor session.
 
 ---
 
-09. Make sure you are in the **Command Mode**. Enter the character sequence as shown below:
+9.  Make sure you are in the **Command Mode**. Enter the character sequence as shown below:
 
     `:/#include`, `Enter`, `4dd`, `:1`, `Enter`, `P`
 

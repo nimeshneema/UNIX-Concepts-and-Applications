@@ -1,18 +1,18 @@
 # Chapter 11 - More File Attributes
 
-01. True.
+1.  True.
 
     In a UNIX system, each available file system directory structure is headed by a root directory. Among all the available file systems, one of them is designated as the root file system. At the time of booting, all the secondary file systems attach themselves to the root file system, thereby creating an illusion of a single file system.
 
 ---
 
-02. The three time stamps maintained in the inode for every file are:
+2.  The three time stamps maintained in the inode for every file are:
 
-    01. Time of creation.
+    1.  Time of creation.
 
-    02. Time of last modification.
+    2.  Time of last modification.
 
-    03. Time of last access.
+    3.  Time of last access.
 
     To display them for the file _foo_ execute the following command line:
 
@@ -22,7 +22,7 @@
 
 ---
 
-03. When a file is linked (hard link), the link count of the file in incremented by one in the inode.
+3.  When a file is linked (hard link), the link count of the file in incremented by one in the inode.
 
     When the link is removed, the link count is decremented by one in the inode.
 
@@ -30,7 +30,7 @@
 
 ---
 
-04. (i). A file named _bar_ in created anew.
+4.  (i). A file named _bar_ in created anew.
 
     (ii). The `ln` command throws an error message stating that the file _bar_ exits.
 
@@ -38,7 +38,7 @@
 
 ---
 
-05. Two application areas of hard links are:
+5.  Two application areas of hard links are:
 
     (i). Protect against accidental deletion by creating a backup link.
 
@@ -52,23 +52,23 @@
 
 ---
 
-06. Fast symbolic link is a feature available in Linux, where the pathname is stored in the inode itself.
+6.  Fast symbolic link is a feature available in Linux, where the pathname is stored in the inode itself.
 
     When the original file pointed to by a symbolic link is deleted, the link itself becomes useless and is called a dangling symbolic link.
 
 ---
 
-07. By creating a symbolic link to the new location with the old path by executing the following:
+7.  By creating a symbolic link to the new location with the old path by executing the following:
 
     `ln -s $HOME/internet/progs $HOME/progs`
 
 ---
 
-08. The command can fail if the execute permission is not available for the directory _bar_.
+8.  The command can fail if the execute permission is not available for the directory _bar_.
 
 ---
 
-09. Whether the file can be deleted or not depends upon the write permission available for the containing directory. The file can be deleted with write permission set on directory otherwise not.
+9.  Whether the file can be deleted or not depends upon the write permission available for the containing directory. The file can be deleted with write permission set on directory otherwise not.
 
     The presence or absence of execute permission of either file or directory has no role to play here.
 

@@ -1,6 +1,6 @@
 # Chapter 09 - The Process
 
-01. Both of them are special environment variables available in the shell.
+1.  Both of them are special environment variables available in the shell.
 
     -   `$$`: This shell variable stores the PID of the user's login shell.
 
@@ -8,7 +8,7 @@
 
 ---
 
-02. (i). Both processes and files have certain attributes.
+2.  (i). Both processes and files have certain attributes.
 
     (ii). Attributes for both are stored in a special structure maintained by the operating system (called process table for processes and inode for files).
 
@@ -16,7 +16,7 @@
 
 ---
 
-03. The two options available to a parent after spawning a child process are:
+3.  The two options available to a parent after spawning a child process are:
 
     (i). Wait for the child process to die before spawning another process.
 
@@ -30,7 +30,7 @@
 
 ---
 
-04. Daemons are special system processes that keep running all the time. The standard input and standard output of these process are not connected to the terminal, i.e. they have no controlling terminal. They are called without a specific request from the user. Many of these daemons are sleeping and wake up only when they receive input.
+4.  Daemons are special system processes that keep running all the time. The standard input and standard output of these process are not connected to the terminal, i.e. they have no controlling terminal. They are called without a specific request from the user. Many of these daemons are sleeping and wake up only when they receive input.
 
     A few examples of daemons and the tasks that they perform are:
 
@@ -44,7 +44,7 @@
 
 ---
 
-05. A process is created via three distinct phases using three system calls, in order, as discussed below:
+5.  A process is created via three distinct phases using three system calls, in order, as discussed below:
 
     01. **fork**: The `fork` system call causes a copy of the invoking process to be made. The newly created child process has identical value for its process parameters except for the value of PID and PPID.
 
@@ -56,7 +56,7 @@
 
 ---
 
-06. The five important process attributes inherited by a child process from its parent process are:
+6.  The five important process attributes inherited by a child process from its parent process are:
 
     (i). Real UID and GID.
 
@@ -70,17 +70,17 @@
 
 ---
 
-07. `cd` is the change directory command. Directory change can't be made in a separate process. If invoking `cd` command was to spawn a child process (as in case `cd` was made available as an external command), after the command has completed execution, control will return to the parent process, and the original directory would be restored. Hence the command is built into the shell.
+7.  `cd` is the change directory command. Directory change can't be made in a separate process. If invoking `cd` command was to spawn a child process (as in case `cd` was made available as an external command), after the command has completed execution, control will return to the parent process, and the original directory would be restored. Hence the command is built into the shell.
 
 ---
 
-08. Once the system is up, **init** forks and execs a **getty** for every active communication port. **getty** prints login prompts on their respective terminals. When an attempt is made to login, **getty** fork-execs the login program. Upon successful login, **login** fork-execs the process for the applicable login shell. With repeated overlaying, **init** becomes the immediate ancestor of the shell.
+8.  Once the system is up, **init** forks and execs a **getty** for every active communication port. **getty** prints login prompts on their respective terminals. When an attempt is made to login, **getty** fork-execs the login program. Upon successful login, **login** fork-execs the process for the applicable login shell. With repeated overlaying, **init** becomes the immediate ancestor of the shell.
 
     When the user logs out, the shell process is killed and the death of the process is intimated to **init** which spawns another **getty** for the communication port.
 
 ---
 
-09. Zombie is a process state which is acquired by a process upon its death. A dead process remains in this state until its parent process picks up its exit status from the process table. Once that is done, the kernel frees the process table entry thereby killing the zombie process.
+9.  Zombie is a process state which is acquired by a process upon its death. A dead process remains in this state until its parent process picks up its exit status from the process table. Once that is done, the kernel frees the process table entry thereby killing the zombie process.
 
 ---
 

@@ -1,12 +1,12 @@
 # Chapter 12 - Simple Filters
 
-01. Assume that the file is named _foo_. Execute the following command line to print it in reverse:
+1.  Assume that the file is named _foo_. Execute the following command line to print it in reverse:
 
     `pr -n -t foo | sort -nr | cut -f 2 -`
 
 ---
 
-02. Run the following command line to create the desired alias:
+2.  Run the following command line to create the desired alias:
 
     `alias lastedit="vi $(ls -t | head -n 1)"`
 
@@ -14,7 +14,7 @@
 
 ---
 
-03. Assume that the file in question is named _foo_. Execute the following command lines:
+3.  Assume that the file in question is named _foo_. Execute the following command lines:
 
     (i). `head -n 10 foo | tail -n -6`
 
@@ -22,7 +22,7 @@
 
 ---
 
-04. `data` command output with each filed on a separate line can be produced by executing the command line:
+4.  `data` command output with each filed on a separate line can be produced by executing the command line:
 
     `date | tr -s '\040' | tr '\040' '\012'`
 
@@ -32,27 +32,27 @@
 
 ---
 
-05. Execute the following command line:
+5.  Execute the following command line:
 
     `ps -A | tr -s "\040" | sort -t"\040" -k 4`
 
 ---
 
-06. Assume that the file is named _foo_. Execute the following command line:
+6.  Assume that the file is named _foo_. Execute the following command line:
 
     `tr -cd '?' < foo | wc -m`
 
 ---
 
-07. `cut -d ":" -f1 /etc/passwd | tail -n +11`
+7.  `cut -d ":" -f1 /etc/passwd | tail -n +11`
 
 ---
 
-08. `echo $PATH | tr ":" "\012"`
+8.  `echo $PATH | tr ":" "\012"`
 
 ---
 
-09. `sort -t ":" -n -k 3 -k 4 /etc/passwd`
+9.  `sort -t ":" -n -k 3 -k 4 /etc/passwd`
 
 ---
 

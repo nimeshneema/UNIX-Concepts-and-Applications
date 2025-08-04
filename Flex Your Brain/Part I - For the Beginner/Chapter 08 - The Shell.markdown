@@ -1,26 +1,26 @@
 # Chapter 08 - The Shell
 
-01. The shell performs all the actions represented by the metacharacters before executing the command line.
+1.  The shell performs all the actions represented by the metacharacters before executing the command line.
 
     After completing the pre-processing step consisting of:
 
-    01. **Parsing**: Breaking up the command line into individual, meaningful words (tokens).
+    1.  **Parsing**: Breaking up the command line into individual, meaningful words (tokens).
 
-    02. **Variable Evaluation**: Evaluating the values of all the **$** prefixed items.
+    2.  **Variable Evaluation**: Evaluating the values of all the **$** prefixed items.
 
-    03. **Command Substitution**: Executing the command line enclosed in backticks, and substituting their output.
+    3.  **Command Substitution**: Executing the command line enclosed in backticks, and substituting their output.
 
-    04. **Redirection**: Looking for redirection operations and opening appropriate files.
+    4.  **Redirection**: Looking for redirection operations and opening appropriate files.
 
-    05. **Wild-card Interpretation**: Interpreting wildcard characters and making appropriate substitutions.
+    5.  **Wild-card Interpretation**: Interpreting wildcard characters and making appropriate substitutions.
 
-    06. **PATH evaluation**: Traversing directories listed in the PATH variable to locate the command file.
+    6.  **PATH evaluation**: Traversing directories listed in the PATH variable to locate the command file.
 
     the shell submits the command line to the kernel for final execution.
 
 ---
 
-02. (i). `{foo[12],Foo5}`
+2.  (i). `{foo[12],Foo5}`
 
     (ii). `quit.[coh]`
 
@@ -30,7 +30,7 @@
 
 ---
 
-03. (i). `[0-9]?*[!A-Za-z]`
+3.  (i). `[0-9]?*[!A-Za-z]`
 
     (ii). `[!.]??*`
 
@@ -38,7 +38,7 @@
 
 ---
 
-04. (i). A filename comprising of at least 5 characters, where the first character is an alphabet or one of the `[`, `\`, `]`, `^`, `_` or `` ` `` characters.
+4.  (i). A filename comprising of at least 5 characters, where the first character is an alphabet or one of the `[`, `\`, `]`, `^`, `_` or `` ` `` characters.
 
     (ii). A filename comprising of at least one numeric character.
 
@@ -48,29 +48,29 @@
 
 ---
 
-05. `cp chap{0[1-9],1[0-9],2[0-6]} ../`
+5.  `cp chap{0[1-9],1[0-9],2[0-6]} ../`
 
     Yes, a single wild-card pattern can match all the files.
 
 ---
 
-06. The first command lists all the hidden files in the current directory. If there are any hidden sub-directories, their contents are listed.
+6.  The first command lists all the hidden files in the current directory. If there are any hidden sub-directories, their contents are listed.
 
     The second command lists all the non-hidden files in the current directory whose name ends with a dot. If there are any non-hidden sub-directories, their contents are listed.
 
 ---
 
-07. The said file and directory can be removed by executing the following command line:
+7.  The said file and directory can be removed by executing the following command line:
 
     `rm -rf "*" "My Documents"`
 
 ---
 
-08. Single and double quoting suppresses the special meaning of meta-characters and treats them literally. Double quoting is preferred when shell variable evaluation or command substitution is desired within the quoted string.
+8.  Single and double quoting suppresses the special meaning of meta-characters and treats them literally. Double quoting is preferred when shell variable evaluation or command substitution is desired within the quoted string.
 
 ---
 
-09. In the first command line, the `wc` command opens the file named _foo_ and displays the count of lines, words and bytes in the file on the standard output.
+9.  In the first command line, the `wc` command opens the file named _foo_ and displays the count of lines, words and bytes in the file on the standard output.
 
     In the second command line, the `wc` command reads the stream input coming from the file _foo_ and displays the count of lines, words and bytes in the file on the standard output.
 
@@ -112,11 +112,11 @@
 
 15. Three conditions need to be satisfied here:
 
-    01. `prog1` should be able to write to the Standard Output.
+    1.  `prog1` should be able to write to the Standard Output.
 
-    02. `prog2` should be able to read from the Standard Input, and write to the Standard Output.
+    2.  `prog2` should be able to read from the Standard Input, and write to the Standard Output.
 
-    03. `prog3` should be able to read from the Standard Input.
+    3.  `prog3` should be able to read from the Standard Input.
 
 ---
 

@@ -1,12 +1,12 @@
 # Chapter 03 - General-Purpose Utilities
 
-01. By running the following command line:
+1.  By running the following command line:
 
     `date +"%d-%m-%y/%H:%M:%S"`
 
 ---
 
-02. An escape sequence is a sequence of characters that does not represent the character itself, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (**\\**) character.
+2.  An escape sequence is a sequence of characters that does not represent the character itself, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (**\\**) character.
 
     Three escape sequences used by `echo` command, with their significance are:
 
@@ -18,7 +18,7 @@
 
 ---
 
-03. (i). Supply `-e` option to the `echo` command. The modified command line is:
+3.  (i). Supply `-e` option to the `echo` command. The modified command line is:
 
     `echo -e "Filename: \c"`
 
@@ -28,7 +28,7 @@
 
 ---
 
-04. There are a couple of mistakes in the command line:
+4.  There are a couple of mistakes in the command line:
 
     -   As per the syntax of `printf` command, it is invalid to supply a comma character between arguments.
 
@@ -40,7 +40,7 @@
 
 ---
 
-05. (i). Convert 192 to octal by executing the following `bc` internal commands:
+5.  (i). Convert 192 to octal by executing the following `bc` internal commands:
 
     `obase=8`
     <br/>
@@ -60,19 +60,19 @@
 
 ---
 
-06. Running `script` command spawns a new sub-shell process.
+6.  Running `script` command spawns a new sub-shell process.
 
 ---
 
-07. `mailx` command can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can also be automated via scripting.
+7.  `mailx` command can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can also be automated via scripting.
 
 ---
 
-08. When a new email message is received, it is stored in a file referred to as _mailbox_. Once the email message is read, it automatically moves to a file named _mbox_ which is generally stored in the user's home directory.
+8.  When a new email message is received, it is stored in a file referred to as _mailbox_. Once the email message is read, it automatically moves to a file named _mbox_ which is generally stored in the user's home directory.
 
 ---
 
-09. To hide the keyboard input from getting displayed on the terminal execute:
+9.  To hide the keyboard input from getting displayed on the terminal execute:
 
     `stty -echo`
 

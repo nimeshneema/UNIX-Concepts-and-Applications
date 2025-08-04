@@ -1,6 +1,6 @@
 # Chapter 04 - The File System
 
-01. Two types of ordinary files are:
+1.  Two types of ordinary files are:
 
     -   **Text** file
 
@@ -14,11 +14,11 @@
 
 ---
 
-02. A device file helps in accessing the device by setting appropriate file attributes on the file representing the device.
+2.  A device file helps in accessing the device by setting appropriate file attributes on the file representing the device.
 
 ---
 
-03. (i). This command won't work. Directory _a_ and _a/b_ need to exist before attempting to create the directory _a/b/c_.
+3.  (i). This command won't work. Directory _a_ and _a/b_ need to exist before attempting to create the directory _a/b/c_.
 
     (ii). This command will work. Directory _a_ will be created first followed by the directory _a/b_.
 
@@ -30,29 +30,29 @@
 
 ---
 
-04. Either _test_ already exists as a file or directory in the current directory, or the user doesn't have write permission in the current directory.
+4.  Either _test_ already exists as a file or directory in the current directory, or the user doesn't have write permission in the current directory.
 
 ---
 
-05. Only **...** and **....** can be created either as a file or a directory. **.** and **..** are special names reserved for use by the operating system to refer to the current and the parent directory.
+5.  Only **...** and **....** can be created either as a file or a directory. **.** and **..** are special names reserved for use by the operating system to refer to the current and the parent directory.
 
 ---
 
-06. The directory _bar_ contains hidden files or directories which are not displayed when running `ls bar`.
+6.  The directory _bar_ contains hidden files or directories which are not displayed when running `ls bar`.
 
 ---
 
-07. By referring to charlie's home directory as `~charlie`. (Assuming that charlie's username remains the same.)
+7.  By referring to charlie's home directory as `~charlie`. (Assuming that charlie's username remains the same.)
 
 ---
 
-08. `cd ~charlie` changes the current working directory to user charlie's home directory. `cd ~/charlie` changes the current working directory to a directory named _charlie_ in the current user's home directory.
+8.  `cd ~charlie` changes the current working directory to user charlie's home directory. `cd ~/charlie` changes the current working directory to a directory named _charlie_ in the current user's home directory.
 
     The former command will fail if there is no user named **charlie**. The latter command will fail if no directory named _charlie_ exists in the current user's home directory.
 
 ---
 
-09. To refer to _update.sh_ file present in the current directory and not some other file with the same name existing in one of the directories listed in **PATH** variable. This measure is also required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
+9.  To refer to _update.sh_ file present in the current directory and not some other file with the same name existing in one of the directories listed in **PATH** variable. This measure is also required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
 
 ---
 
@@ -66,6 +66,6 @@
 
     (iii). This command won't work. It attempts to remove the parent directory i.e. _/home_ while being placed in the child directory _/home/kumar_, which the shell won't permit.
 
-    (iv). This command will attempt to list the contents of the parent directory i.e. _/home_. It will succeed only if the user has read permission available for _/home_ directory.
+    0(iv). This command will attempt to list the contents of the parent directory i.e. _/home_. It will succeed only if the user has read permission available for _/home_ directory.
 
 ---

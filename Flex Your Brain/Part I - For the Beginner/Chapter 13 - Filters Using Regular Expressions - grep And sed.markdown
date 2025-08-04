@@ -1,6 +1,6 @@
 # Chapter 13 - Filters Using Regular Expressions - grep And sed
 
-01. Both wildcards and regular expressions are used to define a search pattern. However, wildcards are a feature of the shell, while regular expressions are not.
+1.  Both wildcards and regular expressions are used to define a search pattern. However, wildcards are a feature of the shell, while regular expressions are not.
 
     Regular Expressions are a well-defined and systematic way of using a sequence of characters that define a search pattern. Regular expressions are used with commands that support its usage and it has nothing to do with the shell.
 
@@ -8,7 +8,7 @@
 
 ---
 
-02. The asterisk character is used thrice in the command line. Here's the meaning of each occurrence:
+2.  The asterisk character is used thrice in the command line. Here's the meaning of each occurrence:
 
     -   The first asterisk is interpreted as a regular expression metacharacter. It matches the longest string starting with _botswana_ and ending with _birds_.
 
@@ -18,7 +18,7 @@
 
 ---
 
-03. Use the following command line:
+3.  Use the following command line:
 
     `ls -l | grep "^-r-xr-xr-x"`
 
@@ -40,7 +40,7 @@
 
 ---
 
-04. The command line displays the same number of lines as present in the file named _foo_. The mentioned Basic Regular Expression is trying to match occurrences of zero or more characters, which is technically every line in the file.
+4.  The command line displays the same number of lines as present in the file named _foo_. The mentioned Basic Regular Expression is trying to match occurrences of zero or more characters, which is technically every line in the file.
 
     Removing the quotes would cause the `.*` pattern to be interpreted as wildcard by the shell instead. This wildcard expansion step (which is performed by the shell before the `grep` command is executed) would replace `.*` with all the file and directory names beginning with a `.` character. This would include, at the minimum, the current and the parent directory names which are represented with `.` and `..` respectively.
 
@@ -56,17 +56,17 @@
 
 ---
 
-05. The command line would print the string `foo` on standard output if the file _foo_ contains a tab character.
+5.  The command line would print the string `foo` on standard output if the file _foo_ contains a tab character.
 
 ---
 
-06. Use the following command line:
+6.  Use the following command line:
 
     ```grep "`date +"%d/%m"`" emp.lst | cut -d "|" -f2```
 
 ---
 
-07. (i) The former expression matches a numric string containing the digits 0 to 9, with the string of length zero or more.
+7.  (i) The former expression matches a numric string containing the digits 0 to 9, with the string of length zero or more.
 
     The latter matches a numeric string while ensuring that the string contains at least one digit.
 
@@ -78,7 +78,7 @@
 
 ---
 
-08. The first command line matches all the lines in the file foo, that has, as its first character, anything other than small case alphabet.
+8.  The first command line matches all the lines in the file foo, that has, as its first character, anything other than small case alphabet.
 
     The second command line matches all the lines in the file foo, that does not begin with a small case alphabet as its first character.
 
@@ -86,7 +86,7 @@
 
 ---
 
-09. (i) `jeff[er][er](ie|y)s?`
+9.  (i) `jeff[er][er](ie|y)s?`
 
     (ii) `hitch(e|i)ng?`
 

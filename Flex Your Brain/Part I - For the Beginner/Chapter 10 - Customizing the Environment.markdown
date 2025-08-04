@@ -1,26 +1,26 @@
 # Chapter 10 - Customizing the Environment
 
-01. An interactive shell presents a prompt and waits for input from the user. A non-interactive shell on the other hand only executes shell scripts. There are certain shell features which are exclusive to the interactive shell.
+1.  An interactive shell presents a prompt and waits for input from the user. A non-interactive shell on the other hand only executes shell scripts. There are certain shell features which are exclusive to the interactive shell.
 
     Job control, aliases and history features have significance only in an interactive shell.
 
 ---
 
-02. Applications are not designed to run from a specific shell. The environment variables are not dependent on the shell. As they are independent of shell in use, they are represented in a fixed format.
+2.  Applications are not designed to run from a specific shell. The environment variables are not dependent on the shell. As they are independent of shell in use, they are represented in a fixed format.
 
 ---
 
-03. **HOME** and **SHELL** representing user's home directory and login shell respectively are set by reading the _/etc/passwd_ file.
+3.  **HOME** and **SHELL** representing user's home directory and login shell respectively are set by reading the _/etc/passwd_ file.
 
 ---
 
-04. The location of user's mailbox is stored in the **MAIL** variable. The value of the **MAILCHECK** variable, on the other hand, determines the interval of time in seconds after which the shell checks the mailbox for the arrival of a new mail.
+4.  The location of user's mailbox is stored in the **MAIL** variable. The value of the **MAILCHECK** variable, on the other hand, determines the interval of time in seconds after which the shell checks the mailbox for the arrival of a new mail.
 
     The arrival of a new mail is intimated to the user by the shell, by printing a message on the terminal.
 
 ---
 
-05. (i). The prompt string can be changed to look as desired by setting the **PS1** environment variable by executing the following command line:
+5.  (i). The prompt string can be changed to look as desired by setting the **PS1** environment variable by executing the following command line:
 
     `PS1="[\H-\u \w]"`
 
@@ -28,7 +28,7 @@
 
 ---
 
-06. The alias can be created by executing the following command line:
+6.  The alias can be created by executing the following command line:
 
     `alias rm='rm -R'`
 
@@ -38,7 +38,7 @@
 
 ---
 
-07. The accidental file overwriting can be prevented by setting the **noclobber** option in Korn and Bash shell by executing the following command line:
+7.  The accidental file overwriting can be prevented by setting the **noclobber** option in Korn and Bash shell by executing the following command line:
 
     `set -o noclobber`
 
@@ -48,7 +48,7 @@
 
 ---
 
-08. (i). Execute the command line corresponding to event number **50** as indicated by the output of the `history` shell built-in command.
+8.  (i). Execute the command line corresponding to event number **50** as indicated by the output of the `history` shell built-in command.
 
     (ii). Display the command line before the previously executed command.
 
@@ -68,7 +68,7 @@
 
 ---
 
-09. (iii) the last command beginning with ca.
+9.  (iii) the last command beginning with ca.
 
 ---
 

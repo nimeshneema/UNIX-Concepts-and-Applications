@@ -1,12 +1,12 @@
 # Chapter 05 - Handling Ordinary Files
 
-01. A directory is technically a file containing the name and the inode number of files and sub-directories that it contains. The entries are updated by the kernel on the user's behalf when files and sub-directories are added, renamed or deleted.
+1.  A directory is technically a file containing the name and the inode number of files and sub-directories that it contains. The entries are updated by the kernel on the user's behalf when files and sub-directories are added, renamed or deleted.
 
     The size of a directory file is usually small as it doesn't store the files and subdirectories it contains, just their name and inode numbers.
 
 ---
 
-02. The former command displays the contents of the file named _foo_ present in the current directory.
+2.  The former command displays the contents of the file named _foo_ present in the current directory.
 
     The latter command returns a secondary prompt and lets the user type any text. Upon encountering the end-of-file (`Control + d`) character, the entered text is saved in a file named _foo_ in the current directory.
 
@@ -14,19 +14,19 @@
 
 ---
 
-03. (i). Yes, the command would work. The file _foo_ would be copied into the directory named _bar_.
+3.  (i). Yes, the command would work. The file _foo_ would be copied into the directory named _bar_.
 
     (ii). No, the command won't work. An error message is displayed stating that _foo_ is a directory and is not copied.
 
 ---
 
-04. The first command will delete the directory _bar_ along with all the files and sub-directories recursively, disregarding the write protection status of any files or sub-directory and non-emptiness of any sub-directory.
+4.  The first command will delete the directory _bar_ along with all the files and sub-directories recursively, disregarding the write protection status of any files or sub-directory and non-emptiness of any sub-directory.
 
     The second command will work only when the directory _bar_ is empty and its parent directory (current directory here) is not write-protected.
 
 ---
 
-05. (i). The file or directory named _include_ present in the logged-in user's home directory is moved to the current working directory.
+5.  (i). The file or directory named _include_ present in the logged-in user's home directory is moved to the current working directory.
 
     (ii). The command recursively copies the contents of _bar1_ to _bar2_. If _bar2_ exists and is a directory, recursively copy contents of _bar1_ into _bar2_, thus making a copy of _bar1_ a sub-directory of _bar2_.
 
@@ -34,7 +34,7 @@
 
 ---
 
-06. The three possible reasons can be:
+6.  The three possible reasons can be:
 
     (i). Read permission is not available for the file _hosts_.
 
@@ -44,7 +44,7 @@
 
 ---
 
-07. By executing the following command line:
+7.  By executing the following command line:
 
     `cd ; mv a temp ; mv temp/a . ; rmdir temp`
 
@@ -60,7 +60,7 @@
 
 ---
 
-08. Using the repeat factor, an internal command within `more` command can be made to run multiple times.
+8.  Using the repeat factor, an internal command within `more` command can be made to run multiple times.
 
     Type `/include` to locate the first occurrence of the pattern. Continue pressing the key `n` to repeat the search for further occurrences.
 
@@ -68,7 +68,7 @@
 
 ---
 
-09. We can ensure that the file is indeed a Postscript file by executing `file` command with the filename as an argument and checking for the file type information.
+9.  We can ensure that the file is indeed a Postscript file by executing `file` command with the filename as an argument and checking for the file type information.
 
     Postscript files are properly formatted for input to a Postscript printer.
 
