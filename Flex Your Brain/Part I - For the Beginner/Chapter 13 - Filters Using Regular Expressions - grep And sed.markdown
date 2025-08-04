@@ -6,8 +6,6 @@
 
     Regular expressions use its own set of special characters called metacharacters, which overshadows the wildcard characters used by the shell. Quoting is used to ensure that the shell doesn't attempt to interpret the regular expression characters.
 
----
-
 2.  The asterisk character is used thrice in the command line. Here's the meaning of each occurrence:
 
     -   The first asterisk is interpreted as a regular expression metacharacter. It matches the longest string starting with _botswana_ and ending with _birds_.
@@ -15,8 +13,6 @@
     -   The second and third asterisks are interpreted as shell wildcard characters. They match all the files which contain the string `.htm` in their filename.
 
     Thus, the command line searches for the lines matching the pattern starting with _botswana_ and ending with _birds_, in all the files in the current directory, which contain the string `.htm` in their filename.
-
----
 
 3.  Use the following command line:
 
@@ -38,8 +34,6 @@
 
     While the `cut` command has been discussed previously in the text, `tr` command is not. Refer to the `tr` command man page to learn more about it and the available options.
 
----
-
 4.  The command line displays the same number of lines as present in the file named _foo_. The mentioned Basic Regular Expression is trying to match occurrences of zero or more characters, which is technically every line in the file.
 
     Removing the quotes would cause the `.*` pattern to be interpreted as wildcard by the shell instead. This wildcard expansion step (which is performed by the shell before the `grep` command is executed) would replace `.*` with all the file and directory names beginning with a `.` character. This would include, at the minimum, the current and the parent directory names which are represented with `.` and `..` respectively.
@@ -54,17 +48,11 @@
 
     Since the filename _foo_ occurres as the last argument, every one of its line would be displayed too in a similar manner, but after the contents of all the hidden files listed before it are displayed.
 
----
-
 5.  The command line would print the string `foo` on standard output if the file _foo_ contains a tab character.
-
----
 
 6.  Use the following command line:
 
     ```grep "`date +"%d/%m"`" emp.lst | cut -d "|" -f2```
-
----
 
 7.  (i) The former expression matches a numric string containing the digits 0 to 9, with the string of length zero or more.
 
@@ -76,15 +64,11 @@
 
     The latter matches the presence of the string `^^` at the beginning of a line.
 
----
-
 8.  The first command line matches all the lines in the file foo, that has, as its first character, anything other than small case alphabet.
 
     The second command line matches all the lines in the file foo, that does not begin with a small case alphabet as its first character.
 
     Thus, the two commands are equivalent.
-
----
 
 9.  (i) `jeff[er][er](ie|y)s?`
 
@@ -95,5 +79,3 @@
     (iv) `di(x|ck)s?(on)?`
 
     (v) `[Mm](c|a)gh?ee`
-
----

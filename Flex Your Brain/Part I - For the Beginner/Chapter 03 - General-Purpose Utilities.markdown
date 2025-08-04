@@ -4,8 +4,6 @@
 
     `date +"%d-%m-%y/%H:%M:%S"`
 
----
-
 2.  An escape sequence is a sequence of characters that does not represent the character itself, but a different character that's not possible to be entered directly in the given context. It is generally a two character-sequence beginning with a backslash (**\\**) character.
 
     Three escape sequences used by `echo` command, with their significance are:
@@ -16,8 +14,6 @@
 
     -   `\\`: Represents backslash character.
 
----
-
 3.  (i). Supply `-e` option to the `echo` command. The modified command line is:
 
     `echo -e "Filename: \c"`
@@ -25,8 +21,6 @@
     (ii). Supply `-n` option to the `echo` command. The modified command line is:
 
     `echo -n "Filename: \c"`
-
----
 
 4.  There are a couple of mistakes in the command line:
 
@@ -37,8 +31,6 @@
     The corrected command line is:
 
     `printf "Filename: %s\n" $fname`
-
----
 
 5.  (i). Convert 192 to octal by executing the following `bc` internal commands:
 
@@ -58,19 +50,11 @@
 
     `bc` command can be used to display the number in binary by setting `obase=2`.
 
----
-
 6.  Running `script` command spawns a new sub-shell process.
-
----
 
 7.  `mailx` command can obtain its arguments via shell variables or at runtime using piping and redirection. It can work non-interactively and can also be automated via scripting.
 
----
-
 8.  When a new email message is received, it is stored in a file referred to as _mailbox_. Once the email message is read, it automatically moves to a file named _mbox_ which is generally stored in the user's home directory.
-
----
 
 9.  To hide the keyboard input from getting displayed on the terminal execute:
 
@@ -80,21 +64,15 @@
 
     `stty echo`
 
----
-
 10. By identifying the machine by determining its hostname obtained from executing the command line:
 
     `uname -n`
-
----
 
 11. By examining the output of:
 
     `stty -a`
 
     and reading values corresponding to **erase**, **kill** and **eof** keys.
-
----
 
 12. By setting `Control + c` key sequence corresponding to **kill** keyword using `stty` command as:
 
@@ -103,5 +81,3 @@
     No, the setting doesn't persist between login sessions.
 
     (Note that both macOS and Linux have the said key sequence set for interruption by default and need not be set explicitly.)
-
----

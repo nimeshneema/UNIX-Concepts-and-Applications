@@ -34,15 +34,9 @@
 
     To enter **ex Mode**, switch to the **Command Mode** and press the `:` key, followed by the **ex Mode** command. An **ex Mode** command is executed upon pressing the `Enter` key, which upon completion switches the editor back to the **Command Mode**.
 
----
-
 2.  First, navigate to the desired line using appropriate navigation keys. Press `I` to insert text at the beginning of the line. Enter `/*` and press `Esc` key to switch back to the **Command Mode**. Now press `A` key to append text at the end of the line. Enter `*/` and press the `Esc` key to switch back to the **Command Mode**.
 
----
-
 3.  Since the cursor is still placed at the last character of the line, press the `x` key twice to delete two characters at the end of the line. Now press the `0` key to move to the beginning of the line. Again press the `x` key twice to delete the two characters at the beginning of the line.
-
----
 
 4.  To move to line number 100, enter `:100` followed by pressing the `Enter` key.
 
@@ -50,11 +44,7 @@
 
     `:.,$w newfile`
 
----
-
 5.  This can happen when there are unsaved changes in the buffer. To discard the unsaved changes, and exit anyways, execute the **ex Mode** command: `:q!`.
-
----
 
 6.  (i). This command saves the lines from the current line to 10th line below in a file named _foo_.
 
@@ -63,8 +53,6 @@
     Both the above commands are executed in the **ex Mode**. If the file _foo_ already exists, a warning message is shown by the vi editor upon executing the `:w` **ex Mode** command. The warning message can be overridden by appending the `!` character to the `:w` command.
 
     So the second command overwrite the file _foo_ if it already exists in the current directory.
-
----
 
 7.  Enter the character sequence as shown below:
 
@@ -118,13 +106,9 @@
 
     -   `Esc`: Switch to the **Command Mode**.
 
----
-
 8.  By running the `who` command by executing the **ex Mode** command `:!who`.
 
     Switch to the shell without quitting the editor by executing the **ex Mode** command `:sh`. Quitting the shell resumes the editor session.
-
----
 
 9.  Make sure you are in the **Command Mode**. Enter the character sequence as shown below:
 
@@ -144,8 +128,6 @@
 
     -   `P`: Paste the deleted content of the four lines before the first line.
 
----
-
 10. The desired command sequence to replace the occurrences of the text in the current line is:
 
     `:.s/printf(/fprintf(stderr,/g`
@@ -156,13 +138,9 @@
 
     `:1,$s/printf(/fprintf(stderr,/g`
 
----
-
 11. In the default configuration, `u` undoes the most recent, single editing change. Subsequent pressing of the key will further undo previous changes.
 
     When several editing changes have been made to a single line, and the user has not navigated away from the line, pressing `U` will discard all the changes made since the cursor was moved to the line.
-
----
 
 12. The desired command sequences are as shown below:
 
@@ -180,21 +158,15 @@
 
     (iii). `:1,$s/cnt/count/gc`
 
----
-
 13. A temporary swap file created by the vi editor can persist on disk. In such a case, upon restarting, and resuming the work subsequently, the editor will complain when an attempt is made to open the file.
 
     To salvage, use the `:recover` **ex Mode** command to recover as much of the file data as possible.
-
----
 
 14. Save the file under a different name by executing the **ex Mode** command:
 
     `:w filename`
 
     Make sure that a file named _filename_ doesn't already exist on disk.
-
----
 
 15. Copy the _/etc/passwd_ file in the home directory by running the following command line:
 
@@ -211,8 +183,6 @@
     -   `:11,20w passwd2`
 
     -   `:21,$w passwd3`
-
----
 
 16. Use the key-sequence as mentioned below (along with explanation):
 
@@ -291,5 +261,3 @@
     -   `Esc`: Switch back to the **Command Mode**.
 
     -   `:w` or `:w somefile`: Optionally save the updated buffer contents to a disk file.
-
----
