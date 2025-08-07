@@ -1,49 +1,71 @@
 # Chapter 4 - The File System
 
-1.  Two types of ordinary files are:
+1.  The two types of ordinary files are:
 
-    -   Text file
+    -   **Text files**
 
-    -   Binary file
+    -   **Binary files**
 
-    A text file contains only the commonly identifiable printable characters. On the other hand, a binary file can contain characters from the entire spectrum of the ASCII character set which can include non-printable characters too.
+    A **text file** contains only printable characters and is often human-readable. Each line in a text file is terminated by a newline character. Examples include C and Java source code, shell scripts, and plain text documents.
 
-    C program source code, Perl script and ASCII text files are some examples of a text file.
+    A **binary file** contains both printable and unprintable characters, covering the entire ASCII range. These files are typically not human-readable and can disturb a terminal's settings if you try to display them directly. Examples include UNIX commands, compiled executables, and picture or video files.
 
-    Executable program, PNG image and WAV audio files are some examples of a binary file.
+2.  A **device file** helps in accessing a device by acting as a symbolic representation of it within the file system. The device file itself contains no data. Instead, its attributes, which are stored elsewhere, identify the physical device to the kernel. When a user or program performs a read or write operation on a device file, the kernel uses these attributes to interact with and operate the corresponding device.
 
-2.  A device file helps in accessing the device by setting appropriate file attributes on the file representing the device.
+3.  1.  `mkdir a/b/c`: This command will **not work** because it attempts to create a directory `b` inside `a`, and then `c` inside `b`, but `a` and `a/b` do not exist yet. The parent directories must be created before their subdirectories.
 
-3.  1.  This command won't work. Directory _a_ and _a/b_ need to exist before attempting to create the directory _a/b/c_.
+    2.  `mkdir a a/b`: This command **will work**. It first creates the directory `a` and then, because `a` now exists, it successfully creates the subdirectory `a/b`. The order of arguments is crucial here.
 
-    2.  This command will work. Directory _a_ will be created first followed by the directory _a/b_.
+    3.  `rmdir a/b/c`: This command will **not work**, as the directory `a/b/c` does not exist yet.
 
-    3.  This command won't work. The directory _a/b/c_ does not exist yet.
+    4.  `rmdir a a/b`: This command **will not work** as written. The `rmdir` command works on the lowest-level directory first. It will attempt to remove `a`, but `a` is not empty because it contains `b`. The command to correctly remove this structure would be `rmdir a/b a`.
 
-    4.  This command will work partially. Directory _a_ won't be removed as it's non-empty. Directory _a/b_ will be removed as it's empty.
+    5.  `mkdir /bin/foo`: This command **will likely not work**. The `/bin` directory is a system-level directory owned by the root user. A non-privileged user would receive a "Permission denied" error when trying to create a directory there.
 
-    5.  This command won't work for ordinary users. _/bin_ is writable only by the root user.
+4.  If the `mkdir test` command fails, the possible reasons are:
 
-4.  Either _test_ already exists as a file or directory in the current directory, or the user doesn't have write permission in the current directory.
+    -   A directory named `test` **already exists** in the current directory.
 
-5.  Only **...** and **....** can be created either as a file or a directory. **.** and **..** are special names reserved for use by the operating system to refer to the current and the parent directory.
+    -   The user does **not have the correct permissions** to create files or directories in the current directory.
 
-6.  The directory _bar_ contains hidden files or directories which are not displayed when running `ls bar`.
+5.  The only one of these that can be created is `...` or `....`.
 
-7.  By referring to charlie's home directory as `~charlie`. (Assuming that charlie's username remains the same.)
+    -   `.` (a single dot) is used to refer to the current directory.
 
-8.  `cd ~charlie` changes the current working directory to user charlie's home directory. `cd ~/charlie` changes the current working directory to a directory named _charlie_ in the current user's home directory.
+    -   `..` (two dots) is used to refer to the parent directory of the current directory.
 
-    The former command will fail if there is no user named **charlie**. The latter command will fail if no directory named _charlie_ exists in the current user's home directory.
+    -   `...` and `....` are **not special characters** to the shell and are treated as normal filenames. Therefore, you can successfully create files or directories with these names using a command like `mkdir ...` and `mkdir ....`.
 
-9.  To refer to _update.sh_ file present in the current directory and not some other file with the same name existing in one of the directories listed in **PATH** variable. This measure is also required if the current working directory (represented by **.**) is not listed in the **PATH** variable.
+6.  The `rmdir bar` command failed because `rmdir` can only remove **empty** directories. The `ls bar` command may have shown no files because it does not show hidden files—those that begin with a dot (`.`).
 
-10. Numbers, followed by uppercase alphabets, followed by lowercase alphabets.
+7.  To develop a script that refers to a file in `charlie`'s home directory and works even if the home directory changes, you should use the tilde (`~`) symbol followed by the username. The shell will automatically expand this to the correct home directory path.
 
-11. 1.  Changes the current directory to the root directory _/_. It will work successfully if the user has execute permission available for the root directory.
+    You can specify the location of the file in your script like this: `~charlie/filename`.
 
-    2.  Creates a directory named _bin_ under _/home_ directory. The command will fail if either the user doesn't have write permission available for _/home_ or _/home/bin_ already exists as a directory or file.
+8.  -   `cd ~charlie` will attempt to change the current directory to **charlie's home directory**. The shell expands `~charlie` to the absolute pathname of charlie's home directory (e.g., `/home/charlie`).
 
-    3.  This command won't work. It attempts to remove the parent directory i.e. _/home_ while being placed in the child directory _/home/kumar_, which the shell won't permit.
+    -   `cd ~/charlie` will attempt to change the current directory to a subdirectory named `charlie` located inside **your own home directory**. The shell expands `~` to your home directory, and then looks for a `charlie` subdirectory within it.
 
-    4.  This command will attempt to list the contents of the parent directory i.e. _/home_. It will succeed only if the user has read permission available for _/home_ directory.
+    It is possible for both commands to work. This would happen if a subdirectory named `charlie` exists within your home directory, and the user `charlie` also has their own home directory on the system. However, they refer to two completely different locations.
+
+9.  You sometimes run a command with the prefix `./` because `.` represents the **current directory**.
+
+    The command `update.sh` fails because the shell searches for executable files only in the directories specified by the `PATH` variable. The current directory (`.`) is often not included in `PATH` for security reasons.
+
+    The command `./update.sh` explicitly tells the shell to look in the current directory for the file `update.sh` and execute it, bypassing the `PATH` search.
+
+10. The sort order prescribed by the ASCII collating sequence gives priority in this order:
+
+    1.  **Numbers** (0-9)
+
+    2.  **Uppercase** letters (A-Z)
+
+    3.  **Lowercase** letters (a-z)
+
+11. 1.  `cd ../..`: This command is presumed to change the current directory two levels up in the hierarchy. Starting from `/home/kumar`, the first `..` would move you to `/home`, and the second `..` would move you to `/`. This command **will work**.
+
+    2.  `mkdir ../bin`: This command is presumed to create a directory named `bin` inside the parent directory of `/home/kumar`, which is `/home`. This command **will work**, if you have the permissions to create a directory in `/home`, otherwise not.
+
+    3.  `rmdir ..`: This command is presumed to remove the parent directory, `/home`. This command **will not work** because `/home` is not empty (it contains the directory `kumar`), and `rmdir` can only remove empty directories. Also, you do not have permission to delete the home directory.
+
+    4.  `ls ..`: This command is presumed to list the contents of the parent directory, `/home`. It will display the files and subdirectories found there, such as `kumar`. This command **will work**.
