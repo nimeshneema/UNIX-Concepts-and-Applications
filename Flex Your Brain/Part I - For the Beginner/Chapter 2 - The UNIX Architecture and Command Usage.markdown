@@ -12,9 +12,9 @@
 
 2.  The two basic entities supporting the UNIX system are the file and the process.
 
-    A **file** is simply an array of bytes, and the system considers everything, including directories, devices, terminals, and printers, as files.
+    -   A **file** is simply an array of bytes, and the system considers everything, including directories, devices, terminals, and printers, as files.
 
-    A **process** is the name given to a file when it is executed as a program. The process is a "time image" of an executable file, and like files, processes are part of a hierarchical tree structure.
+    -   A **process** is the name given to a file when it is executed as a program. The process is a "time image" of an executable file, and like files, processes are part of a hierarchical tree structure.
 
     UNIX systems predominantly use text files because their behavior is mainly controlled by them. The system provides a vast array of text manipulation tools to edit these files without a full-fledged editor.
 
@@ -26,9 +26,9 @@
 
     **Multitasking** means that a single user can run multiple jobs at the same time, with one job running in the foreground and others running in the background.
 
-4.  **System calls** are a handful of functions, written in C and built into the kernel, that user programs use to communicate with the kernel and access hardware. The power of UNIX lies in the fact that all flavors use the same system calls, which makes it easier to port software from one UNIX machine to another.
+4.  **System calls** are a handful of functions, written in C and built into the kernel, that user programs use to communicate with the kernel and access hardware. The power of UNIX lies in the fact that all UNIX flavors use the same system calls, which makes it easier to port software from one UNIX machine to another.
 
-    In contrast to a Windows system, where C programmers must use standard library functions, the C programmer in the UNIX environment has complete access to both the system call library and standard library functions, making it a more powerful environment.
+    In contrast to a Windows system, where C programmers must use the C standard library functions, the C programmer in the UNIX environment has complete access to both the system call library and C standard library functions, making it a more powerful environment.
 
 5.  Many UNIX commands are designed to perform simple rather than complex tasks as part of the "small is beautiful" philosophy adopted by its designers.
 
@@ -36,47 +36,49 @@
 
 6.  The statement is not entirely true.
 
-    While the **wc** command is designed to count lines, words, and characters, it is designed to work with _any_ input, not just files.
+    While the **wc** command is designed to count lines, words, and characters, it is designed to work with "any" input, not just files.
 
-    The pipe (`|`) symbol can connect two commands, feeding the output of one as input to another. For example, the command **ls | wc** uses the output of **ls** (the list of filenames) as input to **wc**, which then counts the number of files by counting the number of lines. In this case, **wc** is not working on a file but on the output from another command.
+    The pipe (`|`) symbol can connect two commands, feeding the output of one as input to another. For example, the command `ls | wc` uses the output of **ls** (the list of filenames) as input to **wc**, which then counts the number of files by counting the number of lines. In this case, **wc** is not working on a file but on the output from another command.
 
 7.  Three major differences between UNIX commands and Windows programs are:
 
-    -   **Command Naming and Case Sensitivity:** UNIX commands are typically short, single, lowercase words, and the system is case-sensitive (e.g., **ls** is a valid command but **LS** is not). Windows is generally not case-sensitive.
+    -   **Command Naming and Case Sensitivity**: UNIX commands are typically short, single, lowercase words, and the system is case-sensitive (e.g., **ls** is a valid command but **LS** is not). Windows commands are generally not case-sensitive.
 
-    -   **Command Architecture and Tools:** UNIX uses a building-block approach with hundreds of small, simple commands that can be combined using tools like pipes (`|`). Many Windows programs are more monolithic and are not designed to be easily chained together.
+    -   **Command Architecture and Tools**: UNIX uses a building-block approach with hundreds of small, simple commands that can be combined using tools like pipes (`|`). Many Windows programs are more monolithic and are not designed to be easily chained together.
 
-    -   **Command Documentation:** UNIX provides extensive online documentation through the **man** command and other tools (**apropos**, **whatis**). While Windows has help systems, the structure and availability of command-line documentation differ.
+    -   **Command Documentation**: UNIX provides extensive online documentation through the **man** command and other tools (**apropos**, **whatis**). While Windows has help systems, the structure and availability of command-line documentation differ.
 
-8.  A program file named `foo` might exist in the current directory, but when you try to execute it, the shell searches for the command in the directories specified by its `PATH` variable. The message `foo: command not found` appears because the current directory is not included in the `PATH` variable, or it is not listed in a location where the shell found and executed the command. To run the command, you would either need to add the current directory to the `PATH` or specify the full pathname, `./foo`.
+8.  A program file named `foo` might exist in the current directory, but when you try to execute it, the shell searches for the command in the directories specified by its `PATH` variable.
 
-9.  **Whitespace** refers to a contiguous string of spaces and tabs. The shell compresses multiple consecutive spaces or tabs to a single space.
+    The message "foo: command not found" appears because the current directory is not included in the `PATH` variable, or it is not listed in a location where the shell found and executed the command. To run the command, you would either need to add the current directory to the `PATH` or specify the full pathname as `./foo`.
 
-10. To display the man pages for each of these, you would need to specify the section number in which the keyword is located. The `man` command searches in order, so specifying the section number is necessary to get the correct documentation when a keyword appears in multiple sections.
+9.  **Whitespace** refers to a contiguous string of spaces and tabs. The shell (generally) compresses multiple consecutive spaces or tabs to a single space.
 
-    The options used to specify section number differ between macOS and Linux. Form the usage forms are depicted below:
+10. To display the man pages for each of these, you would need to specify the section number in which the keyword is located. The **man** command searches in order, so specifying the section number is necessary to get the correct documentation when a keyword appears in multiple sections.
 
-    -   **macOS**
-
-        -   `man -s1 command`
-
-        -   `man -s5 filename`
-
-        -   `man -s2 system_call`
+    The option used to specify section number differ between macOS and Linux.
 
     -   **Linux**
 
-        -   `man -s 1 command`
+        -   `man -s 1 command`      man page for command in section 1
 
-        -   `man -s 5 filename`
+        -   `man -s 2 system_call`  man page for system_call in section 2
 
-        -   `man -s 2 system_call`
+        -   `man -s 5 filename`     man page for filename in section 5
+
+    -   **macOS**
+
+        -   `man -s1 command`       man page for command in section 1
+
+        -   `man -s2 system_call`   man page for system_call in section 2
+
+        -   `man -s5 filename`      man page for filename in section 5
 
     In Linux, the option `-s` is followed by a whitespace and the section number, while in macOS, the section number is appended to `-s` option.
 
-11. In the `SYNOPSIS` section of a man page:
+11. In the **SYNOPSIS** section of a man page:
 
-    -   The `|` character indicates that only one of the options on either side can be used. For `/usr/xpg4/bin/tail [ -f | -r]`, you can use either the `-f` option or the `-r` option, but not both.
+    -   The `|` character indicates that only one of the options separated by the `|` character can be used at a time. For `/usr/xpg4/bin/tail [ -f | -r]`, you can use either the `-f` option or the `-r` option, but not both simultaneously.
 
     -   The three dots `...` (ellipsis) indicate that there can be more instances of the preceding word. For `ls [ file ... ]`, it means the `ls` command can be used with one or more filenames as arguments.
 
@@ -84,7 +86,7 @@
 
     The **eof character** (end-of-file) is used to terminate input for commands that are expecting user input from the terminal. This is associated with the **[Ctrl-d]** key sequence.
 
-13. To direct **man** to use a specific pager, such as `less`, you must set the `PAGER` shell variable and then export it. The commands to do this would be:
+13. To direct **man** to use a specific pager, such as **less**, you must set the `PAGER` shell variable and then export it. The commands to do this would be:
 
     ```
     PAGER=less ; export PAGER
