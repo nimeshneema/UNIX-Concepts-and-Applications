@@ -22,19 +22,19 @@ Every effort has been made to ensure the correctness and completeness of these s
 
 ## Conventions Used
 
-1.  **Command, program name, key term**: **bold**
+1.  Command, program name, key term: **bold**
 
-2.  **Command-line, option(s), user input, expression, symbol, File/folder name, path**: `code span`
+2.  Command-line, option(s), user input, expression, symbol, File/folder name, path: `code span`
 
-3.  **Command output, script, source code**:
+3.  Command output, script, source code:
 
     ```
     code block
     ```
 
-4.  **String:** "double quotes"
+4.  String: "double quotes"
 
-5.  **Domain name, email address, URL:** _italicized_
+5.  Domain name, email address, URL: _italicized_
 
 ## Notes
 
