@@ -6,7 +6,7 @@
 
     For **users**, the operating system provides services for common tasks like copying or deleting a file, creating a directory, finding out who is working on the network, and sending a mail message. As a system administrator, it also handles tasks like backing up files.
 
-2.  When a program needs to access the hardware, such as reading a file on disk, it makes a **call to the operating system** instead of attempting to do the job itself. The operating system then directs the disk controller to open the file and make the data available to the program.
+2.  When a program needs to access the hardware, such as reading a file on disk, it makes a "call to the operating system" instead of attempting to do the job itself. The operating system then directs the disk controller to open the file and make the data available to the program.
 
 3.  The program that starts executing at your terminal when you log in is known as the **shell**. Four types of this program available on a UNIX system are:
 
@@ -18,15 +18,15 @@
 
     -   Bash shell (**bash**)
 
-4.  The output produced by executing `ls` command is saved in a file named _list_ in the current directory.
+4.  The output produced by executing **ls** command is saved in a file named `list` in the current directory.
 
-    When you enter the sequence **ls > list**, the shell sees the `>` metacharacter and acts on it first. It opens a file named `list` and then executes the `ls` command. The shell has manipulated things so that the output of `ls`, which is normally displayed on the terminal, is redirected to the file it opened on behalf of the command. No output is shown on the screen, and the prompt returns after the command is completed.
+    When you enter the sequence `ls > list`, the shell sees the `>` metacharacter and acts on it first. It opens a file named `list` and then executes the **ls** command. The shell has manipulated things so that the output of **ls**, which is normally displayed on the terminal, is redirected to the file it opened on behalf of the command. No output is shown on the screen, and the prompt returns after the command is completed.
 
 5.  The variable assignment `x=10` with spaces on either side of the `=` does not work because shell programming syntax requires there to be "No spaces on either side of =". When spaces are present, the shell does not interpret it as a variable assignment but instead attempts to run `x` as a command.
 
 6.  Two empty files named _README_ and _readme_ are created in the current directory.
 
-    If either of the two files exists already, it is replaced by an empty file.
+    If either of the two files exists already, they are replaced by an empty file.
 
     When running the commands on a case-insensitive file-system, only one file named _README_ is created.
 
