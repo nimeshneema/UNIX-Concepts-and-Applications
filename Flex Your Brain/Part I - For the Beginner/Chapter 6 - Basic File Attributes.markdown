@@ -24,9 +24,9 @@
 
 3.  The significance of commands:
 
-    1.  **ls -ld .**: This command displays the attributes of the current directory (`.`) itself, rather than its contents. The `-d` option tells **ls** command to treat the directory as a file.
+    1.  `ls -ld .`: This command displays the attributes of the current directory (`.`) itself, rather than its contents. The `-d` option tells **ls** command to treat the directory as a file.
 
-    2.  **ls -l ..**: This command displays a long listing of the files and subdirectories found in the parent directory (`..`).
+    2.  `ls -l ..`: This command displays a long listing of the files and subdirectories found in the parent directory (`..`).
 
 4.  The commands `ls bar` and `ls -d bar` will display the same output, the string `bar`, if `bar` is an ordinary file.
 
@@ -36,7 +36,7 @@
 
 6.  To assign all permissions to the owner and remove all permissions from others on a file named `foo`, you can use either relative or absolute assignment methods.
 
-    1.  **Relative Assignment**: You would use two separate expressions with `chmod`, separated by a comma.
+    1.  `Relative Assignment`: You would use two separate expressions with `chmod`, separated by a comma.
 
         ```
         chmod u+rwx,o-rwx foo
@@ -44,7 +44,7 @@
 
         This command adds all permissions to the user while explicitly removing all permissions from others. This approach doesn't require any assumptions about the file's default permissions.
 
-    2.  **Absolute Assignment**: This method sets all nine permission bits at once, so it is necessary to consider the group's permissions as well. Assuming the group has read and execute permissions (`r-x` or `5`), the octal representation for the command would be `750`.
+    2.  `Absolute Assignment`: This method sets all nine permission bits at once, so it is necessary to consider the group's permissions as well. Assuming the group has read and execute permissions (`r-x` or `5`), the octal representation for the command would be `750`.
 
         ```
         chmod 750 foo
@@ -58,9 +58,9 @@
 
 8.  From a security viewpoint, the consequences of a file having these permissions are as follows:
 
-    1.  **000**: This file is useless for all categories of users because it cannot be read, written to, or executed. However, the file can still be deleted by the owner, as the ability to delete a file is controlled by the permissions of the directory it is in, not the file's own permissions.
+    1.  000: This file is useless for all categories of users because it cannot be read, written to, or executed. However, the file can still be deleted by the owner, as the ability to delete a file is controlled by the permissions of the directory it is in, not the file's own permissions.
 
-    2.  **777**: This file is extremely dangerous because it is universally readable, writable, and executable. Any user on the system can read, modify, or delete its contents. You should never set permissions this way unless you have a specific and highly controlled reason, and even then, it is not recommended.
+    2.  777: This file is extremely dangerous because it is universally readable, writable, and executable. Any user on the system can read, modify, or delete its contents. You should never set permissions this way unless you have a specific and highly controlled reason, and even then, it is not recommended.
 
 9.  The `ls -l` output shows that the owner of the file `foo` is sumit, while the current user is kumar. The permissions for `others` are not set (`---`), so the permissions for the kumar group apply. Kumar is also the group owner, as seen in the fourth field of the output. The permissions for the group are `rw-`.
 
@@ -78,27 +78,27 @@
 
     1.  To change to `rwxrwxrwx`:
 
-        -   **Relative**: `chmod u+x,g+wx,o+rwx filename` or `chmod ugo+rwx filename` or `chmod a+rwx filename`.
+        -   Relative: `chmod u+x,g+wx,o+rwx filename` or `chmod ugo+rwx filename` or `chmod a+rwx filename`.
 
-        -   **Absolute**: `chmod 777 filename`.
+        -   Absolute: `chmod 777 filename`.
 
     2.  To change to `r--r-----`:
 
-        -   **Relative**: `chmod u-w,g-wx,o-rw filename`
+        -   Relative: `chmod u-w,g-wx,o-rw filename`
 
-        -   **Absolute**: `chmod 440 filename`
+        -   Absolute: `chmod 440 filename`
 
     3.  To change to `--r--r--`:
 
-        -   **Relative**: `chmod u-rwx,g-x,o-w filename`
+        -   Relative: `chmod u-rwx,g-x,o-w filename`
 
-        -   **Absolute**: `chmod 244 filename`
+        -   Absolute: `chmod 244 filename`
 
     4.  To change to `--------`:
 
-        -   **Relative**: `chmod a-rwx filename`
+        -   Relative: `chmod a-rwx filename`
 
-        -   **Absolute**: `chmod 000 filename`
+        -   Absolute: `chmod 000 filename`
 
 11. After running `chmod a-w .`, you cannot create or remove a file in the current directory because you have removed write permission from the directory itself. Directory write permission is required to create or remove files and subdirectories, regardless of a file's individual permissions.
 
