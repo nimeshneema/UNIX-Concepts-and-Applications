@@ -1,79 +1,111 @@
 # Chapter 6 - Basic File Attributes
 
-1.  Executing the command-line `ls -lR / > listing` saves the listing of all the files and directories in the whole system in a file named _listing_ in the current directory.
+1.  You can get a complete listing of all files and directories in the whole system by using the **ls** command with the `-R` (recursive) option and an absolute pathname to the root directory. To save this output to a file, you use the `>` redirection operator.
 
-    However, it is worth noting that executing the above command line as a non root user may cause the directories without read permission to be skipped and the error message displayed on the console.
+    ```
+    ls -R / > all_files.txt
+    ```
 
-2.  The significance of the first four fields in `ls -l` output is as described below:
+    However, it is worth noting that executing the above command line as a non root user may cause the directories without read permission to be skipped and an error message displayed on the console.
 
-    -   **First column**: File type and the associated permissions for the file owner, group owner and others.
+2.  The first four fields of the `ls -l` output are significant for understanding a file's basic properties and security.
 
-    -   **Second column**: The number of links associated with the file.
+    -   First column - File Type and Permissions: The first character indicates the file type (e.g., `-` for a regular file, `d` for a directory), followed by nine characters representing permissions (`r`, `w`, `x`) for the owner, group, and others.
 
-    -   **Third column**: The username of the file owner.
+    -   Second column - Links: The number in the second field shows how many links (names) the file has.
 
-    -   **Fourth column**: The name of the group that owns the file.
+    -   Third column - Ownership: The third field is the user who owns the file, usually the one who created it.
 
-    These attributes can be changed by the owner of the file as well as the system administrator. (Depending on the release of UNIX i.e. AT&T or BSD. See answer 12 below).
+    -   Fourth column - Group Ownership: The fourth field is the group that owns the file.
 
-    Only the system administrator can change the group ownership of a file to a group to which the owner doesn't belong.
+    The **owner** of a file can change all of its attributes. The **superuser** can also change all attributes for any file on the system.
 
-3.  1.  This command shows the attributes of the current directory in a long listing format.
+    The file ownership attribute can be changed from one user to another using **chown** command only by the superuser.
 
-    2.  This command lists the contents of the parent directory in a long listing format.
+3.  The significance of commands:
 
-4.  1.  If _bar_ is an ordinary file, both the commands display _bar_ as the output.
+    1.  **ls -ld .**: This command displays the attributes of the current directory (`.`) itself, rather than its contents. The `-d` option tells **ls** command to treat the directory as a file.
 
-    2.  If _bar_ is a directory that contains only a single file or directory also named _bar_, than both the commands display _bar_ as the output.
+    2.  **ls -l ..**: This command displays a long listing of the files and subdirectories found in the parent directory (`..`).
 
-5.  No. The group owner of a file can be changed to a group to which the file owner is not a member of by the system administrator.
+4.  The commands `ls bar` and `ls -d bar` will display the same output, the string `bar`, if `bar` is an ordinary file.
 
-6.  1.  By executing the command-line: `chmod u+rwx,o-rwx foo`
+    The second way this could happen is if `bar` is a directory containing a file named `bar`. `ls bar` would display the file name `bar`, while `ls -d bar` would display the directory `bar` itself.
 
-    2.  By executing the command-line: `chmod 740 foo`
+5.  No, the owner does not always belong to the same group as the group owner of a file. While by default, a file's group owner is the group to which the owner belongs, the owner can change the group owner of the file using the **chgrp** command.
 
-    In case of absolute assignment, we need to know the default permissions for the file _foo_ to preserve the group permissions.
+6.  To assign all permissions to the owner and remove all permissions from others on a file named `foo`, you can use either relative or absolute assignment methods.
 
-7.  The read permission may not be available for the source file. To copy the file, the appropriate read permission is required which can be set either by the file owner or the superuser.
+    1.  **Relative Assignment**: You would use two separate expressions with `chmod`, separated by a comma.
 
-8.  1.  No one, including the owner of the file, can do anything with the file. The file is technically inaccessible.
+        ```
+        chmod u+rwx,o-rwx foo
+        ```
 
-    2.  Anyone can read, write or execute the file. The file is publicly accessible.
+        This command adds all permissions to the user while explicitly removing all permissions from others. This approach doesn't require any assumptions about the file's default permissions.
 
-9.  _kumar_ is the group owner of the file _foo_.
+    2.  **Absolute Assignment**: This method sets all nine permission bits at once, so it is necessary to consider the group's permissions as well. Assuming the group has read and execute permissions (`r-x` or `5`), the octal representation for the command would be `750`.
 
-    1.  _kumar_ can edit the file as the group owners have the write permission available.
+        ```
+        chmod 750 foo
+        ```
 
-    2.  Whether or not _kumar_ can delete the file _foo_ would depend on the group ownership and permission set for the directory housing the file _foo_. _kumar_ will be able to delete the file _foo_ if the parent directory belongs to group _kumar_, and has the write permission available for the group.
+        This sets the user's permissions to `rwx` (7), the group's permissions to `r-x` (5), and others' permissions to `---` (0). This method requires an assumption about the group's desired permissions.
 
-    3.  _kumar_ cannot change the permissions of the file _foo_ as the user is not the owner of the file.
+7.  The reason you received the error message "cannot create file foo" is that the source file in the other user's directory is likely not readable by you A copy command requires read permission on the source file to access its contents. While you have write permission in your own directory, you cannot read the other user's file.
 
-    4.  _kumar_ cannot change the ownership of the file _foo_ as she is not the owner of the file.
+    To copy the file, you would need to ask the other user to grant you read permission on the file, or ask them to copy the file to a location where you have read permission.
 
-10. Assume that the file is named _foo_.
+8.  From a security viewpoint, the consequences of a file having these permissions are as follows:
 
-    Using relative assignment:
+    1.  **000**: This file is useless for all categories of users because it cannot be read, written to, or executed. However, the file can still be deleted by the owner, as the ability to delete a file is controlled by the permissions of the directory it is in, not the file's own permissions.
 
-    1.  `chmod a+rwx foo`
+    2.  **777**: This file is extremely dangerous because it is universally readable, writable, and executable. Any user on the system can read, modify, or delete its contents. You should never set permissions this way unless you have a specific and highly controlled reason, and even then, it is not recommended.
 
-    2.  `chmod a-wx,o-r foo`
+9.  The `ls -l` output shows that the owner of the file `foo` is sumit, while the current user is kumar. The permissions for `others` are not set (`---`), so the permissions for the kumar group apply. Kumar is also the group owner, as seen in the fourth field of the output. The permissions for the group are `rw-`.
 
-    3.  `chmod a-wx,u-r foo`
+    Based on this information, kumar can:
 
-    4.  `chmod a-rwx foo`
+    1.   Edit: Yes, the group has `w` (write) permission.
 
-    Using absolute assignment:
+    2.  Delete: Yes, if Kumar has write permission on the directory where the file `foo` resides. This is not shown in the `ls -l` output, but the directory has write permission.
 
-    1.  `chmod 777 foo`
+    3.  Change permissions: No, only the owner (sumit) or the superuser can change the permissions of the file.
 
-    2.  `chmod 440 foo`
+    4.  Change ownership: No, only the superuser can change the ownership of a file on a BSD-based system.
 
-    3.  `chmod 044 foo`
+10. The file's current permissions are `rw-r-xr--`.
 
-    4.  `chmod 000 foo`
+    1.  To change to `rwxrwxrwx`:
 
-11. No, it could not be done. No file can be created or deleted as the write permission has been revoked for everyone, owner included.
+        -   **Relative**: `chmod u+x,g+wx,o+rwx filename` or `chmod ugo+rwx filename` or `chmod a+rwx filename`.
 
-    No, the latter command revokes write permission for everyone on the file/directory named _foo_.
+        -   **Absolute**: `chmod 777 filename`.
 
-12. On an AT&T system, the owner can change the owner and the group of a file. On a BSD system, the owner of a file can be changed only by the system administrator and the user can change the group of a file only to a group to which she already belongs.
+    2.  To change to `r--r-----`:
+
+        -   **Relative**: `chmod u-w,g-wx,o-rw filename`
+
+        -   **Absolute**: `chmod 440 filename`
+
+    3.  To change to `--r--r--`:
+
+        -   **Relative**: `chmod u-rwx,g-x,o-w filename`
+
+        -   **Absolute**: `chmod 244 filename`
+
+    4.  To change to `--------`:
+
+        -   **Relative**: `chmod a-rwx filename`
+
+        -   **Absolute**: `chmod 000 filename`
+
+11. After running `chmod a-w .`, you cannot create or remove a file in the current directory because you have removed write permission from the directory itself. Directory write permission is required to create or remove files and subdirectories, regardless of a file's individual permissions.
+
+    The command `chmod a-w foo` is different because it only removes write permissions from the file named `foo`, not the directory. You would still be able to create and remove other files and directories.
+
+12. To determine whether your system uses the BSD or AT&T version of **chown** and **chgrp**, you can test their behavior.
+
+    For **chown**, try to change the ownership of a file that you own to another user. If the command succeeds, your system likely uses the AT&T version where the owner can change ownership. If it fails and says "Permission denied", it's a BSD-based system, and only the superuser can perform this action.
+
+    For **chgrp**, as the owner of a file, try to change the group ownership to a group you do not belong to. If the command succeeds, it's an AT&T-based system. If it fails, but then succeeds when you change the group to one you are a member of, it's a BSD-based system.
